@@ -13,7 +13,29 @@ releaseLabel: ci-build
 publisher:
   name: "Charité - Universitätsmedizin Berlin"
   url: "https://www.netzwerk-universitaetsmedizin.de"
-
+dependencies:
+  de.medizininformatikinitiative.kerndatensatz.prozedur:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide
+    version: 2.0.0-alpha3
+  de.medizininformatikinitiative.kerndatensatz.person:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide
+    version: 2.0.0-alpha3
+  de.medizininformatikinitiative.kerndatensatz.medikation:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
+    version: 1.0.10
+  de.medizininformatikinitiative.kerndatensatz.diagnose:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide
+    version: 2.0.0-alpha3
+  de.medizininformatikinitiative.kerndatensatz.laborbefund:
+    uri: https://simplifier.net/guide/laborbefundindermedizininformatik-initiative
+    version: 1.0.6
+  de.gecco:
+    uri: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide
+    version: 1.0.5
+  de.medizininformatikinitiative.kerndatensatz.meta:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
+    version: 1.0.3
+    
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
