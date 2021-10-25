@@ -1,4 +1,4 @@
-name: ImplementationGuide publisher
+name: ImplementationGuide Publisher
 
 # Controls when the action will run.
 on:
@@ -55,13 +55,9 @@ jobs:
           # Run the publisher - don't run the batch script but run the line directly
           args: ./packages/run_ig_publisher.sh
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: run-publisher
-    if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main') && (github.event.pull_request.merged)
-    steps:
       # deploy implementation guide to github pages
       - name: Deploy
+        if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
