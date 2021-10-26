@@ -6,10 +6,12 @@ output
 input-cache
 fsh-generated
 
-# Don't commit this because it's so large #
+# IG publisher files #
 ###########################################
 validator_cli.jar
 publisher.jar
+_gencontinuous.bat
+_gencontinuous.sh
 
 # OS generated files #
 ###########################
@@ -32,4 +34,3 @@ node_modules/
 # cache folders
 ###########################
 __pycache__/
-
