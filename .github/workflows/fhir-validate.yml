@@ -17,7 +17,7 @@ on:
 
 jobs:
 
-  CI_FHIR_VALIDATION:
+  fsh-fhir-validation:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

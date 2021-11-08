@@ -12,3 +12,8 @@ Invariant: must-exist-if-vaccination-performed
 Description: "This item must be specified if the vaccination was performed"
 Expression: "(status = 'completed') implies $this.exists()"
 Severity: #error
+
+Invariant: value-or-data-absent-reason
+Description: "If there is no a value a data absent reason must be present or vice versa"
+Severity: #error
+Expression: "value.exists() or dataAbsentReason.exists()"
