@@ -1,0 +1,30 @@
+﻿napkongeccoplus : Validation Results
+=========================================
+
+err = 0, warn = 8, info = 1
+IG Publisher Version: 1.1.84
+Generated Mon Nov 08 22:58:46 UTC 2021. FHIR version 4.0.1 for napkon-geccoplus#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+ Build Errors : 0 / 7 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-geccoplus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-present-not-present-undetermined-other : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-restricted-event-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-yes-no-unknown : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
+WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+== fsh-generated/resources/ImplementationGuide-napkon-geccoplus.json ==
+WARNING: ImplementationGuide/napkon-geccoplus: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Patient-ExamplePatient.json ==
+== fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined.json ==
+== fsh-generated/resources/ValueSet-present-not-present-undetermined-other.json ==
+== fsh-generated/resources/ValueSet-restricted-event-status.json ==
+== fsh-generated/resources/ValueSet-yes-no-unknown.json ==

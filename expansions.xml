@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="92aa098d-4552-479f-96f1-e1a3762de8a9"/>
+  <meta>
+    <lastUpdated value="2021-11-08T22:58:32.000+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+    <resource>
+      <ValueSet>
+        <id value="detected-not-detected-unknown-undetermined"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260373001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
+                </td>
+                <td>Detected</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260415000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
+                </td>
+                <td>Not detected</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373068000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                </td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+        <version value="0.1.0"/>
+        <name value="DetectedNotDetectedUnknownUndetermined"/>
+        <title value="Detected Not Detected Unknown Undetermined"/>
+        <status value="active"/>
+        <date value="2021-11-08T22:58:32+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Values for laboratory observations"/>
+        <expansion>
+          <identifier value="urn:uuid:f2f8f473-dea2-432e-8bf5-1edce7740fb9"/>
+          <timestamp value="2021-11-08T22:58:40+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260373001"/>
+            <display value="Detected"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260415000"/>
+            <display value="Not detected"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+    <resource>
+      <ValueSet>
+        <id value="present-not-present-undetermined-other"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410605003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003">410605003</a>
+                </td>
+                <td>Confirmed present (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410594000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000">410594000</a>
+                </td>
+                <td>Definitely NOT present (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373068000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                </td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+        <version value="0.1.0"/>
+        <name value="PresentNotPresentUndeterminedOther"/>
+        <title value="Present Not Present Undetermined Other"/>
+        <status value="active"/>
+        <date value="2021-11-08T22:58:32+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Values for laboratory observations"/>
+        <expansion>
+          <identifier value="urn:uuid:f38b0203-7ace-4fb4-b29c-436d8b1acce4"/>
+          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410605003"/>
+            <display value="Confirmed present (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410594000"/>
+            <display value="Definitely NOT present (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+    <resource>
+      <ValueSet>
+        <id value="restricted-event-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">
+                <code>http://hl7.org/fhir/event-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-not-done"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a>
+                </td>
+                <td>Not Done</td>
+                <td>The event was terminated prior to any activity beyond preparation.  I.e. The &#39;main&#39; activity has not yet begun.  The boundary between preparatory and the &#39;main&#39; activity is context-specific.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-completed"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a>
+                </td>
+                <td>Completed</td>
+                <td>The event has now concluded.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-unknown"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-in-progress"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress">in-progress</a>
+                </td>
+                <td>In Progress</td>
+                <td>The event is currently occurring.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+        <version value="0.1.0"/>
+        <name value="RestrictedEventStatus"/>
+        <title value="RestrictedEventStatus"/>
+        <status value="active"/>
+        <date value="2021-11-08T22:58:32+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
+        <expansion>
+          <identifier value="urn:uuid:c9d06342-7e13-4715-85a5-dbc00616f19f"/>
+          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/event-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="not-done"/>
+            <display value="Not Done"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown"/>
+    <resource>
+      <ValueSet>
+        <id value="yes-no-unknown"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373066001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
+                </td>
+                <td>Yes (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373067005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
+                </td>
+                <td>No (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown"/>
+        <version value="0.1.0"/>
+        <name value="YesNoUnknown"/>
+        <title value="Yes No Unknown"/>
+        <status value="active"/>
+        <date value="2021-11-08T22:58:32+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Yes / No / Unknown"/>
+        <expansion>
+          <identifier value="urn:uuid:26d8083f-afce-491e-a955-372ac67fdae1"/>
+          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

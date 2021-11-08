@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="napkon-geccoplus"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus"/>
+  <version value="0.1.0"/>
+  <name value="napkongeccoplus"/>
+  <status value="draft"/>
+  <date value="2021-11-08T22:58:32+00:00"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <packageId value="napkon-geccoplus"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_prozedur">
+    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.prozedur"/>
+    <version value="2.0.0-alpha3"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_person">
+    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.person"/>
+    <version value="2.0.0-alpha3"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_medikation">
+    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
+    <version value="1.0.10"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_diagnose">
+    <uri value="https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.diagnose"/>
+    <version value="2.0.0-alpha3"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_laborbefund">
+    <uri value="https://simplifier.net/guide/laborbefundindermedizininformatik-initiative"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+    <version value="1.0.6"/>
+  </dependsOn>
+  <dependsOn id="de_gecco">
+    <uri value="https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide"/>
+    <packageId value="de.gecco"/>
+    <version value="1.0.5"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_meta">
+    <uri value="https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+    <version value="1.0.3"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/detected-not-detected-unknown-undetermined"/>
+      </reference>
+      <name value="Detected Not Detected Unknown Undetermined"/>
+      <description value="Values for laboratory observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/present-not-present-undetermined-other"/>
+      </reference>
+      <name value="Present Not Present Undetermined Other"/>
+      <description value="Values for laboratory observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/restricted-event-status"/>
+      </reference>
+      <name value="RestrictedEventStatus"/>
+      <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/yes-no-unknown"/>
+      </reference>
+      <name value="Yes No Unknown"/>
+      <description value="Yes / No / Unknown"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExamplePatient"/>
+      </reference>
+      <name value="ExamplePatient"/>
+      <description value="Example patient to be used as reference in other instances"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

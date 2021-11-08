@@ -1,0 +1,251 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "92aa098d-4552-479f-96f1-e1a3762de8a9",
+  "meta" : {
+    "lastUpdated" : "2021-11-08T22:58:32.000+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "detected-not-detected-unknown-undetermined",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260373001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001\">260373001</a></td><td>Detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260415000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000\">260415000</a></td><td>Not detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+      "version" : "0.1.0",
+      "name" : "DetectedNotDetectedUnknownUndetermined",
+      "title" : "Detected Not Detected Unknown Undetermined",
+      "status" : "active",
+      "date" : "2021-11-08T22:58:32+00:00",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "name" : "Charité - Universitätsmedizin Berlin",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+        }]
+      }],
+      "description" : "Values for laboratory observations",
+      "expansion" : {
+        "identifier" : "urn:uuid:f2f8f473-dea2-432e-8bf5-1edce7740fb9",
+        "timestamp" : "2021-11-08T22:58:40+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260373001",
+          "display" : "Detected"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260415000",
+          "display" : "Not detected"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373068000",
+          "display" : "Undetermined (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "present-not-present-undetermined-other",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410605003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003\">410605003</a></td><td>Confirmed present (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410594000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000\">410594000</a></td><td>Definitely NOT present (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other",
+      "version" : "0.1.0",
+      "name" : "PresentNotPresentUndeterminedOther",
+      "title" : "Present Not Present Undetermined Other",
+      "status" : "active",
+      "date" : "2021-11-08T22:58:32+00:00",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "name" : "Charité - Universitätsmedizin Berlin",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+        }]
+      }],
+      "description" : "Values for laboratory observations",
+      "expansion" : {
+        "identifier" : "urn:uuid:f38b0203-7ace-4fb4-b29c-436d8b1acce4",
+        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410605003",
+          "display" : "Confirmed present (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "410594000",
+          "display" : "Definitely NOT present (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373068000",
+          "display" : "Undetermined (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "74964007",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "restricted-event-status",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\">EventStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\"><code>http://hl7.org/fhir/event-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-not-done\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done\">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-completed\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed\">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-unknown\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown\">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-in-progress\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress\">in-progress</a></td><td>In Progress</td><td>The event is currently occurring.</td></tr></table></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+      "version" : "0.1.0",
+      "name" : "RestrictedEventStatus",
+      "title" : "RestrictedEventStatus",
+      "status" : "active",
+      "date" : "2021-11-08T22:58:32+00:00",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "name" : "Charité - Universitätsmedizin Berlin",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+        }]
+      }],
+      "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
+      "expansion" : {
+        "identifier" : "urn:uuid:c9d06342-7e13-4715-85a5-dbc00616f19f",
+        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/event-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "not-done",
+          "display" : "Not Done"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "in-progress",
+          "display" : "In Progress"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "yes-no-unknown",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373066001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001\">373066001</a></td><td>Yes (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>No (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+      "version" : "0.1.0",
+      "name" : "YesNoUnknown",
+      "title" : "Yes No Unknown",
+      "status" : "active",
+      "date" : "2021-11-08T22:58:32+00:00",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "name" : "Charité - Universitätsmedizin Berlin",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+        }]
+      }],
+      "description" : "Yes / No / Unknown",
+      "expansion" : {
+        "identifier" : "urn:uuid:26d8083f-afce-491e-a955-372ac67fdae1",
+        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373066001",
+          "display" : "Yes (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373067005",
+          "display" : "No (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  }]
+}

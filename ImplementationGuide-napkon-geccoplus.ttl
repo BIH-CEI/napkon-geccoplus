@@ -1,0 +1,481 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "napkon-geccoplus"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "napkongeccoplus"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-08T22:58:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "napkon-geccoplus"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_prozedur" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.prozedur" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_person" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.person" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_medikation" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.medikation" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.10" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_diagnose" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.diagnose" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
+  ], [
+     fhir:index 4;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_laborbefund" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/laborbefundindermedizininformatik-initiative";
+       fhir:link <https://simplifier.net/guide/laborbefundindermedizininformatik-initiative>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.laborbefund" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.6" ]
+  ], [
+     fhir:index 5;
+     fhir:Element.id [ fhir:value "de_gecco" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide";
+       fhir:link <https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.gecco" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.5" ]
+  ], [
+     fhir:index 6;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_meta" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.meta" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.3" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
+         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other>;
+         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/restricted-event-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RestrictedEventStatus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, active, completed and unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Patient/ExamplePatient>;
+         fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient to be used as reference in other instances" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

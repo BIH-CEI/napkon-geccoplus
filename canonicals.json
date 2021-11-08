@@ -1,0 +1,37 @@
+[
+  {
+    "id": "napkon-geccoplus",
+    "type": "ImplementationGuide",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus",
+    "version": "0.1.0",
+    "name": "napkongeccoplus"
+  },
+  {
+    "id": "detected-not-detected-unknown-undetermined",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "version": "0.1.0",
+    "name": "DetectedNotDetectedUnknownUndetermined"
+  },
+  {
+    "id": "present-not-present-undetermined-other",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other",
+    "version": "0.1.0",
+    "name": "PresentNotPresentUndeterminedOther"
+  },
+  {
+    "id": "restricted-event-status",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+    "version": "0.1.0",
+    "name": "RestrictedEventStatus"
+  },
+  {
+    "id": "yes-no-unknown",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+    "version": "0.1.0",
+    "name": "YesNoUnknown"
+  }
+]
