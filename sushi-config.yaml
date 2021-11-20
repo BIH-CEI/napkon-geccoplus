@@ -2,9 +2,9 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: "napkon-module"
+id: "napkon-geccoplus"
 canonical: "https://www.netzwerk-universitaetsmedizin.de/fhir"
-name: "napkon-module"
+name: "napkon-geccoplus"
 status: "draft"
 version: "0.1.0"
 fhirVersion: "4.0.1"
@@ -35,7 +35,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.meta:
     uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
     version: 1.0.3
-    
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
