@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "92aa098d-4552-479f-96f1-e1a3762de8a9",
+  "id" : "47d784b1-bff5-413a-9291-eaaf0ab867b3",
   "meta" : {
-    "lastUpdated" : "2021-11-08T22:58:32.000+00:00"
+    "lastUpdated" : "2021-11-22T10:32:05.393+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-11-08T22:58:32+00:00",
+      "date" : "2021-11-22T10:32:05+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -30,8 +30,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:f2f8f473-dea2-432e-8bf5-1edce7740fb9",
-        "timestamp" : "2021-11-08T22:58:40+00:00",
+        "identifier" : "urn:uuid:13457fae-0aa5-47d2-8299-90950532be29",
+        "timestamp" : "2021-11-22T10:32:16+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -43,7 +43,7 @@
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -82,7 +82,7 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-11-08T22:58:32+00:00",
+      "date" : "2021-11-22T10:32:05+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -93,8 +93,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:f38b0203-7ace-4fb4-b29c-436d8b1acce4",
-        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "identifier" : "urn:uuid:36b05a0b-cd68-4525-bc2d-313455fedb65",
+        "timestamp" : "2021-11-22T10:32:17+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -106,7 +106,7 @@
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -145,7 +145,7 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-11-08T22:58:32+00:00",
+      "date" : "2021-11-22T10:32:05+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -156,8 +156,8 @@
       }],
       "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:c9d06342-7e13-4715-85a5-dbc00616f19f",
-        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "identifier" : "urn:uuid:1c71ffda-ec05-45cf-8f1f-4104785fd260",
+        "timestamp" : "2021-11-22T10:32:17+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -204,7 +204,7 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-11-08T22:58:32+00:00",
+      "date" : "2021-11-22T10:32:05+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -215,8 +215,8 @@
       }],
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:26d8083f-afce-491e-a955-372ac67fdae1",
-        "timestamp" : "2021-11-08T22:58:41+00:00",
+        "identifier" : "urn:uuid:16bb6675-1598-4cbd-b15a-440d49922473",
+        "timestamp" : "2021-11-22T10:32:17+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -228,7 +228,7 @@
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",

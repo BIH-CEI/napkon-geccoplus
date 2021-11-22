@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="92aa098d-4552-479f-96f1-e1a3762de8a9"/>
+  <id value="47d784b1-bff5-413a-9291-eaaf0ab867b3"/>
   <meta>
-    <lastUpdated value="2021-11-08T22:58:32.000+00:00"/>
+    <lastUpdated value="2021-11-22T10:32:05.393+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -73,7 +73,7 @@
         <name value="DetectedNotDetectedUnknownUndetermined"/>
         <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-11-08T22:58:32+00:00"/>
+        <date value="2021-11-22T10:32:05+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -84,8 +84,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:f2f8f473-dea2-432e-8bf5-1edce7740fb9"/>
-          <timestamp value="2021-11-08T22:58:40+00:00"/>
+          <identifier value="urn:uuid:13457fae-0aa5-47d2-8299-90950532be29"/>
+          <timestamp value="2021-11-22T10:32:16+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -97,7 +97,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -190,7 +190,7 @@
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-11-08T22:58:32+00:00"/>
+        <date value="2021-11-22T10:32:05+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -201,8 +201,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:f38b0203-7ace-4fb4-b29c-436d8b1acce4"/>
-          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <identifier value="urn:uuid:36b05a0b-cd68-4525-bc2d-313455fedb65"/>
+          <timestamp value="2021-11-22T10:32:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -214,7 +214,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -309,7 +309,7 @@
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-11-08T22:58:32+00:00"/>
+        <date value="2021-11-22T10:32:05+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -320,8 +320,8 @@
         </contact>
         <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:c9d06342-7e13-4715-85a5-dbc00616f19f"/>
-          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <identifier value="urn:uuid:1c71ffda-ec05-45cf-8f1f-4104785fd260"/>
+          <timestamp value="2021-11-22T10:32:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -414,7 +414,7 @@
         <name value="YesNoUnknown"/>
         <title value="Yes No Unknown"/>
         <status value="active"/>
-        <date value="2021-11-08T22:58:32+00:00"/>
+        <date value="2021-11-22T10:32:05+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -425,8 +425,8 @@
         </contact>
         <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:26d8083f-afce-491e-a955-372ac67fdae1"/>
-          <timestamp value="2021-11-08T22:58:41+00:00"/>
+          <identifier value="urn:uuid:16bb6675-1598-4cbd-b15a-440d49922473"/>
+          <timestamp value="2021-11-22T10:32:17+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -438,7 +438,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
