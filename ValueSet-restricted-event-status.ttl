@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "RestrictedEventStatus"];
   fhir:ValueSet.title [ fhir:value "RestrictedEventStatus"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-11-22T10:32:05+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-11-23T16:07:41+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [
      fhir:index 0;

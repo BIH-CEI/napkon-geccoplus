@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 8, info = 1
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.88
-Generated Mon Nov 22 10:32:22 UTC 2021. FHIR version 4.0.1 for napkon-geccoplus#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
+Generated Tue Nov 23 16:07:57 UTC 2021. FHIR version 4.0.1 for napkon-geccoplus#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
  Build Errors : 0 / 7 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-geccoplus : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 2

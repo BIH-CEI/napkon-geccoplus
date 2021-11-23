@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "47d784b1-bff5-413a-9291-eaaf0ab867b3",
+  "id" : "2aa2a832-a616-4708-9215-9ceaaa7d5088",
   "meta" : {
-    "lastUpdated" : "2021-11-22T10:32:05.393+00:00"
+    "lastUpdated" : "2021-11-23T16:07:41.625+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-11-22T10:32:05+00:00",
+      "date" : "2021-11-23T16:07:41+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -30,8 +30,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:13457fae-0aa5-47d2-8299-90950532be29",
-        "timestamp" : "2021-11-22T10:32:16+00:00",
+        "identifier" : "urn:uuid:e54c6197-773f-4154-a7b9-4bfd13f3c177",
+        "timestamp" : "2021-11-23T16:07:51+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -82,7 +82,7 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-11-22T10:32:05+00:00",
+      "date" : "2021-11-23T16:07:41+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -93,8 +93,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:36b05a0b-cd68-4525-bc2d-313455fedb65",
-        "timestamp" : "2021-11-22T10:32:17+00:00",
+        "identifier" : "urn:uuid:d97a2e9f-8e63-41bc-ac1c-48bf5e281c4e",
+        "timestamp" : "2021-11-23T16:07:52+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -145,7 +145,7 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-11-22T10:32:05+00:00",
+      "date" : "2021-11-23T16:07:41+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -156,8 +156,8 @@
       }],
       "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:1c71ffda-ec05-45cf-8f1f-4104785fd260",
-        "timestamp" : "2021-11-22T10:32:17+00:00",
+        "identifier" : "urn:uuid:ec186d04-eae6-4e31-9221-925035150882",
+        "timestamp" : "2021-11-23T16:07:52+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -204,7 +204,7 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-11-22T10:32:05+00:00",
+      "date" : "2021-11-23T16:07:41+00:00",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
         "name" : "Charité - Universitätsmedizin Berlin",
@@ -215,8 +215,8 @@
       }],
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:16bb6675-1598-4cbd-b15a-440d49922473",
-        "timestamp" : "2021-11-22T10:32:17+00:00",
+        "identifier" : "urn:uuid:237c79f0-a762-43e6-9394-7387b4fd8a55",
+        "timestamp" : "2021-11-23T16:07:52+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
