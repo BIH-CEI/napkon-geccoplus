@@ -7,12 +7,6 @@ RuleSet: quantity-ucum(code, unit)
 * code 1.. MS
 * code = {code}
 
-RuleSet: value-quantity(code, unit)
-* value[x] MS
-* value[x] only Quantity
-* valueQuantity 1..1 MS
-  * insert quantity-ucum({code}, {unit})
-
 RuleSet: value-quantity-or-range(code, unit)
 * value[x] MS
 * value[x] only Range or Quantity
