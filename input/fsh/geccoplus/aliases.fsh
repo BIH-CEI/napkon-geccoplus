@@ -11,3 +11,8 @@ Alias: $yes-no-unknown = https://www.netzwerk-universitaetsmedizin.de/fhir/Value
 
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
 Alias: $cs-condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+
+// Own code systems
+Alias: $ngp = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/eq5d-geccoplus
+// Canonical URLs for instances
+Alias: $eq5d-questionaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/eq5d-questionaire

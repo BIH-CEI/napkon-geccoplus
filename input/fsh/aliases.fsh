@@ -49,3 +49,4 @@ Alias: $ext-condition-occurredFollowing = http://hl7.org/fhir/StructureDefinitio
 Alias: $vs-kontakt-art-de = http://fhir.de/ValueSet/kontaktart-de
 Alias: $cs-kontakt-art-de = http://fhir.de/CodeSystem/kontaktart-de
 Alias: $vs-encounter-class-de = http://fhir.de/ValueSet/EncounterClassDE
+
