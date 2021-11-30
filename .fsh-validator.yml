@@ -1,0 +1,2 @@
+exclude_code_systems:
+  - http://fhir.de/CodeSystem/bfarm/icd-10-gm
