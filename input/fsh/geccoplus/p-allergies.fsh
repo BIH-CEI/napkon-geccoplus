@@ -19,7 +19,7 @@ Description: "Profile for allergies in the context of GECCO+"
   * coding[allergicDisposition].code 1.. MS
 * code.coding[icd10-gm] from AllergiesICD (required)
 * code.coding[sct] from AllergiesSCT (required)
-* code.text = "String"
+* code obeys codeable-concept-text-present-if-code-other
 
 //Instances
 Instance: instance-allergies-confirmed
@@ -49,8 +49,8 @@ InstanceOf: allergies-geccoplus
 Usage: #example
 Title: "Instance of profile allergies with expression -unknown- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"
-//* code = $sct#74964007 "Other (qualifier value)"
-* valueCodeableConcept.text = "Arzneimittelallergie"
+* code.coding = $sct#74964007 "Other (qualifier value)"
+* code.text = "Arzneimittelallergie"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-11-29"
 * insert uncertainty-of-presence
