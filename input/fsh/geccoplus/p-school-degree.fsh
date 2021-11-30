@@ -14,7 +14,7 @@ Description: "Profile for highest school degree in the context of GECCO+"
 * category.coding contains loinc 1..1
 * category.coding[loinc] = $loinc#63504-5 "What is the highest grade or level of school you have completed or the highest degree you have received [NHANES]"
 * code 1..1 MS
-* code from $highest-school-degree-loi (required)
+* code from HighestSchoolDegree (required)
 
 * subject only Reference(Patient)
 

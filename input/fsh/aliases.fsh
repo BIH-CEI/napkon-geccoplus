@@ -24,6 +24,9 @@ Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
 // ValueSets
 Alias: $cardiovascular-diseases-icd = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd
 Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases
+Alias: $allergy-sct = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/allergy-geccoplus-sct
+Alias: $highest-school-degree-loi = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/highest-school-degree-geccoplus-loi
+Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 
 // GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
@@ -39,6 +42,7 @@ Alias: $mii-encounter = https://www.medizininformatik-initiative.de/fhir/core/mo
 // Own code systems
 Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
 Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
+Alias: $ngp = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/eq5d-geccoplus
 
 // Extensions
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
@@ -49,4 +53,7 @@ Alias: $ext-condition-occurredFollowing = http://hl7.org/fhir/StructureDefinitio
 Alias: $vs-kontakt-art-de = http://fhir.de/ValueSet/kontaktart-de
 Alias: $cs-kontakt-art-de = http://fhir.de/CodeSystem/kontaktart-de
 Alias: $vs-encounter-class-de = http://fhir.de/ValueSet/EncounterClassDE
+
+// Canonical URLs for instances
+Alias: $eq5d-questionaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/eq5d-questionaire
 
