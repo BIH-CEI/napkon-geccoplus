@@ -7,7 +7,7 @@ Title: "CS in the GECCOplus"
 Description: "Code system for Ge cco in order to be able to specify codes which are currently not assigned to any terminology"
 
 // EQ5D Sections
-* #s1 "Mobility"
+* #s1 "Agility and mobility"
 * #s2 "Self-sufficiency"
 * #s3 "Daily activities"
 * #s4 "Pain and discomfort"

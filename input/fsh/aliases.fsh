@@ -42,7 +42,7 @@ Alias: $mii-encounter = https://www.medizininformatik-initiative.de/fhir/core/mo
 // Own code systems
 Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
 Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
-Alias: $ngp = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/eq5d-geccoplus
+Alias: $ngp = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/codesystem-geccoplus
 
 // Extensions
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
