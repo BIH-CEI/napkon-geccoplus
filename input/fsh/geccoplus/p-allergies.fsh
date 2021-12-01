@@ -27,22 +27,22 @@ InstanceOf: allergies-geccoplus
 Usage: #example
 Title: "Instance of profile allergies with expression -confirmed- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"
-* code.coding[sct] = $sct#404640003 "Dizziness (finding)"
+* code.coding[sct] = $sct#300910009 "Allergy to pollen (finding)"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-11-29"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
-* verificationStatus.coding[snomed] = $sct#232349006 "Confirmed present (qualifier value)"
+* verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
 
 Instance: instance-allergies-refuted
 InstanceOf: allergies-geccoplus
 Usage: #example
 Title: "Instance of profile allergies with expression -refuted- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"
-* code.coding[sct] = $sct#64531003 "Nasal discharge (finding)"
+* code.coding[sct] = $sct#232349006 "Allergy to house dust (finding)"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-11-29"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#refuted
-* verificationStatus.coding[snomed] = $sct#300910009 "Definitely NOT present (qualifier value)"
+* verificationStatus.coding[snomed] = $sct#410594000 "Definitely NOT present (qualifier value)"
 
 Instance: instance-allergies-unknown
 InstanceOf: allergies-geccoplus
