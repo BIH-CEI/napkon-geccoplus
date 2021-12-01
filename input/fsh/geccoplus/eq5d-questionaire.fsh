@@ -29,19 +29,19 @@ Description: "Official questionaire EQ5D in the context of GECCO+"
 
 //Section Three "Daily activities"
 * item[+].linkId = "daily-activities"
-* item[=].code = $ngp#s2 "Daily activities"
+* item[=].code = $ngp#s3 "Daily activities"
 * item[=].type = #choice
 * item[=].answerValueSet = Canonical(eq5d-s3-geccoplus)
 
 //Section Four "Pain and discomfort"
 * item[+].linkId = "pain-discomfort"
-* item[=].code = $ngp#s2 "Pain and discomfort"
+* item[=].code = $ngp#s4 "Pain and discomfort"
 * item[=].type = #choice
 * item[=].answerValueSet = Canonical(eq5d-s4-geccoplus)
 
 //Section Five "Anxiety and depression"
 * item[+].linkId = "anxiety-depression"
-* item[=].code = $ngp#s2 "Anxiety and depression"
+* item[=].code = $ngp#s5 "Anxiety and depression"
 * item[=].type = #choice
 * item[=].answerValueSet = Canonical(eq5d-s5-geccoplus)
 

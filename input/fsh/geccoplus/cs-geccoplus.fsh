@@ -3,8 +3,8 @@
 
 CodeSystem: Geccoplus
 Id: codesystem-geccoplus
-Title: "EQ5D in the GECCOplus"
-Description: "Code system for GEccoin order to be able to specify codes which are currently not assigned to any terminology"
+Title: "CS in the GECCOplus"
+Description: "Code system for Ge cco in order to be able to specify codes which are currently not assigned to any terminology"
 
 // EQ5D Sections
 * #s1 "Mobility"
