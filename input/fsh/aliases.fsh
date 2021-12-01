@@ -56,4 +56,5 @@ Alias: $vs-encounter-class-de = http://fhir.de/ValueSet/EncounterClassDE
 
 // Canonical URLs for instances
 Alias: $eq5d-questionaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/eq5d-questionaire
+Alias: $proms-questionaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/eq5d-questionaire
 

@@ -1,7 +1,6 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
 
-//Alias: $eq5d = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/eq5d-questionaire
 Alias: $ngp = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/eq5d-geccoplus
 
 Instance: Eq5dQuestionaire
@@ -64,12 +63,6 @@ InstanceOf: eq5d-profile
 Usage: #example
 Title: "EQ5D section one"
 Description: "Example as part of an answer to the EQ5D questionnaire."
-/*
-* item[+]
-  * linkId = "mobility"
-  * answer.valueCoding = $ngp#14 "I have severe problems in walking about."
-* subject = Reference(ExamplePatient)
-*/
 
 * item[+].linkId = "mobility"
 * item[=].answer.valueCoding = $ngp#14 "I have severe problems in walking about."
