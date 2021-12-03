@@ -2,13 +2,14 @@
 """
 Create an intro file for each profile from input/data/ig.yml
 """
+import json
 import yaml
 import os
 from pathlib import Path
 
-base_path = Path(os.path.dirname(os.path.realpath(__file__))) / 'input'
-output_path = base_path / 'pagecontent'
-ig_fname = base_path / 'data' / 'ig.yml'
+base_path = Path(os.path.dirname(os.path.realpath(__file__)))
+output_path = base_path / 'input' / 'pagecontent'
+ig_fname = base_path / 'input' / 'data' / 'ig.yml'
 
 template_md = """
 {% assign id = {{include.id}} %}
@@ -53,8 +54,27 @@ This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | 
 """
 
 if not ig_fname.exists():
-    print('No ig.yml file found')
-    exit()
+    print('No ig.yml file found, trying to create')
+
+    fsh_generated_path = base_path /'fsh-generated' / 'resources'
+    ig_files = list(fsh_generated_path.glob('ImplementationGuide-*.json'))
+
+    if len(ig_files) == 0:
+        print('No ImplementationGuide files found in fsh-generated/resources')
+        exit(1)
+    elif len(ig_files) > 1:
+        print('More than one ImplementationGuide file found in fsh-generated/resources')
+        exit(1)
+    else:
+        json_ig_fname = ig_files[0]
+
+    if not ig_fname.parent.exists():
+        ig_fname.parent.mkdir()
+
+    print(f"Converting {json_ig_fname} to {ig_fname}")
+    content = json.loads(open(json_ig_fname).read())
+    yaml.dump(content, open(ig_fname, "w"))
+
 
 if not output_path.exists():
     output_path.mkdir(parents=True)
