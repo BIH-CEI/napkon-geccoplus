@@ -2,7 +2,7 @@
 // Charité - Universitätsmedizin Berlin
 Profile: Symptoms
 Parent: $gecco-base-condition
-Id: symptoms-geccoplus
+Id: geccoplus-symptoms
 Title: "Symptoms"
 Description: "Symptoms in the context of GECCO+"
 * insert napkon-metadata(2021-11-29, #draft, 0.1.0)
@@ -20,9 +20,8 @@ Description: "Symptoms in the context of GECCO+"
 * code.coding[icd10-gm] from SymptomsICD (required)
 * code.coding[sct] from SymptomsSCT (required)
 
-//Instances
-Instance: instance-symptoms-confirmed
-InstanceOf: symptoms-geccoplus
+Instance: SymptomConfirmed
+InstanceOf: geccoplus-symptoms
 Usage: #example
 Title: "Instance of profile symptoms in the context of geccoplus"
 Description: "Example of symptoms with snomed coding"
@@ -33,8 +32,8 @@ Description: "Example of symptoms with snomed coding"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
 * verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
 
-Instance: instance-symptoms-refuted
-InstanceOf: symptoms-geccoplus
+Instance: SymptomRefuted
+InstanceOf: geccoplus-symptoms
 Usage: #example
 Title: "Instance of profile symptoms in the context of geccoplus"
 Description: "Example of symptoms with snomed coding"
@@ -44,8 +43,8 @@ Description: "Example of symptoms with snomed coding"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#refuted
 * verificationStatus.coding[snomed] = $sct#410594000 "Definitely NOT present (qualifier value)"
 
-Instance: instance-symptoms-unknown
-InstanceOf: symptoms-geccoplus
+Instance: SymptomUnknown
+InstanceOf: geccoplus-symptoms
 Usage: #example
 Title: "Instance of profile symptoms in the context of geccoplus"
 Description: "Example of symptoms with snomed coding"

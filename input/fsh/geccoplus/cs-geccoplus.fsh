@@ -1,10 +1,9 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
-
-CodeSystem: Geccoplus
-Id: codesystem-geccoplus
-Title: "CS in the GECCOplus"
-Description: "Code system for Ge cco in order to be able to specify codes which are currently not assigned to any terminology"
+CodeSystem: GECCOPlus
+Id: geccoplus-codesystem
+Title: "GECCOplus Module Codes"
+Description: "GECCOplus Module Code System - Collection of codes that are missing from common terminologies such as SNOMED CT"
 
 // EQ5D Sections
 * #s1 "Agility and mobility"
@@ -53,10 +52,8 @@ Description: "Code system for Ge cco in order to be able to specify codes which 
 * #55 "I am extremely anxious or depressed."
 * #56 "No information available."
 
-// PROMS
-
-// Questions
-* #s6 "Lift something that weighs 4.5kg - 9,0kg (e.g. a large bag of food)."
+// PROMs Questions
+* #s6 "Lift something that weighs 4.5kg - 9.0kg (e.g. a large bag of food)."
 * #s7 "Carrying something that weighs 4.5kg - 9.0 kg (e.g. a large bag of food) from one room to another room."
 * #s8 "Walk approximately 1 km (faster than your normal pace) without stopping."
 * #s9 "Walk 50 steps on level ground at a normal pace without stopping."
@@ -67,10 +64,15 @@ Description: "Code system for Ge cco in order to be able to specify codes which 
 * #s14 "Washing dishes."
 * #s15 "Making a bed."
 
-// Answers
+// PROMs Answers
 * #61 "No difficulties."
 * #62 "Mild difficulties."
 * #63 "Moderate difficulties."
 * #64 "Severe difficulties."
 * #65 "I haven't done this in the past 7 days."
 * #66 "No information available."
+
+// school degrees
+* #71 "Volks-/Hauptschulabschluss"
+* #72 "Realschulabschluss/Mittlere Reife"
+* #73 "Fachhochschulabschluss"

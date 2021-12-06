@@ -1,29 +1,26 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
-
 Profile: Allergies
 Parent: $gecco-base-condition
-Id: allergies-geccoplus
+Id: geccoplus-allergy
 Title: "Allergies"
 Description: "Profile for allergies in the context of GECCO+"
-
 * insert napkon-metadata(2021-11-29, #draft, 0.1.0)
 * category 1.. MS
   * coding MS
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains allergicDisposition 1..1 MS
-  * coding[allergicDisposition] = $sct#609328004 "Allergic disposition (finding)"
-  * coding[allergicDisposition].system 1.. MS
-  * coding[allergicDisposition].code 1.. MS
+  * coding contains immunology 1..1 MS
+  * coding[immunology] = $sct#394805004 "Clinical immunology/allergy (qualifier value)"
+  * coding[immunology].system 1.. MS
+  * coding[immunology].code 1.. MS
 * code.coding[icd10-gm] from AllergiesICD (required)
 * code.coding[sct] from AllergiesSCT (required)
 * code obeys codeable-concept-text-present-if-code-other
 
-//Instances
 Instance: instance-allergies-confirmed
-InstanceOf: allergies-geccoplus
+InstanceOf: geccoplus-allergy
 Usage: #example
 Title: "Instance of profile allergies with expression -confirmed- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"
@@ -34,7 +31,7 @@ Description: "Example of allergies with snomed coding"
 * verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
 
 Instance: instance-allergies-refuted
-InstanceOf: allergies-geccoplus
+InstanceOf: geccoplus-allergy
 Usage: #example
 Title: "Instance of profile allergies with expression -refuted- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"
@@ -45,7 +42,7 @@ Description: "Example of allergies with snomed coding"
 * verificationStatus.coding[snomed] = $sct#410594000 "Definitely NOT present (qualifier value)"
 
 Instance: instance-allergies-unknown
-InstanceOf: allergies-geccoplus
+InstanceOf: geccoplus-allergy
 Usage: #example
 Title: "Instance of profile allergies with expression -unknown- in the context of geccoplus."
 Description: "Example of allergies with snomed coding"

@@ -1,12 +1,9 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
-
-ValueSet: Eq5dS1Geccoplus
-Id: eq5d-s1-geccoplus
-Title: "EQ5D section one in the context of GECCOplus"
-Description: "Manuell code system for EQ5D section one in order to be able to specify codes which are currently not assigned to any terminology"
-
-// Section "Agility and mobility"
+ValueSet: EQ5DS1Responses
+Id: geccoplus-eq5d-s1-responses
+Title: "EQ5D section one answers"
+Description: "EQ5D section one (agility and mobility) answers"
 * $ngp#11 "I have no problems in walking about."
 * $ngp#12 "I have slight problems in walking about."
 * $ngp#13 "I have moderate problems in walking about."
