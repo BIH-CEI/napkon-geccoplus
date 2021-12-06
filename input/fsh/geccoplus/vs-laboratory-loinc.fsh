@@ -43,7 +43,7 @@ Description: "Laboratory terms in the context of NAPKON GECCO+ Module"
 * $loinc#2158-4	"Creatine kinase.total/Creatine kinase.MB [Enzymatic activity ratio] in Serum or Plasma"
 * $loinc#53433-9 "Creatine kinase [Enzymatic activity/volume] in Dialysis fluid"
 
-// Chloride 
+// Chloride
 
 * $loinc#38740-7 "Dimethylcarbamoyl chloride [Mass/volume] in Air"
 * $loinc#43128-8 "Chloride panel - 24 hour Urine"
@@ -52,20 +52,20 @@ Description: "Laboratory terms in the context of NAPKON GECCO+ Module"
 * $loinc#26762-5 "Chloride [Units/volume] in Urine"
 
 
-// hematocrit 
+// hematocrit
 
 * $loinc#20570-8 "Hematocrit [Volume Fraction] of Blood"
 * $loinc#17809-5 "Hematocrit [Volume Fraction] of Urine"
 * $loinc#43416-7 "Hematocrit [Volume Fraction] of Stem cell product"
 
 
-// Protein 
+// Protein
 
 * $loinc#50043-9	"Protein carbonyl/Protein [Ratio] in Serum or Plasma"
 * $loinc#81904-5	"Protein intake panel"
 // what else for proteine?
 
-// Albumin 
+// Albumin
 
 * $loinc#76631-1 "Albumin [Mass/volume] in Blood by Bromocresol purple (BCP) dye binding method"
 * $loinc#62235-7 "Albumin [Moles/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method"
@@ -96,19 +96,19 @@ Description: "Laboratory terms in the context of NAPKON GECCO+ Module"
 * $loinc#97595-3	"CD3+CD4+ (T4 helper) cells/100 lymphocytes in Lower respiratory specimen by Flow cytometry (FC)"
 
 
-// CD8 
+// CD8
 
 * $loinc#80222-3	"CD8 cells/100 lymphocytes in Specimen"
 * $loinc#73898-9	"CD8-CD57+ cells/100 lymphocytes in Blood by Flow cytometry (FC)"
 * $loinc#73901-1	"CD3- CD8- CD57+ Cells/100 lymphocytes in Blood by Flow cytometry (FC)"
 
-// creatinine 
+// creatinine
 
 * $loinc#65634-8 "Creatinine 24 hour urine panel - 24 hour Urine"
 * $loinc#59826-8	"Creatinine [Moles/volume] in Blood"
 * $loinc#14683-7	"Creatinine [Moles/volume] in Urine"
 
-// Phosphate 
+// Phosphate
 
 * $loinc#38717-5	"Phosphate [Mass/volume] in Air"
 * $loinc#50898-6	"Phosphate [Moles/mass] in Hair"
@@ -147,5 +147,3 @@ Description: "Laboratory terms in the context of NAPKON GECCO+ Module"
 * $loinc#26461-4	"Nucleated erythrocytes/100 erythrocytes in Blood"
 * $loinc#790-6	"Erythrocytes [#/volume] in Blood by Manual count"
 * $loinc#798-9	"Erythrocytes [#/volume] in Urine by Automated count"
-
-

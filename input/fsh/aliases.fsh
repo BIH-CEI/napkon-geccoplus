@@ -17,6 +17,10 @@ Alias: $cs-condition-category = http://terminology.hl7.org/CodeSystem/condition-
 Alias: $cs-data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $cs-condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $cs-act-code = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $cs-observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+
+// HL7 / FHIR specific valuesets
+Alias: $vs-observation-interpretation-detected = http://terminology.hl7.org/ValueSet/v3-ObservationInterpretationDetected
 
 // LOINC ValueSets
 Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
