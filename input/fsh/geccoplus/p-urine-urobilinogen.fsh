@@ -1,27 +1,51 @@
-/*// Author: Larissa Röhrig
+// Author: Gregor Lichtner, Larissa Röhrig
 // Berlin Institute of Health | Charité
-Profile:  UrineLaboratoryDiagnosticUrobilinogen
+Profile: UrineUrobilinogen
 Parent: Observation
-Id: urine-laboratory-diagnostic-urobilinogen
-Title: "Urine Laboratory Diagnostic Urobilinogen	 "
-Description: "All laboratory findings for urine"
-* insert napkon-metadata(2021-11-29, #draft, 0.1.0)
-* category
+Id: geccoplus-urine-urobilinogen
+Title: "Urine Urobilinogen"
+Description: "Urine urobilinogen"
+* insert napkon-metadata(2021-12-01, #draft, 0.1.0)
+* insert mii-patient-reference
+* status MS
+* category 1..* MS
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains laboratory 1..1
+* category[laboratory] = $cs-observation-category#laboratory "Laboratory"
+* code 1..1 MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains laboratory 1..*
-  * coding[laboratory] = $cs-observation-category#laboratory // aus dem observation profil von fhir laboratory code
-* code.coding[loinc] from urine-laboratory-diagnostic-loinc-urobilinogen (required)
-* code.interpretation[sct] from uriobilinogen-interrpretation-codes (required)
+  * coding contains loinc 1..*
+  * coding[loinc] from UrobilinogenDiagnostics (required)
+  * coding[loinc].system 1..
+  * coding[loinc].code 1..
+* interpretation 1..* MS
+* interpretation from UrobilinogenInterpretation (extensible)
+* effective[x] 1..1 MS
 
-Instance: urine-laboratory-diagnostic-urobilinogen-example
-InstanceOf: urine-laboratory-diagnostic-urobilinogen
+Instance: UrobilinogenPathologic
+InstanceOf: geccoplus-urine-urobilinogen
 Usage: #example
-Title: "urine laboratory diagnostic instance urobilinogen"
-Description: "Urine Laboratory Diagnostic Urobilinogen"
-* code = $loinc32727-0 "Urobilinogen [Units/volume] in Urine"
+Title: "Urobilinogen Pathologic"
+Description: "Example of a pathologic urine urobilinogen observation"
+* status = #registered
+* code = $loinc#3107-0 "Urobilinogen [Mass/volume] in Urine"
 * subject = Reference(ExamplePatient)
-* recordedDate = "2021"
-* interpretation = $sct#17621005  "Normal (qualifier value"
-*/
+* valueQuantity = 2.3 'mg/dl'
+* effectiveDateTime = "2021-12-06"
+* interpretation = $cs-observation-interpretation#NEG "Negative"
+
+Instance: UrobilinogenNormal
+InstanceOf: geccoplus-urine-urobilinogen
+Usage: #example
+Title: "Urobilinogen Normal"
+Description: "Example of a normal urine urobilinogen observation"
+* status = #registered
+* code = $loinc#34927-4 "Urobilinogen [Moles/volume] in Urine"
+* subject = Reference(ExamplePatient)
+* valueQuantity = 14.3 'umol/l'
+* effectiveDateTime = "2021-12-06"
+* interpretation = $cs-observation-interpretation#POS "Positive"
