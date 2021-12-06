@@ -33,16 +33,6 @@ Authors
 * `Gregor Lichtner <https://github.com/glichtner>`_
 * `Sally Lucie Brose <https://github.com/BroseS8927>`_
 * `Larissa Röhrig <https://github.com/Larissa-MR>`_
-* `Hassan Sami Adnan <https://github.com/sami5001>`_
-
-Branch overview
----------------
-::
-
-  +-- master      Main branch with released profiles
-  +-- staging     Staging branch with functional but not reviewed/published profiles
-  +-- fix/*       Bugfix branches
-  +-- feature/*   Feature development branches
 
 Credits
 -------
@@ -50,5 +40,3 @@ This package was created with Cookiecutter_ and the `glichtner/cookiecutter-fhir
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`glichtner/cookiecutter-fhir-shorthand`: https://github.com/glichtner/cookiecutter-fhir-shorthand
-
-
