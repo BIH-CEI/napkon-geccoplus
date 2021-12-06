@@ -22,6 +22,8 @@ Description: "Urine urobilinogen"
   * coding[loinc] from UrobilinogenDiagnostics (required)
   * coding[loinc].system 1..
   * coding[loinc].code 1..
+* value[x] only Quantity or Range
+* value[x] MS
 * interpretation 1..* MS
 * interpretation from UrobilinogenInterpretation (extensible)
 * effective[x] 1..1 MS
@@ -36,7 +38,7 @@ Description: "Example of a pathologic urine urobilinogen observation"
 * subject = Reference(ExamplePatient)
 * valueQuantity = 2.3 'mg/dl'
 * effectiveDateTime = "2021-12-06"
-* interpretation = $cs-observation-interpretation#NEG "Negative"
+* interpretation = $sct#29458008 "Pathologic (qualifier value)"
 
 Instance: UrobilinogenNormal
 InstanceOf: geccoplus-urine-urobilinogen
@@ -48,4 +50,4 @@ Description: "Example of a normal urine urobilinogen observation"
 * subject = Reference(ExamplePatient)
 * valueQuantity = 14.3 'umol/l'
 * effectiveDateTime = "2021-12-06"
-* interpretation = $cs-observation-interpretation#POS "Positive"
+* interpretation = $sct#17621005 "Normal (qualifier value)"
