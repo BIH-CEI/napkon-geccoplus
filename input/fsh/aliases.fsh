@@ -8,7 +8,7 @@ Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
-Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
+Alias: $icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 
 // HL7 / FHIR specific code systems
 Alias: $cs-observation-category = http://terminology.hl7.org/CodeSystem/observation-category
@@ -26,8 +26,7 @@ Alias: $vs-observation-interpretation-detected = http://terminology.hl7.org/Valu
 Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
 
 // ValueSets
-Alias: $cardiovascular-diseases-icd = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd
-Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases
+Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 
 // GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
@@ -39,10 +38,6 @@ Alias: $mii-procedure = https://www.medizininformatik-initiative.de/fhir/core/mo
 Alias: $mii-reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $mii-observation-lab = https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
 Alias: $mii-encounter = https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
-
-// Own code systems
-Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
-Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
 
 // Extensions
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
