@@ -12,22 +12,27 @@ Description: "EQ-5D is a standardised measure of health-related quality of life 
 * item[+].linkId = "mobility"
 * item[=].code = $ngp#s1 "Agility and mobility"
 * item[=].type = #choice
+* item[=].required = true
 * item[=].answerValueSet = Canonical(geccoplus-eq5d-s1-responses)
 * item[+].linkId = "self-sufficiency"
 * item[=].code = $ngp#s2 "Self-sufficiency"
 * item[=].type = #choice
+* item[=].required = true
 * item[=].answerValueSet = Canonical(geccoplus-eq5d-s2-responses)
 * item[+].linkId = "daily-activities"
 * item[=].code = $ngp#s3 "Daily activities"
 * item[=].type = #choice
+* item[=].required = true
 * item[=].answerValueSet = Canonical(geccoplus-eq5d-s3-responses)
 * item[+].linkId = "pain-discomfort"
 * item[=].code = $ngp#s4 "Pain and discomfort"
 * item[=].type = #choice
+* item[=].required = true
 * item[=].answerValueSet = Canonical(geccoplus-eq5d-s4-responses)
 * item[+].linkId = "anxiety-depression"
 * item[=].code = $ngp#s5 "Anxiety and depression"
 * item[=].type = #choice
+* item[=].required = true
 * item[=].answerValueSet = Canonical(geccoplus-eq5d-s5-responses)
 
 Profile: EQ5DResponse
