@@ -1,13 +1,12 @@
-{% comment %}
-### Auto-generated list of profile
-To use an auto-generated table of profiles, use the following include
+### Profiles
 
-{% include table-profiles.xhtml %}
-
-### Manual list of profiles
-To manually sort the profiles, use the following include using the profile name as the parameter "name":
-{% include resource-reference.md name='COVID-19 Immunization' %}
-
-{% endcomment %}
+{% include resource-reference.md name='Allergies' %}
+{% include resource-reference.md name='EQ5D Questionnaire Response' %}
+{% include resource-reference.md name='Highest school degree' %}
+{% include resource-reference.md name='PROMS Response' %}
+{% include resource-reference.md name='Symptoms' %}
+{% include resource-reference.md name='Urine Diagnostics' %}
+{% include resource-reference.md name='Urine Specific Gravity' %}
+{% include resource-reference.md name='Urine Urobilinogen' %}
 
 {% include link-list.md %}
