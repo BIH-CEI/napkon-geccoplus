@@ -8,8 +8,9 @@ import os
 from pathlib import Path
 
 base_path = Path(os.path.dirname(os.path.realpath(__file__)))
-output_path = base_path / 'input' / 'pagecontent'
+output_path = base_path / 'input' / 'intro-notes'
 ig_fname = base_path / 'input' / 'data' / 'ig.yml'
+linklist_fname = base_path / 'input' / 'includes' / 'link-list.md'
 
 template_md = """
 {% assign id = {{include.id}} %}
@@ -53,6 +54,19 @@ This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | 
 {% include link-list.md %}
 """
 
+linklist_general = {
+    "GECCO": "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/home",
+    "NAPKON": "https://napkon.de/",
+    "NUM": "https://www.netzwerk-universitaetsmedizin.de/",
+    "BIH": "https://www.bihealth.org/",
+    "MII": "https://www.medizininformatik-initiative.de/",
+    "uncertaintyOfPresence": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+    "ConditionVerificationStatus": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "SNOMEDCT": "http://snomed.info/sct",
+    "LOINC": "http://loinc.org/",
+    "VSdataAbsentReason": "http://hl7.org/fhir/R4/valueset-data-absent-reason.html",
+}
+
 if not ig_fname.exists():
     print('No ig.yml file found, trying to create')
 
@@ -82,6 +96,7 @@ if not output_path.exists():
 with open(ig_fname, 'r') as f:
     ig = yaml.safe_load(f)
 
+linklist = {}
 
 for resource in ig["definition"]["resource"]:
     ref = resource["reference"]["reference"]
@@ -95,5 +110,20 @@ for resource in ig["definition"]["resource"]:
         print(resource["name"])
         with open(fname, 'w') as f:
             f.write(template_md)
+
+    linklist[resource["name"]] = ref.replace('/', '-') + '.html'
+
+
+if not linklist_fname.exists():
+    if not linklist_fname.parent.exists():
+        linklist_fname.parent.mkdir()
+
+    print(linklist_fname.name)
+    with open(linklist_fname, 'w') as f:
+        for k, v in linklist.items():
+            f.write(f'[{k}]: {v}\n')
+        f.write("\n")
+        for k, v in linklist_general.items():
+            f.write(f'[{k}]: {v}\n')
 
 print("Done")
