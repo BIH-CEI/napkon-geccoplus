@@ -11,6 +11,7 @@ base_path = Path(os.path.dirname(os.path.realpath(__file__)))
 output_path = base_path / 'input' / 'intro-notes'
 ig_fname = base_path / 'input' / 'data' / 'ig.yml'
 linklist_fname = base_path / 'input' / 'includes' / 'link-list.md'
+profiles_fname = base_path / 'input' / 'pagecontent' / 'profiles-generated.md'
 
 template_md = """
 {% assign id = {{include.id}} %}
@@ -125,5 +126,13 @@ if not linklist_fname.exists():
         f.write("\n")
         for k, v in linklist_general.items():
             f.write(f'[{k}]: {v}\n')
+
+if not profiles_fname.exists():
+    print(profiles_fname.name)
+    with open(profiles_fname, 'w') as f:
+        f.write('### Profiles\n\n')
+        for name in linklist:
+            f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+
 
 print("Done")

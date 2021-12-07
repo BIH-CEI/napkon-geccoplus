@@ -1,0 +1,354 @@
+contact:
+- name: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
+  telecom:
+  - system: url
+    value: https://www.netzwerk-universitaetsmedizin.de
+definition:
+  page:
+    generation: html
+    nameUrl: toc.html
+    page:
+    - generation: markdown
+      nameUrl: index.html
+      title: NAPKON GECCO+
+    - generation: markdown
+      nameUrl: profiles.html
+      title: Profiles
+    - generation: markdown
+      nameUrl: codesystems.html
+      title: Code Systems
+    - generation: markdown
+      nameUrl: valuesets.html
+      title: Value Sets
+    - generation: markdown
+      nameUrl: extensions.html
+      title: Extensions
+    - generation: markdown
+      nameUrl: examples.html
+      title: Examples
+    - generation: html
+      nameUrl: downloads.html
+      title: Downloads
+    - generation: markdown
+      nameUrl: changelog.html
+      title: Change Log
+    title: Table of Contents
+  parameter:
+  - code: copyrightyear
+    value: 2021+
+  - code: releaselabel
+    value: ci-build
+  - code: active-tables
+    value: 'true'
+  - code: apply-contact
+    value: 'false'
+  - code: apply-jurisdiction
+    value: 'false'
+  - code: apply-publisher
+    value: 'false'
+  - code: apply-version
+    value: 'false'
+  - code: show-inherited-invariants
+    value: 'false'
+  - code: usage-stats-opt-out
+    value: 'true'
+  - code: excludexml
+    value: 'false'
+  - code: excludejsn
+    value: 'false'
+  - code: excludettl
+    value: 'true'
+  - code: excludemap
+    value: 'true'
+  - code: excludeexample
+    value: 'true'
+  - code: extension-domain
+    value: https://www.netzwerk-universitaetsmedizin.de
+  - code: extension-domain
+    value: https://napkon.de
+  - code: extension-domain
+    value: https://simplifier.net
+  resource:
+  - description: Profile for allergies in the context of GECCO+
+    exampleBoolean: false
+    name: Allergies
+    reference:
+      reference: StructureDefinition/geccoplus-allergy
+  - description: Response to the EQ-5D Questionnaire
+    exampleBoolean: false
+    name: EQ5D Questionnaire Response
+    reference:
+      reference: StructureDefinition/geccoplus-eq5d-response
+  - description: Highest school degree in the context of GECCO+
+    exampleBoolean: false
+    name: Highest school degree
+    reference:
+      reference: StructureDefinition/geccoplus-highest-school-degree
+  - description: Response to the PROMs questionnaire
+    exampleBoolean: false
+    name: PROMS Response
+    reference:
+      reference: StructureDefinition/geccoplus-proms-response
+  - description: Symptoms in the context of GECCO+
+    exampleBoolean: false
+    name: Symptoms
+    reference:
+      reference: StructureDefinition/geccoplus-symptoms
+  - description: Urine diagnostics
+    exampleBoolean: false
+    name: Urine Diagnostics
+    reference:
+      reference: StructureDefinition/geccoplus-urine-diagnostics
+  - description: Specific gravity of urine
+    exampleBoolean: false
+    name: Urine Specific Gravity
+    reference:
+      reference: StructureDefinition/geccoplus-urine-specific-gravity
+  - description: Urine urobilinogen
+    exampleBoolean: false
+    name: Urine Urobilinogen
+    reference:
+      reference: StructureDefinition/geccoplus-urine-urobilinogen
+  - description: Value set for allergies in the context of GECCO+
+    exampleBoolean: false
+    name: Allergies
+    reference:
+      reference: ValueSet/geccoplus-allergies-icd
+  - description: Value set for allergies in the context of GECCO+
+    exampleBoolean: false
+    name: Allergies
+    reference:
+      reference: ValueSet/geccoplus-allergies-sct
+  - description: Values for laboratory observations
+    exampleBoolean: false
+    name: Detected Not Detected Unknown Undetermined
+    reference:
+      reference: ValueSet/detected-not-detected-unknown-undetermined
+  - description: EQ5D section one (agility and mobility) answers
+    exampleBoolean: false
+    name: EQ5D section one answers
+    reference:
+      reference: ValueSet/geccoplus-eq5d-s1-responses
+  - description: EQ5D section two (self-sufficiency) answers
+    exampleBoolean: false
+    name: EQ5D section two answers
+    reference:
+      reference: ValueSet/geccoplus-eq5d-s2-responses
+  - description: EQ5D section three (daily activities) answers
+    exampleBoolean: false
+    name: EQ5D section three answers
+    reference:
+      reference: ValueSet/geccoplus-eq5d-s3-responses
+  - description: EQ5D section four (pain and discomfort) answers
+    exampleBoolean: false
+    name: EQ5D section four answers
+    reference:
+      reference: ValueSet/geccoplus-eq5d-s4-responses
+  - description: EQ5D section five (anxiety and depression) answers
+    exampleBoolean: false
+    name: EQ5D section five answers
+    reference:
+      reference: ValueSet/geccoplus-eq5d-s5-responses
+  - description: Laboratory diagnostics in the context of NAPKON GECCO+ module
+    exampleBoolean: false
+    name: Laboratory Diagnostics
+    reference:
+      reference: ValueSet/geccoplus-laboratory-diagnostics
+  - description: Normal Pathologic
+    exampleBoolean: false
+    name: Normal Pathologic
+    reference:
+      reference: ValueSet/geccoplus-normal-pathologic
+  - description: Manuell code system for proms in order to be able to specify codes
+      which are currently not assigned to any terminology
+    exampleBoolean: false
+    name: Proms in the context of GECCOplus
+    reference:
+      reference: ValueSet/geccoplus-proms-responses
+  - description: Positive / Negative Codes in the context of NAPKON GECCO+ Module
+    exampleBoolean: false
+    name: Positive Negative Codes
+    reference:
+      reference: ValueSet/geccoplus-positive-negative
+  - description: Values for laboratory observations
+    exampleBoolean: false
+    name: Present Not Present Undetermined Other
+    reference:
+      reference: ValueSet/present-not-present-undetermined-other
+  - description: EventStatus value set restricted to codes not-done, active, completed
+      and unknown
+    exampleBoolean: false
+    name: RestrictedEventStatus
+    reference:
+      reference: ValueSet/restricted-event-status
+  - description: Value set of school degrees
+    exampleBoolean: false
+    name: School Degree
+    reference:
+      reference: ValueSet/geccoplus-school-degree
+  - description: Value set for symptoms in the context of GECCO+
+    exampleBoolean: false
+    name: Symptoms
+    reference:
+      reference: ValueSet/geccoplus-symptoms-icd
+  - description: Value set for symptoms in the context of GECCO+
+    exampleBoolean: false
+    name: Symptoms
+    reference:
+      reference: ValueSet/geccoplus-symptoms-sct
+  - description: Urine diagnostic codes in the context of NAPKON GECCO+ module
+    exampleBoolean: false
+    name: Urine Diagnostics
+    reference:
+      reference: ValueSet/urine-diagnostics
+  - description: Specific gravity of urine
+    exampleBoolean: false
+    name: Urine Specific Gravity
+    reference:
+      reference: ValueSet/urine-specific-gravity
+  - description: Urobilinogen diagnostics in the context of NAPKON GECCO+ module
+    exampleBoolean: false
+    name: Urobilinogen Diagnostics
+    reference:
+      reference: ValueSet/urobilinogen-diagnostics
+  - description: Yes / No / Unknown
+    exampleBoolean: false
+    name: Yes No Unknown
+    reference:
+      reference: ValueSet/yes-no-unknown
+  - description: GECCOplus Module Code System - Collection of codes that are missing
+      from common terminologies such as SNOMED CT
+    exampleBoolean: false
+    name: GECCOplus Module Codes
+    reference:
+      reference: CodeSystem/geccoplus-codesystem
+  - description: Example as part of answers to the EQ-5D questionnaire.
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response
+    name: Example responses to EQ-5D questionnaire
+    reference:
+      reference: QuestionnaireResponse/EQ5DResponse
+  - description: EQ-5D is a standardised measure of health-related quality of life
+      developed by the EuroQol Group to provide a simple, generic questionnaire for
+      use in clinical and economic appraisal and population health surveys.
+    exampleBoolean: false
+    name: EQ-5D Questionnaire
+    reference:
+      reference: Questionnaire/Eq5dQuestionaire
+  - description: Example patient to be used as reference in other instances
+    exampleBoolean: true
+    name: ExamplePatient
+    reference:
+      reference: Patient/ExamplePatient
+  - description: Example of a achieved school degree
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree
+    name: Highest School Degree Example
+    reference:
+      reference: Observation/HighestSchoolDegreeExample
+  - description: Example as part of an answer to the PROMs questionnaire.
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response
+    name: PROMs Questionnaire example responses
+    reference:
+      reference: QuestionnaireResponse/PROMSExample
+  - description: PROMs questionnaire in the context of GECCO+
+    exampleBoolean: false
+    name: PROMs Questionnaire
+    reference:
+      reference: Questionnaire/PROMsQuestionnaire
+  - description: Example of symptoms with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms
+    name: Instance of profile symptoms in the context of geccoplus
+    reference:
+      reference: Condition/SymptomConfirmed
+  - description: Example of symptoms with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms
+    name: Instance of profile symptoms in the context of geccoplus
+    reference:
+      reference: Condition/SymptomRefuted
+  - description: Example of symptoms with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms
+    name: Instance of profile symptoms in the context of geccoplus
+    reference:
+      reference: Condition/SymptomUnknown
+  - description: Confirmed presence of nitrite in urine
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics
+    name: Urine Diagnostics Example
+    reference:
+      reference: Observation/UrineDiagnosticsNitriteExample
+  - description: Confirmed absence of ketones in urine
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics
+    name: Urine Diagnostics No Ketones Example
+    reference:
+      reference: Observation/UrineDiagnosticsNoKetonesExample
+  - description: Example of a specific gravity of urine
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity
+    name: Urine Specific Gravity Example
+    reference:
+      reference: Observation/UrineSpecificGravityExample
+  - description: Example of a normal urine urobilinogen observation
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen
+    name: Urobilinogen Normal
+    reference:
+      reference: Observation/UrobilinogenNormal
+  - description: Example of a pathologic urine urobilinogen observation
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen
+    name: Urobilinogen Pathologic
+    reference:
+      reference: Observation/UrobilinogenPathologic
+  - description: Example of allergies with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy
+    name: Instance of profile allergies with expression -confirmed- in the context
+      of geccoplus.
+    reference:
+      reference: Condition/instance-allergies-confirmed
+  - description: Example of allergies with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy
+    name: Instance of profile allergies with expression -refuted- in the context of
+      geccoplus.
+    reference:
+      reference: Condition/instance-allergies-refuted
+  - description: Example of allergies with snomed coding
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy
+    name: Instance of profile allergies with expression -unknown- in the context of
+      geccoplus.
+    reference:
+      reference: Condition/instance-allergies-unknown
+dependsOn:
+- id: de_medizininformatikinitiative_kerndatensatz_prozedur
+  packageId: de.medizininformatikinitiative.kerndatensatz.prozedur
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide
+  version: 2.0.0-alpha3
+- id: de_medizininformatikinitiative_kerndatensatz_person
+  packageId: de.medizininformatikinitiative.kerndatensatz.person
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide
+  version: 2.0.0-alpha3
+- id: de_medizininformatikinitiative_kerndatensatz_medikation
+  packageId: de.medizininformatikinitiative.kerndatensatz.medikation
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
+  version: 1.0.10
+- id: de_medizininformatikinitiative_kerndatensatz_diagnose
+  packageId: de.medizininformatikinitiative.kerndatensatz.diagnose
+  uri: https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide
+  version: 2.0.0-alpha3
+- id: de_medizininformatikinitiative_kerndatensatz_laborbefund
+  packageId: de.medizininformatikinitiative.kerndatensatz.laborbefund
+  uri: https://simplifier.net/guide/laborbefundindermedizininformatik-initiative
+  version: 1.0.6
+- id: de_gecco
+  packageId: de.gecco
+  uri: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide
+  version: 1.0.5
+- id: de_medizininformatikinitiative_kerndatensatz_meta
+  packageId: de.medizininformatikinitiative.kerndatensatz.meta
+  uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
+  version: 1.0.3
+fhirVersion:
+- 4.0.1
+id: napkon-geccoplus
+name: napkongeccoplus
+packageId: napkon-geccoplus
+publisher: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
+resourceType: ImplementationGuide
+status: draft
+title: NAPKON GECCO+
+url: https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus
+version: 0.1.0

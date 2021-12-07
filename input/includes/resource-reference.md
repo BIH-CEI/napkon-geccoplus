@@ -6,14 +6,8 @@
   {%- endif -%}
   {%- if p.name == include.name -%}
     {% assign reference_found = true %}
-<tr>
-  <td>
-    <a href="{{p.reference.reference | replace: '/','-'}}.html">{{p.name}}</a>
-  </td>
-  <td>
-    <p>{{p.description}}</p>
-  </td>
-</tr>
+    {% assign link = p.reference.reference | replace: '/','-' | append: '.html' %}
+    {% include resource-explicit.md name=p.name link=link description=p.description %}
   {%- endif -%}
 {%- endfor %}
 {% comment %} keep this line here for proper rendering {% endcomment %}
