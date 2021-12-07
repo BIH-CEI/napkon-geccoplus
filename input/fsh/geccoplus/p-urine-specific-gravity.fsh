@@ -23,7 +23,7 @@ Description: "Specific gravity of urine"
   * coding[loinc] from UrineSpecificGravity (required)
   * coding[loinc].system 1..
   * coding[loinc].code 1..
-* value[x] only Quantity or Range
+* insert value-quantity-or-range-required-no-unit
 * effective[x] 1..1 MS
 
 Instance: UrineSpecificGravityExample
@@ -35,4 +35,4 @@ Description: "Example of a specific gravity of urine"
 * code = $loinc#2965-2 "Specific gravity of Urine"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2021-12-06"
-* valueQuantity.value = 1.010
+* valueQuantity = 1.010 '{Spec grav}' "Spezifisches Gewicht"

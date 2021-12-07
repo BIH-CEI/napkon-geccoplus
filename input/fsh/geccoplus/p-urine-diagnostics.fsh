@@ -22,8 +22,9 @@ Description: "Urine diagnostics"
   * coding[loinc] from urine-diagnostics (required)
   * coding[loinc].system 1..
   * coding[loinc].code 1..
-* interpretation 1..* MS
-* interpretation from $vs-observation-interpretation-detected (required)
+* value[x] 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from PositiveNegative (required)
 * effective[x] 1..1 MS
 
 Instance: UrineDiagnosticsNoKetonesExample
@@ -35,7 +36,7 @@ Description: "Confirmed absence of ketones in urine"
 * code = $loinc#33903-6	"Ketones [Presence] in Urine"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2021-12-06"
-* interpretation = $cs-observation-interpretation#NEG "Negative"
+* valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
 
 Instance: UrineDiagnosticsNitriteExample
 InstanceOf: geccoplus-urine-diagnostics
@@ -46,4 +47,4 @@ Description: "Confirmed presence of nitrite in urine"
 * code = $loinc#32710-6 "Nitrite [Presence] in Urine"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2021-12-06"
-* interpretation = $cs-observation-interpretation#POS "Positive"
+* valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"

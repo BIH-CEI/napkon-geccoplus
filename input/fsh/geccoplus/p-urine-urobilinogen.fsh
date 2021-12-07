@@ -22,11 +22,9 @@ Description: "Urine urobilinogen"
   * coding[loinc] from UrobilinogenDiagnostics (required)
   * coding[loinc].system 1..
   * coding[loinc].code 1..
-* value[x] only Quantity or Range
-* value[x] MS
-* interpretation 1..* MS
-* interpretation from UrobilinogenInterpretation (extensible)
-* effective[x] 1..1 MS
+* value[x] 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from NormalPathologic (extensible)
 
 Instance: UrobilinogenPathologic
 InstanceOf: geccoplus-urine-urobilinogen
@@ -34,9 +32,9 @@ Usage: #example
 Title: "Urobilinogen Pathologic"
 Description: "Example of a pathologic urine urobilinogen observation"
 * status = #registered
-* code = $loinc#3107-0 "Urobilinogen [Mass/volume] in Urine"
+* code = $loinc#5818-0 "Urobilinogen [Presence] in Urine by Test strip"
 * subject = Reference(ExamplePatient)
-* valueQuantity = 2.3 'mg/dl'
+* valueCodeableConcept = $sct#29458008 "Pathologic (qualifier value)"
 * effectiveDateTime = "2021-12-06"
 * interpretation = $sct#29458008 "Pathologic (qualifier value)"
 
@@ -46,8 +44,8 @@ Usage: #example
 Title: "Urobilinogen Normal"
 Description: "Example of a normal urine urobilinogen observation"
 * status = #registered
-* code = $loinc#34927-4 "Urobilinogen [Moles/volume] in Urine"
+* code = $loinc#13658-0 "Urobilinogen [Presence] in Urine"
 * subject = Reference(ExamplePatient)
-* valueQuantity = 14.3 'umol/l'
+* valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * effectiveDateTime = "2021-12-06"
 * interpretation = $sct#17621005 "Normal (qualifier value)"
