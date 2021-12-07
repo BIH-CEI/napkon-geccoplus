@@ -3,7 +3,7 @@ InstanceOf: ProfilePatientPatientIn
 Usage: #example
 Title: "ExamplePatient"
 Description: "Example patient to be used as reference in other instances"
-* identifier[pid].system = "https://netzwerk-universitätsmedizin/fhir/napkon-example-system"
+* identifier[pid].system = "https://www.napkon.de/fhir/napkon-example-system"
 * identifier[pid].value = "napkon-example-patient"
 * name.family = "musterperson"
 * name.given = "maxi"
