@@ -39,4 +39,3 @@ RuleSet: value-quantity-or-range-required-no-unit
     * insert quantity-ucum-no-unit
   * high
     * insert quantity-ucum-no-unit
-                                                                                                                                                          37,1          Bot
