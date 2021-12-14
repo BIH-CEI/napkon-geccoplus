@@ -5,6 +5,7 @@ template
 output
 input-cache
 fsh-generated
+*-generated.md
 
 # IG publisher files #
 ###########################################

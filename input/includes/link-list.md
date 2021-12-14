@@ -16,4 +16,5 @@
 [ConditionVerificationStatus]: http://terminology.hl7.org/CodeSystem/condition-ver-status
 [SNOMEDCT]: http://snomed.info/sct
 [LOINC]: http://loinc.org/
+[UCUM]: http://unitsofmeasure.org
 [VSdataAbsentReason]: http://hl7.org/fhir/R4/valueset-data-absent-reason.html
