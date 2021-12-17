@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="geccoplus-symptoms-icd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M79.19</td><td>Myalgie: Nicht näher bezeichnete Lokalisation</td></tr><tr><td>R42</td><td>Schwindel und Taumel</td></tr><tr><td>R07.4</td><td>Brustschmerzen, nicht näher bezeichnet</td></tr><tr><td>J02.9</td><td>Akute Pharyngitis, nicht näher bezeichnet</td></tr><tr><td>J34.8</td><td>Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-icd"/>
+  <version value="0.1.0"/>
+  <name value="SymptomsICD"/>
+  <title value="Symptoms"/>
+  <status value="draft"/>
+  <date value="2021-11-29"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Value set for symptoms in the context of GECCO+"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <concept>
+        <code value="M79.19"/>
+        <display value="Myalgie: Nicht näher bezeichnete Lokalisation"/>
+      </concept>
+      <concept>
+        <code value="R42"/>
+        <display value="Schwindel und Taumel"/>
+      </concept>
+      <concept>
+        <code value="R07.4"/>
+        <display value="Brustschmerzen, nicht näher bezeichnet"/>
+      </concept>
+      <concept>
+        <code value="J02.9"/>
+        <display value="Akute Pharyngitis, nicht näher bezeichnet"/>
+      </concept>
+      <concept>
+        <code value="J34.8"/>
+        <display value="Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

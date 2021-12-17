@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="geccoplus-positive-negative"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004">10828004</a></td><td>Positive (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009">260385009</a></td><td>Negative (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
+  <version value="0.1.0"/>
+  <name value="PositiveNegative"/>
+  <title value="Positive Negative Codes"/>
+  <status value="draft"/>
+  <date value="2021-12-07"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Positive / Negative Codes in the context of NAPKON GECCO+ Module"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

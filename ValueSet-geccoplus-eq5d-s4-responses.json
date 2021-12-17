@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-eq5d-s4-responses",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41\">41</a></td><td>I have no pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42\">42</a></td><td>I have slight pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43\">43</a></td><td>I have moderate pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44\">44</a></td><td>I have severe pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45\">45</a></td><td>I have extreme pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46\">46</a></td><td>No information available.</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
+  "version": "0.1.0",
+  "name": "EQ5DS4Responses",
+  "title": "EQ5D section four answers",
+  "status": "active",
+  "date": "2021-12-17T11:18:04+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "EQ5D section four (pain and discomfort) answers",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+        "concept": [
+          {
+            "code": "41",
+            "display": "I have no pain or discomfort."
+          },
+          {
+            "code": "42",
+            "display": "I have slight pain or discomfort."
+          },
+          {
+            "code": "43",
+            "display": "I have moderate pain or discomfort."
+          },
+          {
+            "code": "44",
+            "display": "I have severe pain or discomfort."
+          },
+          {
+            "code": "45",
+            "display": "I have extreme pain or discomfort."
+          },
+          {
+            "code": "46",
+            "display": "No information available."
+          }
+        ]
+      }
+    ]
+  }
+}

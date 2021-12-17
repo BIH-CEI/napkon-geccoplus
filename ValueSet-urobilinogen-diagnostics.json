@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "urobilinogen-diagnostics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13658-0.html\">13658-0</a></td><td>Urobilinogen [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/12269-7.html\">12269-7</a></td><td>Urobilinogen [Presence] in 24 hour Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5818-0.html\">5818-0</a></td><td>Urobilinogen [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/62487-4.html\">62487-4</a></td><td>Urobilinogen [Presence] in Urine by Automated test strip</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
+  "version": "0.1.0",
+  "name": "UrobilinogenDiagnostics",
+  "title": "Urobilinogen Diagnostics",
+  "status": "draft",
+  "date": "2021-12-01",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Urobilinogen diagnostics in the context of NAPKON GECCO+ module",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13658-0",
+            "display": "Urobilinogen [Presence] in Urine"
+          },
+          {
+            "code": "12269-7",
+            "display": "Urobilinogen [Presence] in 24 hour Urine"
+          },
+          {
+            "code": "5818-0",
+            "display": "Urobilinogen [Presence] in Urine by Test strip"
+          },
+          {
+            "code": "62487-4",
+            "display": "Urobilinogen [Presence] in Urine by Automated test strip"
+          }
+        ]
+      }
+    ]
+  }
+}

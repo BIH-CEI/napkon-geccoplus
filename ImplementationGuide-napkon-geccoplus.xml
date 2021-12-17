@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="napkon-geccoplus"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>
   </text>
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus"/>
+  <url value="https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus"/>
   <version value="0.1.0"/>
   <name value="napkongeccoplus"/>
   <status value="draft"/>
-  <date value="2021-11-23T16:07:41+00:00"/>
+  <date value="2021-12-17T11:18:04+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -126,7 +126,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html"/>
+        <valueString value="https://www.napkon.de/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -211,6 +211,116 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-allergy"/>
+      </reference>
+      <name value="Allergies"/>
+      <description value="Profile for allergies in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-eq5d-response"/>
+      </reference>
+      <name value="EQ5D Questionnaire Response"/>
+      <description value="Response to the EQ-5D Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-highest-school-degree"/>
+      </reference>
+      <name value="Highest school degree"/>
+      <description value="Highest school degree in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-proms-response"/>
+      </reference>
+      <name value="PROMS Response"/>
+      <description value="Response to the PROMs questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-symptoms"/>
+      </reference>
+      <name value="Symptoms"/>
+      <description value="Symptoms in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-urine-diagnostics"/>
+      </reference>
+      <name value="Urine Diagnostics"/>
+      <description value="Urine diagnostics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-urine-specific-gravity"/>
+      </reference>
+      <name value="Urine Specific Gravity"/>
+      <description value="Specific gravity of urine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/geccoplus-urine-urobilinogen"/>
+      </reference>
+      <name value="Urine Urobilinogen"/>
+      <description value="Urine urobilinogen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-allergies-icd"/>
+      </reference>
+      <name value="Allergies"/>
+      <description value="Value set for allergies in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-allergies-sct"/>
+      </reference>
+      <name value="Allergies"/>
+      <description value="Value set for allergies in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -218,6 +328,105 @@
       </reference>
       <name value="Detected Not Detected Unknown Undetermined"/>
       <description value="Values for laboratory observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-eq5d-s1-responses"/>
+      </reference>
+      <name value="EQ5D section one answers"/>
+      <description value="EQ5D section one (agility and mobility) answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-eq5d-s2-responses"/>
+      </reference>
+      <name value="EQ5D section two answers"/>
+      <description value="EQ5D section two (self-sufficiency) answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-eq5d-s3-responses"/>
+      </reference>
+      <name value="EQ5D section three answers"/>
+      <description value="EQ5D section three (daily activities) answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-eq5d-s4-responses"/>
+      </reference>
+      <name value="EQ5D section four answers"/>
+      <description value="EQ5D section four (pain and discomfort) answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-eq5d-s5-responses"/>
+      </reference>
+      <name value="EQ5D section five answers"/>
+      <description value="EQ5D section five (anxiety and depression) answers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-laboratory-diagnostics"/>
+      </reference>
+      <name value="Laboratory Diagnostics"/>
+      <description value="Laboratory diagnostics in the context of NAPKON GECCO+ module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-normal-pathologic"/>
+      </reference>
+      <name value="Normal Pathologic"/>
+      <description value="Normal Pathologic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-proms-responses"/>
+      </reference>
+      <name value="Proms in the context of GECCOplus"/>
+      <description value="Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-positive-negative"/>
+      </reference>
+      <name value="Positive Negative Codes"/>
+      <description value="Positive / Negative Codes in the context of NAPKON GECCO+ Module"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -247,10 +456,109 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/geccoplus-school-degree"/>
+      </reference>
+      <name value="School Degree"/>
+      <description value="Value set of school degrees"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-symptoms-icd"/>
+      </reference>
+      <name value="Symptoms"/>
+      <description value="Value set for symptoms in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/geccoplus-symptoms-sct"/>
+      </reference>
+      <name value="Symptoms"/>
+      <description value="Value set for symptoms in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/urine-diagnostics"/>
+      </reference>
+      <name value="Urine Diagnostics"/>
+      <description value="Urine diagnostic codes in the context of NAPKON GECCO+ module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/urine-specific-gravity"/>
+      </reference>
+      <name value="Urine Specific Gravity"/>
+      <description value="Specific gravity of urine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/urobilinogen-diagnostics"/>
+      </reference>
+      <name value="Urobilinogen Diagnostics"/>
+      <description value="Urobilinogen diagnostics in the context of NAPKON GECCO+ module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/yes-no-unknown"/>
       </reference>
       <name value="Yes No Unknown"/>
       <description value="Yes / No / Unknown"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/geccoplus-codesystem"/>
+      </reference>
+      <name value="GECCOplus Module Codes"/>
+      <description value="GECCOplus Module Code System - Collection of codes that are missing from common terminologies such as SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/EQ5DResponse"/>
+      </reference>
+      <name value="Example responses to EQ-5D questionnaire"/>
+      <description value="Example as part of answers to the EQ-5D questionnaire."/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Eq5dQuestionaire"/>
+      </reference>
+      <name value="EQ-5D Questionnaire"/>
+      <description value="EQ-5D is a standardised measure of health-related quality of life developed by the EuroQol Group to provide a simple, generic questionnaire for use in clinical and economic appraisal and population health surveys."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -263,6 +571,160 @@
       <name value="ExamplePatient"/>
       <description value="Example patient to be used as reference in other instances"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HighestSchoolDegreeExample"/>
+      </reference>
+      <name value="Highest School Degree Example"/>
+      <description value="Example of a achieved school degree"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/PROMSExample"/>
+      </reference>
+      <name value="PROMs Questionnaire example responses"/>
+      <description value="Example as part of an answer to the PROMs questionnaire."/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/PROMsQuestionnaire"/>
+      </reference>
+      <name value="PROMs Questionnaire"/>
+      <description value="PROMs questionnaire in the context of GECCO+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/SymptomConfirmed"/>
+      </reference>
+      <name value="Instance of profile symptoms in the context of geccoplus"/>
+      <description value="Example of symptoms with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/SymptomRefuted"/>
+      </reference>
+      <name value="Instance of profile symptoms in the context of geccoplus"/>
+      <description value="Example of symptoms with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/SymptomUnknown"/>
+      </reference>
+      <name value="Instance of profile symptoms in the context of geccoplus"/>
+      <description value="Example of symptoms with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UrineDiagnosticsNitriteExample"/>
+      </reference>
+      <name value="Urine Diagnostics Example"/>
+      <description value="Confirmed presence of nitrite in urine"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UrineDiagnosticsNoKetonesExample"/>
+      </reference>
+      <name value="Urine Diagnostics No Ketones Example"/>
+      <description value="Confirmed absence of ketones in urine"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UrineSpecificGravityExample"/>
+      </reference>
+      <name value="Urine Specific Gravity Example"/>
+      <description value="Example of a specific gravity of urine"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UrobilinogenNormal"/>
+      </reference>
+      <name value="Urobilinogen Normal"/>
+      <description value="Example of a normal urine urobilinogen observation"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UrobilinogenPathologic"/>
+      </reference>
+      <name value="Urobilinogen Pathologic"/>
+      <description value="Example of a pathologic urine urobilinogen observation"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-allergies-confirmed"/>
+      </reference>
+      <name value="Instance of profile allergies with expression -confirmed- in the context of geccoplus."/>
+      <description value="Example of allergies with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-allergies-refuted"/>
+      </reference>
+      <name value="Instance of profile allergies with expression -refuted- in the context of geccoplus."/>
+      <description value="Example of allergies with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-allergies-unknown"/>
+      </reference>
+      <name value="Instance of profile allergies with expression -unknown- in the context of geccoplus."/>
+      <description value="Example of allergies with snomed coding"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

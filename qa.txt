@@ -1,15 +1,57 @@
 ﻿napkongeccoplus : Validation Results
 =========================================
 
-err = 0, warn = 8, info = 1
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
-Generated Tue Nov 23 16:07:57 UTC 2021. FHIR version 4.0.1 for napkon-geccoplus#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
- Build Errors : 0 / 7 / 1
+err = 9, warn = 20, info = 1
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.91
+Generated Fri Dec 17 11:18:50 UTC 2021. FHIR version 4.0.1 for napkon-geccoplus#0.1.0 (canonical = https://www.napkon.de/fhir)
+ Build Errors : 83 / 7 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-geccoplus-codesystem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-SymptomConfirmed : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-SymptomRefuted : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-SymptomUnknown : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-instance-allergies-confirmed : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-instance-allergies-refuted : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-instance-allergies-unknown : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-geccoplus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-HighestSchoolDegreeExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-UrineDiagnosticsNitriteExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-UrineDiagnosticsNoKetonesExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-UrineSpecificGravityExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-UrobilinogenNormal : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-UrobilinogenPathologic : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-Eq5dQuestionaire : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-PROMsQuestionnaire : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-EQ5DResponse : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-PROMSExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-allergy : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-eq5d-response : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-highest-school-degree : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-proms-response : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-symptoms : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-urine-diagnostics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-urine-specific-gravity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-geccoplus-urine-urobilinogen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-allergies-icd : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-allergies-sct : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-eq5d-s1-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-eq5d-s2-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-eq5d-s3-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-eq5d-s4-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-eq5d-s5-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-laboratory-diagnostics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-normal-pathologic : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-positive-negative : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-proms-responses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-school-degree : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-symptoms-icd : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-geccoplus-symptoms-sct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-present-not-present-undetermined-other : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-restricted-event-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-urine-diagnostics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-urine-specific-gravity : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-urobilinogen-diagnostics : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-yes-no-unknown : 0 / 0 / 1
 </table>
 == n/a ==
@@ -21,10 +63,149 @@ WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
+ERROR: ?pkp-1?: The reference https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 374, column 154: The link '' for "UncertaintyOfPresence" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 541, column 115: The link '' for "ConditionVerificationStatusSNOMED" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 831, column 144: The link '' for "CodingICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 861, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 873, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 885, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 958, column 115: The link '' for "Alpha-id" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 959, column 144: The link '' for "CodingAlphaID" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1368, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1382, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1460, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1504, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 247, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 269, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 282, column 1445: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 312, column 1663: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 375, column 1806: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 394, column 1806: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 728, column 1526: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 741, column 1668: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 750, column 1668: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 786, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 807, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 820, column 1445: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 1663: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 913, column 1806: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 932, column 1806: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1275, column 162: The link '#icd-10-gm-null' for "null" cannot be resolved (valid targets: 401 targets)
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-allergy.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1276, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 401 targets)
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-eq5d-response-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 339, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-eq5d-response.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-eq5d-response.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 443, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-highest-school-degree-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 493, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-highest-school-degree.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-highest-school-degree.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 566, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-proms-response-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 339, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-proms-response.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-proms-response.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 443, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 374, column 154: The link '' for "UncertaintyOfPresence" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 541, column 115: The link '' for "ConditionVerificationStatusSNOMED" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 830, column 144: The link '' for "CodingICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 860, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 872, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 884, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 957, column 115: The link '' for "Alpha-id" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 958, column 144: The link '' for "CodingAlphaID" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1367, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1381, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1459, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1503, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 247, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 269, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 283, column 1458: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 313, column 1664: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 376, column 1807: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 395, column 1807: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 729, column 1527: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 743, column 1657: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 1657: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 788, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 809, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 823, column 1458: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 853, column 1664: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 916, column 1807: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 935, column 1807: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1278, column 162: The link '#icd-10-gm-null' for "null" cannot be resolved (valid targets: 404 targets)
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-symptoms.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1279, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 404 targets)
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-diagnostics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 493, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-diagnostics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-diagnostics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 562, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-specific-gravity-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 493, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-specific-gravity.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-specific-gravity.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 649, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-urobilinogen-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 493, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-urobilinogen.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 259, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-geccoplus-urine-urobilinogen.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 556, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+== fsh-generated/resources/CodeSystem-geccoplus-codesystem.json ==
+== fsh-generated/resources/Condition-SymptomConfirmed.json ==
+== fsh-generated/resources/Condition-SymptomRefuted.json ==
+== fsh-generated/resources/Condition-SymptomUnknown.json ==
+== fsh-generated/resources/Condition-instance-allergies-confirmed.json ==
+== fsh-generated/resources/Condition-instance-allergies-refuted.json ==
+== fsh-generated/resources/Condition-instance-allergies-unknown.json ==
 == fsh-generated/resources/ImplementationGuide-napkon-geccoplus.json ==
 WARNING: ImplementationGuide/napkon-geccoplus: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Observation-HighestSchoolDegreeExample.json ==
+== fsh-generated/resources/Observation-UrineDiagnosticsNitriteExample.json ==
+== fsh-generated/resources/Observation-UrineDiagnosticsNoKetonesExample.json ==
+== fsh-generated/resources/Observation-UrineSpecificGravityExample.json ==
+== fsh-generated/resources/Observation-UrobilinogenNormal.json ==
+== fsh-generated/resources/Observation-UrobilinogenPathologic.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
+== fsh-generated/resources/Questionnaire-Eq5dQuestionaire.json ==
+ERROR: Questionnaire.url: Resource id/url mismatch: Eq5dQuestionaire/https://www.napkon.de/fhir/eq5d-questionnaire
+== fsh-generated/resources/Questionnaire-PROMsQuestionnaire.json ==
+ERROR: Questionnaire.url: Resource id/url mismatch: PROMsQuestionnaire/https://www.napkon.de/fhir/proms-questionnaire
+== fsh-generated/resources/QuestionnaireResponse-EQ5DResponse.json ==
+== fsh-generated/resources/QuestionnaireResponse-PROMSExample.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-allergy.json ==
+WARNING: Allergies.coding.Condition.code.coding: Binding http://fhir.de/ValueSet/bfarm/icd-10-gm could not be expanded
+WARNING: Allergies.coding.Condition.code.coding: Unable to check if https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
+WARNING: StructureDefinition/geccoplus-allergy: StructureDefinition: Binding http://fhir.de/ValueSet/bfarm/icd-10-gm could not be expanded
+WARNING: StructureDefinition/geccoplus-allergy: StructureDefinition: Unable to check if https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
+== fsh-generated/resources/StructureDefinition-geccoplus-eq5d-response.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-highest-school-degree.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-proms-response.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-symptoms.json ==
+WARNING: Symptoms.coding.Condition.code.coding: Binding http://fhir.de/ValueSet/bfarm/icd-10-gm could not be expanded
+WARNING: Symptoms.coding.Condition.code.coding: Unable to check if https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
+WARNING: StructureDefinition/geccoplus-symptoms: StructureDefinition: Binding http://fhir.de/ValueSet/bfarm/icd-10-gm could not be expanded
+WARNING: StructureDefinition/geccoplus-symptoms: StructureDefinition: Unable to check if https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
+== fsh-generated/resources/StructureDefinition-geccoplus-urine-diagnostics.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-urine-specific-gravity.json ==
+== fsh-generated/resources/StructureDefinition-geccoplus-urine-urobilinogen.json ==
 == fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined.json ==
+== fsh-generated/resources/ValueSet-geccoplus-allergies-icd.json ==
+WARNING: ValueSet/geccoplus-allergies-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'geccoplus-allergies-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/bfarm/icd-10-gm
+== fsh-generated/resources/ValueSet-geccoplus-allergies-sct.json ==
+== fsh-generated/resources/ValueSet-geccoplus-eq5d-s1-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-eq5d-s2-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-eq5d-s3-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-eq5d-s4-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-eq5d-s5-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-laboratory-diagnostics.json ==
+== fsh-generated/resources/ValueSet-geccoplus-normal-pathologic.json ==
+== fsh-generated/resources/ValueSet-geccoplus-positive-negative.json ==
+== fsh-generated/resources/ValueSet-geccoplus-proms-responses.json ==
+== fsh-generated/resources/ValueSet-geccoplus-school-degree.json ==
+== fsh-generated/resources/ValueSet-geccoplus-symptoms-icd.json ==
+WARNING: ValueSet/geccoplus-symptoms-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'geccoplus-symptoms-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/bfarm/icd-10-gm
+== fsh-generated/resources/ValueSet-geccoplus-symptoms-sct.json ==
 == fsh-generated/resources/ValueSet-present-not-present-undetermined-other.json ==
 == fsh-generated/resources/ValueSet-restricted-event-status.json ==
+== fsh-generated/resources/ValueSet-urine-diagnostics.json ==
+== fsh-generated/resources/ValueSet-urine-specific-gravity.json ==
+== fsh-generated/resources/ValueSet-urobilinogen-diagnostics.json ==
 == fsh-generated/resources/ValueSet-yes-no-unknown.json ==

@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "geccoplus-eq5d-s3-responses"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31\">31</a></td><td>I have no problems doing my usual activities.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32\">32</a></td><td>I have slight problems doing my usual activities.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33\">33</a></td><td>I have moderate problems doing my usual activities.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34\">34</a></td><td>I have severe problems doing my usual activities.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35\">35</a></td><td>I am unable to do my usual activities.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36\">36</a></td><td>No information available.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "EQ5DS3Responses"];
+  fhir:ValueSet.title [ fhir:value "EQ5D section three answers"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T11:18:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "EQ5D section three (daily activities) answers"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I have no problems doing my usual activities." ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I have slight problems doing my usual activities." ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I have moderate problems doing my usual activities." ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I have severe problems doing my usual activities." ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am unable to do my usual activities." ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No information available." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

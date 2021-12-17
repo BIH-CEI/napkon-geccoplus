@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="UrobilinogenPathologic"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: registered</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 5818-0}">Urobilinogen [Presence] in Urine by Test strip</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: 2021-12-06</p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 29458008}">Pathologic (qualifier value)</span></p><p><b>interpretation</b>: <span title="Codes: {http://snomed.info/sct 29458008}">Pathologic (qualifier value)</span></p></div>
+  </text>
+  <status value="registered"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="5818-0"/>
+      <display value="Urobilinogen [Presence] in Urine by Test strip"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2021-12-06"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="29458008"/>
+      <display value="Pathologic (qualifier value)"/>
+    </coding>
+  </valueCodeableConcept>
+  <interpretation>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="29458008"/>
+      <display value="Pathologic (qualifier value)"/>
+    </coding>
+  </interpretation>
+</Observation>

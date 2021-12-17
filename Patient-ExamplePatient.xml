@@ -15,7 +15,7 @@
         <code value="MR"/>
       </coding>
     </type>
-    <system value="https://netzwerk-universitätsmedizin/fhir/napkon-example-system"/>
+    <system value="https://www.napkon.de/fhir/napkon-example-system"/>
     <value value="napkon-example-patient"/>
   </identifier>
   <name>

@@ -3,13 +3,13 @@
   "id": "napkon-geccoplus",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
   },
-  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus",
+  "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus",
   "version": "0.1.0",
   "name": "napkongeccoplus",
   "status": "draft",
-  "date": "2021-11-23T16:07:41+00:00",
+  "date": "2021-12-17T11:18:04+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -185,7 +185,7 @@
           },
           {
             "url": "value",
-            "valueString": "https://www.netzwerk-universitaetsmedizin.de/fhir/history.html"
+            "valueString": "https://www.napkon.de/fhir/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -326,6 +326,146 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-allergy"
+        },
+        "name": "Allergies",
+        "description": "Profile for allergies in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-eq5d-response"
+        },
+        "name": "EQ5D Questionnaire Response",
+        "description": "Response to the EQ-5D Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-highest-school-degree"
+        },
+        "name": "Highest school degree",
+        "description": "Highest school degree in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-proms-response"
+        },
+        "name": "PROMS Response",
+        "description": "Response to the PROMs questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-symptoms"
+        },
+        "name": "Symptoms",
+        "description": "Symptoms in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-urine-diagnostics"
+        },
+        "name": "Urine Diagnostics",
+        "description": "Urine diagnostics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-urine-specific-gravity"
+        },
+        "name": "Urine Specific Gravity",
+        "description": "Specific gravity of urine",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/geccoplus-urine-urobilinogen"
+        },
+        "name": "Urine Urobilinogen",
+        "description": "Urine urobilinogen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-allergies-icd"
+        },
+        "name": "Allergies",
+        "description": "Value set for allergies in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-allergies-sct"
+        },
+        "name": "Allergies",
+        "description": "Value set for allergies in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -334,6 +474,132 @@
         },
         "name": "Detected Not Detected Unknown Undetermined",
         "description": "Values for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-eq5d-s1-responses"
+        },
+        "name": "EQ5D section one answers",
+        "description": "EQ5D section one (agility and mobility) answers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-eq5d-s2-responses"
+        },
+        "name": "EQ5D section two answers",
+        "description": "EQ5D section two (self-sufficiency) answers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-eq5d-s3-responses"
+        },
+        "name": "EQ5D section three answers",
+        "description": "EQ5D section three (daily activities) answers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-eq5d-s4-responses"
+        },
+        "name": "EQ5D section four answers",
+        "description": "EQ5D section four (pain and discomfort) answers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-eq5d-s5-responses"
+        },
+        "name": "EQ5D section five answers",
+        "description": "EQ5D section five (anxiety and depression) answers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-laboratory-diagnostics"
+        },
+        "name": "Laboratory Diagnostics",
+        "description": "Laboratory diagnostics in the context of NAPKON GECCO+ module",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-normal-pathologic"
+        },
+        "name": "Normal Pathologic",
+        "description": "Normal Pathologic",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-proms-responses"
+        },
+        "name": "Proms in the context of GECCOplus",
+        "description": "Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-positive-negative"
+        },
+        "name": "Positive Negative Codes",
+        "description": "Positive / Negative Codes in the context of NAPKON GECCO+ Module",
         "exampleBoolean": false
       },
       {
@@ -372,10 +638,136 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/geccoplus-school-degree"
+        },
+        "name": "School Degree",
+        "description": "Value set of school degrees",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-symptoms-icd"
+        },
+        "name": "Symptoms",
+        "description": "Value set for symptoms in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/geccoplus-symptoms-sct"
+        },
+        "name": "Symptoms",
+        "description": "Value set for symptoms in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/urine-diagnostics"
+        },
+        "name": "Urine Diagnostics",
+        "description": "Urine diagnostic codes in the context of NAPKON GECCO+ module",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/urine-specific-gravity"
+        },
+        "name": "Urine Specific Gravity",
+        "description": "Specific gravity of urine",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/urobilinogen-diagnostics"
+        },
+        "name": "Urobilinogen Diagnostics",
+        "description": "Urobilinogen diagnostics in the context of NAPKON GECCO+ module",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/yes-no-unknown"
         },
         "name": "Yes No Unknown",
         "description": "Yes / No / Unknown",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/geccoplus-codesystem"
+        },
+        "name": "GECCOplus Module Codes",
+        "description": "GECCOplus Module Code System - Collection of codes that are missing from common terminologies such as SNOMED CT",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/EQ5DResponse"
+        },
+        "name": "Example responses to EQ-5D questionnaire",
+        "description": "Example as part of answers to the EQ-5D questionnaire.",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/Eq5dQuestionaire"
+        },
+        "name": "EQ-5D Questionnaire",
+        "description": "EQ-5D is a standardised measure of health-related quality of life developed by the EuroQol Group to provide a simple, generic questionnaire for use in clinical and economic appraisal and population health surveys.",
         "exampleBoolean": false
       },
       {
@@ -391,6 +783,202 @@
         "name": "ExamplePatient",
         "description": "Example patient to be used as reference in other instances",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HighestSchoolDegreeExample"
+        },
+        "name": "Highest School Degree Example",
+        "description": "Example of a achieved school degree",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/PROMSExample"
+        },
+        "name": "PROMs Questionnaire example responses",
+        "description": "Example as part of an answer to the PROMs questionnaire.",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/PROMsQuestionnaire"
+        },
+        "name": "PROMs Questionnaire",
+        "description": "PROMs questionnaire in the context of GECCO+",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SymptomConfirmed"
+        },
+        "name": "Instance of profile symptoms in the context of geccoplus",
+        "description": "Example of symptoms with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SymptomRefuted"
+        },
+        "name": "Instance of profile symptoms in the context of geccoplus",
+        "description": "Example of symptoms with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SymptomUnknown"
+        },
+        "name": "Instance of profile symptoms in the context of geccoplus",
+        "description": "Example of symptoms with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/UrineDiagnosticsNitriteExample"
+        },
+        "name": "Urine Diagnostics Example",
+        "description": "Confirmed presence of nitrite in urine",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/UrineDiagnosticsNoKetonesExample"
+        },
+        "name": "Urine Diagnostics No Ketones Example",
+        "description": "Confirmed absence of ketones in urine",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/UrineSpecificGravityExample"
+        },
+        "name": "Urine Specific Gravity Example",
+        "description": "Example of a specific gravity of urine",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/UrobilinogenNormal"
+        },
+        "name": "Urobilinogen Normal",
+        "description": "Example of a normal urine urobilinogen observation",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/UrobilinogenPathologic"
+        },
+        "name": "Urobilinogen Pathologic",
+        "description": "Example of a pathologic urine urobilinogen observation",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-allergies-confirmed"
+        },
+        "name": "Instance of profile allergies with expression -confirmed- in the context of geccoplus.",
+        "description": "Example of allergies with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-allergies-refuted"
+        },
+        "name": "Instance of profile allergies with expression -refuted- in the context of geccoplus.",
+        "description": "Example of allergies with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-allergies-unknown"
+        },
+        "name": "Instance of profile allergies with expression -unknown- in the context of geccoplus.",
+        "description": "Example of allergies with snomed coding",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"
       }
     ],
     "page": {

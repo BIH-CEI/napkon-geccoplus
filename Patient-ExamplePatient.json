@@ -20,7 +20,7 @@
           }
         ]
       },
-      "system": "https://netzwerk-universitätsmedizin/fhir/napkon-example-system",
+      "system": "https://www.napkon.de/fhir/napkon-example-system",
       "value": "napkon-example-patient"
     }
   ],

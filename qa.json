@@ -1,11 +1,11 @@
 {
-  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus",
+  "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus",
   "name": "napkongeccoplus",
   "package-id": "napkon-geccoplus",
   "ig-ver": "0.1.0",
-  "date": "Tue, 23 Nov, 2021 16:07:41 +0000",
-  "errs": 0,
-  "warnings": 8,
+  "date": "Fri, 17 Dec, 2021 11:18:04 +0000",
+  "errs": 9,
+  "warnings": 20,
   "hints": 1,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

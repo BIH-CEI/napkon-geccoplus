@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "UrineDiagnosticsNoKetonesExample",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: registered</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 33903-6}\">Ketones [Presence] in Urine</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: 2021-12-06</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></p></div>"
+  },
+  "status": "registered",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "33903-6",
+        "display": "Ketones [Presence] in Urine"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2021-12-06",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "10828004",
+        "display": "Positive (qualifier value)"
+      }
+    ]
+  }
+}

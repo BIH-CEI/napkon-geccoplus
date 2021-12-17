@@ -1,0 +1,80 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "EQ5DResponse",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://www.napkon.de/fhir/eq5d-questionnaire\">https://www.napkon.de/fhir/eq5d-questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mobility</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"{https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 14}\">I have severe problems in walking about.</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: self-sufficiency</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"{https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 22}\">I have slight problems washing or dressing myself.</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: daily-activities</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"{https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 33}\">I have moderate problems doing my usual activities.</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pain-discomfort</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"{https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 41}\">I have no pain or discomfort.</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: anxiety-depression</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"{https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 55}\">I am extremely anxious or depressed.</span></td></tr></table></blockquote></div>"
+  },
+  "questionnaire": "https://www.napkon.de/fhir/eq5d-questionnaire",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "item": [
+    {
+      "linkId": "mobility",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+            "code": "14",
+            "display": "I have severe problems in walking about."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "self-sufficiency",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+            "code": "22",
+            "display": "I have slight problems washing or dressing myself."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "daily-activities",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+            "code": "33",
+            "display": "I have moderate problems doing my usual activities."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "pain-discomfort",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+            "code": "41",
+            "display": "I have no pain or discomfort."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "anxiety-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+            "code": "55",
+            "display": "I am extremely anxious or depressed."
+          }
+        }
+      ]
+    }
+  ]
+}

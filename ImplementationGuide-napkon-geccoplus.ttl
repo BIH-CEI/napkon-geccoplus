@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus> a fhir:ImplementationGuide;
+<https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "napkon-geccoplus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus"];
+  fhir:ImplementationGuide.url [ fhir:value "https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "napkongeccoplus"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-23T16:07:41+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-17T11:18:04+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -203,7 +203,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://www.napkon.de/fhir/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -332,71 +332,701 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
-         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-allergy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergies" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for allergies in the context of GECCO+" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other>;
-         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-eq5d-response" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D Questionnaire Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Response to the EQ-5D Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status>;
-         fhir:Reference.reference [ fhir:value "ValueSet/restricted-event-status" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-highest-school-degree" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RestrictedEventStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, active, completed and unknown" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Highest school degree" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Highest school degree in the context of GECCO+" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown>;
-         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-proms-response" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PROMS Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Response to the PROMs questionnaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-urine-diagnostics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Diagnostics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urine diagnostics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-urine-specific-gravity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Specific Gravity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specific gravity of urine" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/geccoplus-urine-urobilinogen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Urobilinogen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urine urobilinogen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-allergies-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergies" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for allergies in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-allergies-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergies" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for allergies in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
+         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-eq5d-s1-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D section one answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ5D section one (agility and mobility) answers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-eq5d-s2-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D section two answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ5D section two (self-sufficiency) answers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-eq5d-s3-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D section three answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ5D section three (daily activities) answers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-eq5d-s4-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D section four answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ5D section four (pain and discomfort) answers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-eq5d-s5-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ5D section five answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ5D section five (anxiety and depression) answers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-laboratory-diagnostics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratory Diagnostics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laboratory diagnostics in the context of NAPKON GECCO+ module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-normal-pathologic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Normal Pathologic" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Normal Pathologic" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-proms-responses" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Proms in the context of GECCOplus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-positive-negative" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Positive Negative Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Positive / Negative Codes in the context of NAPKON GECCO+ Module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other>;
+         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/restricted-event-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/restricted-event-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RestrictedEventStatus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, active, completed and unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-school-degree" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "School Degree" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set of school degrees" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-symptoms-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for symptoms in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/geccoplus-symptoms-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for symptoms in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/urine-diagnostics>;
+         fhir:Reference.reference [ fhir:value "ValueSet/urine-diagnostics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Diagnostics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urine diagnostic codes in the context of NAPKON GECCO+ module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/urine-specific-gravity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/urine-specific-gravity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Specific Gravity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specific gravity of urine" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics>;
+         fhir:Reference.reference [ fhir:value "ValueSet/urobilinogen-diagnostics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urobilinogen Diagnostics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urobilinogen diagnostics in the context of NAPKON GECCO+ module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/yes-no-unknown>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/geccoplus-codesystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GECCOplus Module Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "GECCOplus Module Code System - Collection of codes that are missing from common terminologies such as SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/QuestionnaireResponse/EQ5DResponse>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/EQ5DResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example responses to EQ-5D questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example as part of answers to the EQ-5D questionnaire." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response>
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Questionnaire/Eq5dQuestionaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/Eq5dQuestionaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EQ-5D Questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EQ-5D is a standardised measure of health-related quality of life developed by the EuroQol Group to provide a simple, generic questionnaire for use in clinical and economic appraisal and population health surveys." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Patient/ExamplePatient>;
+         fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
          fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient to be used as reference in other instances" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/HighestSchoolDegreeExample>;
+         fhir:Reference.reference [ fhir:value "Observation/HighestSchoolDegreeExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Highest School Degree Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a achieved school degree" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree>
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/QuestionnaireResponse/PROMSExample>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/PROMSExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PROMs Questionnaire example responses" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example as part of an answer to the PROMs questionnaire." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response>
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Questionnaire/PROMsQuestionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/PROMsQuestionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PROMs Questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PROMs questionnaire in the context of GECCO+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/SymptomConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/SymptomConfirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile symptoms in the context of geccoplus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of symptoms with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms>
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/SymptomRefuted>;
+         fhir:Reference.reference [ fhir:value "Condition/SymptomRefuted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile symptoms in the context of geccoplus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of symptoms with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms>
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/SymptomUnknown>;
+         fhir:Reference.reference [ fhir:value "Condition/SymptomUnknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile symptoms in the context of geccoplus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of symptoms with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/UrineDiagnosticsNitriteExample>;
+         fhir:Reference.reference [ fhir:value "Observation/UrineDiagnosticsNitriteExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Diagnostics Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Confirmed presence of nitrite in urine" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics>
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/UrineDiagnosticsNoKetonesExample>;
+         fhir:Reference.reference [ fhir:value "Observation/UrineDiagnosticsNoKetonesExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Diagnostics No Ketones Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Confirmed absence of ketones in urine" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/UrineSpecificGravityExample>;
+         fhir:Reference.reference [ fhir:value "Observation/UrineSpecificGravityExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urine Specific Gravity Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a specific gravity of urine" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity>
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/UrobilinogenNormal>;
+         fhir:Reference.reference [ fhir:value "Observation/UrobilinogenNormal" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urobilinogen Normal" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a normal urine urobilinogen observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen>
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/UrobilinogenPathologic>;
+         fhir:Reference.reference [ fhir:value "Observation/UrobilinogenPathologic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urobilinogen Pathologic" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a pathologic urine urobilinogen observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-allergies-confirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-allergies-confirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile allergies with expression -confirmed- in the context of geccoplus." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of allergies with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy>
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-allergies-refuted>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-allergies-refuted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile allergies with expression -refuted- in the context of geccoplus." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of allergies with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-allergies-unknown>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-allergies-unknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of profile allergies with expression -unknown- in the context of geccoplus." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of allergies with snomed coding" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -474,7 +1104,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-geccoplus.ttl> a owl:Ontology;
+<https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

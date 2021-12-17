@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-allergies-sct",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009\">300910009</a></td><td>Allergy to pollen (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006\">232349006</a></td><td>Allergy to house dust (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
+  "version": "0.1.0",
+  "name": "AllergiesSCT",
+  "title": "Allergies",
+  "status": "draft",
+  "date": "2021-11-29",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Value set for allergies in the context of GECCO+",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "300910009",
+            "display": "Allergy to pollen (finding)"
+          },
+          {
+            "code": "232349006",
+            "display": "Allergy to house dust (finding)"
+          },
+          {
+            "code": "74964007",
+            "display": "Other (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

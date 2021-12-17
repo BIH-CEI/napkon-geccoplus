@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="instance-allergies-confirmed"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}, {http://snomed.info/sct 410605003}">Confirmed present (qualifier value)</span></p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 394805004}">Clinical immunology/allergy (qualifier value)</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 300910009}">Allergy to pollen (finding)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: 2021-11-29</p></div>
+  </text>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="410605003"/>
+      <display value="Confirmed present (qualifier value)"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394805004"/>
+      <display value="Clinical immunology/allergy (qualifier value)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="300910009"/>
+      <display value="Allergy to pollen (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <recordedDate value="2021-11-29"/>
+</Condition>

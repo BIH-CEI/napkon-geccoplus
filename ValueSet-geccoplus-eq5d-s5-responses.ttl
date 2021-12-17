@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "geccoplus-eq5d-s5-responses"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51\">51</a></td><td>I am not anxious or depressed.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52\">52</a></td><td>I am slightly anxious or depressed.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53\">53</a></td><td>I am moderately anxious or depressed.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54\">54</a></td><td>I am severely anxious or depressed.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55\">55</a></td><td>I am extremely anxious or depressed.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56\">56</a></td><td>No information available.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "EQ5DS5Responses"];
+  fhir:ValueSet.title [ fhir:value "EQ5D section five answers"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T11:18:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "EQ5D section five (anxiety and depression) answers"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am not anxious or depressed." ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am slightly anxious or depressed." ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am moderately anxious or depressed." ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am severely anxious or depressed." ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "I am extremely anxious or depressed." ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No information available." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

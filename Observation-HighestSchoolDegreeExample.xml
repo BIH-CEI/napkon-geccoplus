@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HighestSchoolDegreeExample"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 82589-3}">Highest level of education</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: <span title="Codes: {https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem 72}">Realschulabschluss/Mittlere Reife</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82589-3"/>
+      <display value="Highest level of education"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+      <code value="72"/>
+      <display value="Realschulabschluss/Mittlere Reife"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

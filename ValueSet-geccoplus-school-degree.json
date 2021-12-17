@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-school-degree",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71\">71</a></td><td>Volks-/Hauptschulabschluss</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72\">72</a></td><td>Realschulabschluss/Mittlere Reife</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73\">73</a></td><td>Fachhochschulabschluss</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003\">473461003</a></td><td>Educated to high school level (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005\">224294005</a></td><td>No formal education (finding)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
+  "version": "0.1.0",
+  "name": "SchoolDegree",
+  "title": "School Degree",
+  "status": "draft",
+  "date": "2021-10-11",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of school degrees",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+        "concept": [
+          {
+            "code": "71",
+            "display": "Volks-/Hauptschulabschluss"
+          },
+          {
+            "code": "72",
+            "display": "Realschulabschluss/Mittlere Reife"
+          },
+          {
+            "code": "73",
+            "display": "Fachhochschulabschluss"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "473461003",
+            "display": "Educated to high school level (finding)"
+          },
+          {
+            "code": "224294005",
+            "display": "No formal education (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

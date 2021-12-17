@@ -1,0 +1,258 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "geccoplus-codesystem"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">s1<a name=\"geccoplus-codesystem-s1\"> </a></td><td>Agility and mobility</td></tr><tr><td style=\"white-space:nowrap\">s2<a name=\"geccoplus-codesystem-s2\"> </a></td><td>Self-sufficiency</td></tr><tr><td style=\"white-space:nowrap\">s3<a name=\"geccoplus-codesystem-s3\"> </a></td><td>Daily activities</td></tr><tr><td style=\"white-space:nowrap\">s4<a name=\"geccoplus-codesystem-s4\"> </a></td><td>Pain and discomfort</td></tr><tr><td style=\"white-space:nowrap\">s5<a name=\"geccoplus-codesystem-s5\"> </a></td><td>Anxiety and depression</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"geccoplus-codesystem-11\"> </a></td><td>I have no problems in walking about.</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"geccoplus-codesystem-12\"> </a></td><td>I have slight problems in walking about.</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"geccoplus-codesystem-13\"> </a></td><td>I have moderate problems in walking about.</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"geccoplus-codesystem-14\"> </a></td><td>I have severe problems in walking about.</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"geccoplus-codesystem-15\"> </a></td><td>I am unable to walk about.</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"geccoplus-codesystem-16\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"geccoplus-codesystem-21\"> </a></td><td>I have no problems washing or dressing myself.</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"geccoplus-codesystem-22\"> </a></td><td>I have slight problems washing or dressing myself.</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"geccoplus-codesystem-23\"> </a></td><td>I have moderate problems washing or dressing myself.</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"geccoplus-codesystem-24\"> </a></td><td>I have severe problems washing or dressing myself.</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"geccoplus-codesystem-25\"> </a></td><td>I am unable to wash or dress myself.</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"geccoplus-codesystem-26\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"geccoplus-codesystem-31\"> </a></td><td>I have no problems doing my usual activities.</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"geccoplus-codesystem-32\"> </a></td><td>I have slight problems doing my usual activities.</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"geccoplus-codesystem-33\"> </a></td><td>I have moderate problems doing my usual activities.</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"geccoplus-codesystem-34\"> </a></td><td>I have severe problems doing my usual activities.</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"geccoplus-codesystem-35\"> </a></td><td>I am unable to do my usual activities.</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"geccoplus-codesystem-36\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"geccoplus-codesystem-41\"> </a></td><td>I have no pain or discomfort.</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"geccoplus-codesystem-42\"> </a></td><td>I have slight pain or discomfort.</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"geccoplus-codesystem-43\"> </a></td><td>I have moderate pain or discomfort.</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"geccoplus-codesystem-44\"> </a></td><td>I have severe pain or discomfort.</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"geccoplus-codesystem-45\"> </a></td><td>I have extreme pain or discomfort.</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"geccoplus-codesystem-46\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"geccoplus-codesystem-51\"> </a></td><td>I am not anxious or depressed.</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"geccoplus-codesystem-52\"> </a></td><td>I am slightly anxious or depressed.</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"geccoplus-codesystem-53\"> </a></td><td>I am moderately anxious or depressed.</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"geccoplus-codesystem-54\"> </a></td><td>I am severely anxious or depressed.</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"geccoplus-codesystem-55\"> </a></td><td>I am extremely anxious or depressed.</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"geccoplus-codesystem-56\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">s6<a name=\"geccoplus-codesystem-s6\"> </a></td><td>Lift something that weighs 4.5kg - 9.0kg (e.g. a large bag of food).</td></tr><tr><td style=\"white-space:nowrap\">s7<a name=\"geccoplus-codesystem-s7\"> </a></td><td>Carrying something that weighs 4.5kg - 9.0 kg (e.g. a large bag of food) from one room to another room.</td></tr><tr><td style=\"white-space:nowrap\">s8<a name=\"geccoplus-codesystem-s8\"> </a></td><td>Walk approximately 1 km (faster than your normal pace) without stopping.</td></tr><tr><td style=\"white-space:nowrap\">s9<a name=\"geccoplus-codesystem-s9\"> </a></td><td>Walk 50 steps on level ground at a normal pace without stopping.</td></tr><tr><td style=\"white-space:nowrap\">s10<a name=\"geccoplus-codesystem-s10\"> </a></td><td>Walk up 20 steps or two flights of stairs without stopping.</td></tr><tr><td style=\"white-space:nowrap\">s11<a name=\"geccoplus-codesystem-s11\"> </a></td><td>Sweep or mop the floor.</td></tr><tr><td style=\"white-space:nowrap\">s12<a name=\"geccoplus-codesystem-s12\"> </a></td><td>Dressing without help.</td></tr><tr><td style=\"white-space:nowrap\">s13<a name=\"geccoplus-codesystem-s13\"> </a></td><td>Preparing meals.</td></tr><tr><td style=\"white-space:nowrap\">s14<a name=\"geccoplus-codesystem-s14\"> </a></td><td>Washing dishes.</td></tr><tr><td style=\"white-space:nowrap\">s15<a name=\"geccoplus-codesystem-s15\"> </a></td><td>Making a bed.</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"geccoplus-codesystem-61\"> </a></td><td>No difficulties.</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"geccoplus-codesystem-62\"> </a></td><td>Mild difficulties.</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"geccoplus-codesystem-63\"> </a></td><td>Moderate difficulties.</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"geccoplus-codesystem-64\"> </a></td><td>Severe difficulties.</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"geccoplus-codesystem-65\"> </a></td><td>I haven't done this in the past 7 days.</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"geccoplus-codesystem-66\"> </a></td><td>No information available.</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"geccoplus-codesystem-71\"> </a></td><td>Volks-/Hauptschulabschluss</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"geccoplus-codesystem-72\"> </a></td><td>Realschulabschluss/Mittlere Reife</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"geccoplus-codesystem-73\"> </a></td><td>Fachhochschulabschluss</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "GECCOPlus"];
+  fhir:CodeSystem.title [ fhir:value "GECCOplus Module Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-17T11:18:04+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "GECCOplus Module Code System - Collection of codes that are missing from common terminologies such as SNOMED CT"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "54"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "s1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Agility and mobility" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "s2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self-sufficiency" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "s3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Daily activities" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "s4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pain and discomfort" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "s5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anxiety and depression" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have no problems in walking about." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have slight problems in walking about." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have moderate problems in walking about." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have severe problems in walking about." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am unable to walk about." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have no problems washing or dressing myself." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have slight problems washing or dressing myself." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have moderate problems washing or dressing myself." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have severe problems washing or dressing myself." ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am unable to wash or dress myself." ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have no problems doing my usual activities." ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have slight problems doing my usual activities." ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have moderate problems doing my usual activities." ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "34" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have severe problems doing my usual activities." ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "35" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am unable to do my usual activities." ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "36" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "41" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have no pain or discomfort." ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "42" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have slight pain or discomfort." ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have moderate pain or discomfort." ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "44" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have severe pain or discomfort." ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "45" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have extreme pain or discomfort." ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "46" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am not anxious or depressed." ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "52" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am slightly anxious or depressed." ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "53" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am moderately anxious or depressed." ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "54" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am severely anxious or depressed." ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am extremely anxious or depressed." ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "56" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "s6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lift something that weighs 4.5kg - 9.0kg (e.g. a large bag of food)." ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "s7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Carrying something that weighs 4.5kg - 9.0 kg (e.g. a large bag of food) from one room to another room." ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "s8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Walk approximately 1 km (faster than your normal pace) without stopping." ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "s9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Walk 50 steps on level ground at a normal pace without stopping." ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "s10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Walk up 20 steps or two flights of stairs without stopping." ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "s11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sweep or mop the floor." ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "s12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dressing without help." ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "s13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preparing meals." ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "s14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Washing dishes." ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "s15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Making a bed." ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No difficulties." ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "62" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mild difficulties." ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "63" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moderate difficulties." ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "64" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Severe difficulties." ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I haven't done this in the past 7 days." ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "66" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information available." ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "71" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volks-/Hauptschulabschluss" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "72" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Realschulabschluss/Mittlere Reife" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "73" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fachhochschulabschluss" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

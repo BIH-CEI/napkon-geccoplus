@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="instance-allergies-refuted"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status refuted}, {http://snomed.info/sct 410594000}">Definitely NOT present (qualifier value)</span></p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 394805004}">Clinical immunology/allergy (qualifier value)</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 232349006}">Allergy to house dust (finding)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: 2021-11-29</p></div>
+  </text>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="refuted"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="410594000"/>
+      <display value="Definitely NOT present (qualifier value)"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394805004"/>
+      <display value="Clinical immunology/allergy (qualifier value)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="232349006"/>
+      <display value="Allergy to house dust (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <recordedDate value="2021-11-29"/>
+</Condition>

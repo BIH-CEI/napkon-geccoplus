@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-eq5d-s2-responses",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21\">21</a></td><td>I have no problems washing or dressing myself.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22\">22</a></td><td>I have slight problems washing or dressing myself.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23\">23</a></td><td>I have moderate problems washing or dressing myself.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24\">24</a></td><td>I have severe problems washing or dressing myself.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25\">25</a></td><td>I am unable to wash or dress myself.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26\">26</a></td><td>No information available.</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
+  "version": "0.1.0",
+  "name": "EQ5DS2Responses",
+  "title": "EQ5D section two answers",
+  "status": "active",
+  "date": "2021-12-17T11:18:04+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "EQ5D section two (self-sufficiency) answers",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+        "concept": [
+          {
+            "code": "21",
+            "display": "I have no problems washing or dressing myself."
+          },
+          {
+            "code": "22",
+            "display": "I have slight problems washing or dressing myself."
+          },
+          {
+            "code": "23",
+            "display": "I have moderate problems washing or dressing myself."
+          },
+          {
+            "code": "24",
+            "display": "I have severe problems washing or dressing myself."
+          },
+          {
+            "code": "25",
+            "display": "I am unable to wash or dress myself."
+          },
+          {
+            "code": "26",
+            "display": "No information available."
+          }
+        ]
+      }
+    ]
+  }
+}

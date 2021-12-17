@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-eq5d-s1-responses",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11\">11</a></td><td>I have no problems in walking about.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12\">12</a></td><td>I have slight problems in walking about.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13\">13</a></td><td>I have moderate problems in walking about.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14\">14</a></td><td>I have severe problems in walking about.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15\">15</a></td><td>I am unable to walk about.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16\">16</a></td><td>No information available.</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
+  "version": "0.1.0",
+  "name": "EQ5DS1Responses",
+  "title": "EQ5D section one answers",
+  "status": "active",
+  "date": "2021-12-17T11:18:04+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "EQ5D section one (agility and mobility) answers",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+        "concept": [
+          {
+            "code": "11",
+            "display": "I have no problems in walking about."
+          },
+          {
+            "code": "12",
+            "display": "I have slight problems in walking about."
+          },
+          {
+            "code": "13",
+            "display": "I have moderate problems in walking about."
+          },
+          {
+            "code": "14",
+            "display": "I have severe problems in walking about."
+          },
+          {
+            "code": "15",
+            "display": "I am unable to walk about."
+          },
+          {
+            "code": "16",
+            "display": "No information available."
+          }
+        ]
+      }
+    ]
+  }
+}

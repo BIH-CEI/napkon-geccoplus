@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geccoplus-symptoms-icd",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M79.19</td><td>Myalgie: Nicht näher bezeichnete Lokalisation</td></tr><tr><td>R42</td><td>Schwindel und Taumel</td></tr><tr><td>R07.4</td><td>Brustschmerzen, nicht näher bezeichnet</td></tr><tr><td>J02.9</td><td>Akute Pharyngitis, nicht näher bezeichnet</td></tr><tr><td>J34.8</td><td>Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-icd",
+  "version": "0.1.0",
+  "name": "SymptomsICD",
+  "title": "Symptoms",
+  "status": "draft",
+  "date": "2021-11-29",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Value set for symptoms in the context of GECCO+",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "M79.19",
+            "display": "Myalgie: Nicht näher bezeichnete Lokalisation"
+          },
+          {
+            "code": "R42",
+            "display": "Schwindel und Taumel"
+          },
+          {
+            "code": "R07.4",
+            "display": "Brustschmerzen, nicht näher bezeichnet"
+          },
+          {
+            "code": "J02.9",
+            "display": "Akute Pharyngitis, nicht näher bezeichnet"
+          },
+          {
+            "code": "J34.8",
+            "display": "Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen"
+          }
+        ]
+      }
+    ]
+  }
+}

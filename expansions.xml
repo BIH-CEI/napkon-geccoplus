@@ -1,13 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2aa2a832-a616-4708-9215-9ceaaa7d5088"/>
+  <id value="659b306b-96ea-4780-bc3c-763d458157ff"/>
   <meta>
-    <lastUpdated value="2021-11-23T16:07:41.625+00:00"/>
+    <lastUpdated value="2021-12-17T11:18:04.287+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-allergies-sct"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-300910009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009">300910009</a>
+                </td>
+                <td>Allergy to pollen (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-232349006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006">232349006</a>
+                </td>
+                <td>Allergy to house dust (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
+        <version value="0.1.0"/>
+        <name value="AllergiesSCT"/>
+        <title value="Allergies"/>
+        <status value="draft"/>
+        <date value="2021-11-29"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Value set for allergies in the context of GECCO+"/>
+        <expansion>
+          <identifier value="urn:uuid:940c6102-a586-4652-b18f-b65f150e05be"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="300910009"/>
+            <display value="Allergy to pollen (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="232349006"/>
+            <display value="Allergy to house dust (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
     <resource>
       <ValueSet>
         <id value="detected-not-detected-unknown-undetermined"/>
@@ -17,7 +121,7 @@
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -38,7 +142,7 @@
                   <a name="http---snomed.info-sct-260373001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
                 </td>
-                <td>Detected</td>
+                <td>Detected (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
@@ -46,7 +150,7 @@
                   <a name="http---snomed.info-sct-260415000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
                 </td>
-                <td>Not detected</td>
+                <td>Not detected (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
@@ -54,7 +158,7 @@
                   <a name="http---snomed.info-sct-261665006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
                 </td>
-                <td>Unknown</td>
+                <td>Unknown (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
@@ -68,12 +172,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
         <version value="0.1.0"/>
         <name value="DetectedNotDetectedUnknownUndetermined"/>
         <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-11-23T16:07:41+00:00"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -84,8 +188,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:e54c6197-773f-4154-a7b9-4bfd13f3c177"/>
-          <timestamp value="2021-11-23T16:07:51+00:00"/>
+          <identifier value="urn:uuid:88d87a2a-b5c0-4a8a-934c-7258cd39c6b5"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -102,17 +206,17 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="260373001"/>
-            <display value="Detected"/>
+            <display value="Detected (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="260415000"/>
-            <display value="Not detected"/>
+            <display value="Not detected (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="261665006"/>
-            <display value="Unknown"/>
+            <display value="Unknown (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -124,7 +228,2478 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s1-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-11"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11">11</a>
+                </td>
+                <td>I have no problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-12"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12">12</a>
+                </td>
+                <td>I have slight problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-13"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13">13</a>
+                </td>
+                <td>I have moderate problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-14"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14">14</a>
+                </td>
+                <td>I have severe problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-15"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15">15</a>
+                </td>
+                <td>I am unable to walk about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-16"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16">16</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
+        <version value="0.1.0"/>
+        <name value="EQ5DS1Responses"/>
+        <title value="EQ5D section one answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EQ5D section one (agility and mobility) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:d07d3d99-3b9c-4559-ae29-a53e3fc08a4a"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="11"/>
+            <display value="I have no problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="12"/>
+            <display value="I have slight problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="13"/>
+            <display value="I have moderate problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="14"/>
+            <display value="I have severe problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="15"/>
+            <display value="I am unable to walk about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="16"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s2-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-21"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21">21</a>
+                </td>
+                <td>I have no problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-22"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22">22</a>
+                </td>
+                <td>I have slight problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-23"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23">23</a>
+                </td>
+                <td>I have moderate problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-24"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24">24</a>
+                </td>
+                <td>I have severe problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-25"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25">25</a>
+                </td>
+                <td>I am unable to wash or dress myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-26"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26">26</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
+        <version value="0.1.0"/>
+        <name value="EQ5DS2Responses"/>
+        <title value="EQ5D section two answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EQ5D section two (self-sufficiency) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:9fc4162c-0f3d-4600-9d1d-acf53dc3963c"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="21"/>
+            <display value="I have no problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="22"/>
+            <display value="I have slight problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="23"/>
+            <display value="I have moderate problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="24"/>
+            <display value="I have severe problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="25"/>
+            <display value="I am unable to wash or dress myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="26"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s3-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-31"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31">31</a>
+                </td>
+                <td>I have no problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-32"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32">32</a>
+                </td>
+                <td>I have slight problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-33"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33">33</a>
+                </td>
+                <td>I have moderate problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-34"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34">34</a>
+                </td>
+                <td>I have severe problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-35"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35">35</a>
+                </td>
+                <td>I am unable to do my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-36"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36">36</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
+        <version value="0.1.0"/>
+        <name value="EQ5DS3Responses"/>
+        <title value="EQ5D section three answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EQ5D section three (daily activities) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:3cd99543-1bf5-4c6a-b8b7-f0f082d53f0c"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="31"/>
+            <display value="I have no problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="32"/>
+            <display value="I have slight problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="33"/>
+            <display value="I have moderate problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="34"/>
+            <display value="I have severe problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="35"/>
+            <display value="I am unable to do my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="36"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s4-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-41"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41">41</a>
+                </td>
+                <td>I have no pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-42"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42">42</a>
+                </td>
+                <td>I have slight pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-43"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43">43</a>
+                </td>
+                <td>I have moderate pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-44"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44">44</a>
+                </td>
+                <td>I have severe pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-45"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45">45</a>
+                </td>
+                <td>I have extreme pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-46"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46">46</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
+        <version value="0.1.0"/>
+        <name value="EQ5DS4Responses"/>
+        <title value="EQ5D section four answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EQ5D section four (pain and discomfort) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:3b3faf3d-7455-41ea-ab75-123cff7303cd"/>
+          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="41"/>
+            <display value="I have no pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="42"/>
+            <display value="I have slight pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="43"/>
+            <display value="I have moderate pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="44"/>
+            <display value="I have severe pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="45"/>
+            <display value="I have extreme pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="46"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s5-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-51"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51">51</a>
+                </td>
+                <td>I am not anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-52"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52">52</a>
+                </td>
+                <td>I am slightly anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-53"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53">53</a>
+                </td>
+                <td>I am moderately anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-54"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54">54</a>
+                </td>
+                <td>I am severely anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-55"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55">55</a>
+                </td>
+                <td>I am extremely anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-56"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56">56</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
+        <version value="0.1.0"/>
+        <name value="EQ5DS5Responses"/>
+        <title value="EQ5D section five answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EQ5D section five (anxiety and depression) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:cddb4be3-ddce-4a4b-8fb6-7afabc9b1370"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="51"/>
+            <display value="I am not anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="52"/>
+            <display value="I am slightly anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="53"/>
+            <display value="I am moderately anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="54"/>
+            <display value="I am severely anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="55"/>
+            <display value="I am extremely anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="56"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-laboratory-diagnostics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 106 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-70218-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/70218-3.html">70218-3</a>
+                </td>
+                <td>Triglyceride [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-59572-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/59572-8.html">59572-8</a>
+                </td>
+                <td>Triglyceride [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-3043-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/3043-7.html">3043-7</a>
+                </td>
+                <td>Triglyceride [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-14450-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/14450-1.html">14450-1</a>
+                </td>
+                <td>Triglyceride [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-3040-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/3040-3.html">3040-3</a>
+                </td>
+                <td>Lipase [Enzymatic activity/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-10888-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/10888-6.html">10888-6</a>
+                </td>
+                <td>Lipase [Enzymatic activity/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-15212-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/15212-4.html">15212-4</a>
+                </td>
+                <td>Lipase [Enzymatic activity/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-25992-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/25992-9.html">25992-9</a>
+                </td>
+                <td>Lipase [Enzymatic activity/volume] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2951-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/2951-2.html">2951-2</a>
+                </td>
+                <td>Sodium [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-39791-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/39791-9.html">39791-9</a>
+                </td>
+                <td>Sodium [Moles/volume] in Venous blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32717-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/32717-1.html">32717-1</a>
+                </td>
+                <td>Sodium [Moles/volume] in Arterial blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2947-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2947-0.html">2947-0</a>
+                </td>
+                <td>Sodium [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2955-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/2955-3.html">2955-3</a>
+                </td>
+                <td>Sodium [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-72903-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/72903-8.html">72903-8</a>
+                </td>
+                <td>Urea [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-22700-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/22700-9.html">22700-9</a>
+                </td>
+                <td>Urea [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-20977-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/20977-5.html">20977-5</a>
+                </td>
+                <td>Urea [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-3092-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/3092-4.html">3092-4</a>
+                </td>
+                <td>Urea [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-75940-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/75940-7.html">75940-7</a>
+                </td>
+                <td>Potassium [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-87454-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/87454-5.html">87454-5</a>
+                </td>
+                <td>Potassium [Mass/volume] in Specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-6298-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/6298-4.html">6298-4</a>
+                </td>
+                <td>Potassium [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2828-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/2828-2.html">2828-2</a>
+                </td>
+                <td>Potassium [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32713-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/32713-0.html">32713-0</a>
+                </td>
+                <td>Potassium [Moles/volume] in Arterial blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-39790-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/39790-1.html">39790-1</a>
+                </td>
+                <td>Potassium [Moles/volume] in Capillary blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-39789-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/39789-3.html">39789-3</a>
+                </td>
+                <td>Potassium [Moles/volume] in Venous blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2823-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/2823-3.html">2823-3</a>
+                </td>
+                <td>Potassium [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2821-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/2821-7.html">2821-7</a>
+                </td>
+                <td>Potassium [Moles/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32673-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/32673-6.html">32673-6</a>
+                </td>
+                <td>Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-51506-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/51506-4.html">51506-4</a>
+                </td>
+                <td>Creatine kinase.MB [Enzymatic activity/volume] in Cerebral spinal fluid by Electrophoresis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2154-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/2154-3.html">2154-3</a>
+                </td>
+                <td>Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-54370-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/54370-2.html">54370-2</a>
+                </td>
+                <td>Chloride [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2078-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/2078-4.html">2078-4</a>
+                </td>
+                <td>Chloride [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2069-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/2069-3.html">2069-3</a>
+                </td>
+                <td>Chloride [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32307-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/32307-1.html">32307-1</a>
+                </td>
+                <td>Chloride [Moles/volume] in Specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-41650-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/41650-3.html">41650-3</a>
+                </td>
+                <td>Chloride [Moles/volume] in Arterial blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-41649-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/41649-5.html">41649-5</a>
+                </td>
+                <td>Chloride [Moles/volume] in Venous blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2075-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2075-0.html">2075-0</a>
+                </td>
+                <td>Chloride [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-42908-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/42908-4.html">42908-4</a>
+                </td>
+                <td>Hematocrit [Volume Fraction] of Capillary blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-41654-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/41654-5.html">41654-5</a>
+                </td>
+                <td>Hematocrit [Volume Fraction] of Venous blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32354-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/32354-3.html">32354-3</a>
+                </td>
+                <td>Hematocrit [Volume Fraction] of Arterial blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-17809-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/17809-5.html">17809-5</a>
+                </td>
+                <td>Hematocrit [Volume Fraction] of Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-20570-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/20570-8.html">20570-8</a>
+                </td>
+                <td>Hematocrit [Volume Fraction] of Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-27298-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/27298-9.html">27298-9</a>
+                </td>
+                <td>Protein [Units/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21482-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/21482-5.html">21482-5</a>
+                </td>
+                <td>Protein [Mass/volume] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2881-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/2881-1.html">2881-1</a>
+                </td>
+                <td>Protein [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2880-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/2880-3.html">2880-3</a>
+                </td>
+                <td>Protein [Mass/volume] in Cerebral spinal fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2885-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/2885-2.html">2885-2</a>
+                </td>
+                <td>Protein [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2888-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/2888-6.html">2888-6</a>
+                </td>
+                <td>Protein [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5804-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/5804-0.html">5804-0</a>
+                </td>
+                <td>Protein [Mass/volume] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-50561-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/50561-0.html">50561-0</a>
+                </td>
+                <td>Protein [Mass/volume] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2889-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/2889-4.html">2889-4</a>
+                </td>
+                <td>Protein [Mass/time] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2151-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/2151-9.html">2151-9</a>
+                </td>
+                <td>Creatine kinase [Enzymatic activity/volume] in Cerebral spinal fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2157-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/2157-6.html">2157-6</a>
+                </td>
+                <td>Creatine kinase [Enzymatic activity/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-16688-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/16688-4.html">16688-4</a>
+                </td>
+                <td>Creatine kinase [Enzymatic activity/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-1746-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/1746-7.html">1746-7</a>
+                </td>
+                <td>Albumin [Mass/volume] in Cerebral spinal fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-1754-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/1754-1.html">1754-1</a>
+                </td>
+                <td>Albumin [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-1751-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/1751-7.html">1751-7</a>
+                </td>
+                <td>Albumin [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-1747-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/1747-5.html">1747-5</a>
+                </td>
+                <td>Albumin [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-54347-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/54347-0.html">54347-0</a>
+                </td>
+                <td>Albumin [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-76480-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/76480-3.html">76480-3</a>
+                </td>
+                <td>Albumin [Moles/volume] in Cerebral spinal fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2089-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/2089-1.html">2089-1</a>
+                </td>
+                <td>Cholesterol in LDL [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-13457-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/13457-7.html">13457-7</a>
+                </td>
+                <td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-22748-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/22748-8.html">22748-8</a>
+                </td>
+                <td>Cholesterol in LDL [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-18262-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/18262-6.html">18262-6</a>
+                </td>
+                <td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-53133-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/53133-5.html">53133-5</a>
+                </td>
+                <td>Cholesterol in LDL [Moles/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-69419-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/69419-0.html">69419-0</a>
+                </td>
+                <td>Cholesterol in LDL [Moles/volume] in Serum or Plasma by Direct assay</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-96597-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/96597-0.html">96597-0</a>
+                </td>
+                <td>Cholesterol in LDL [Mass/volume] in DBS by Direct assay</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-39469-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/39469-2.html">39469-2</a>
+                </td>
+                <td>Cholesterol in LDL [Moles/volume] in Serum or Plasma by calculation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-53135-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/53135-0.html">53135-0</a>
+                </td>
+                <td>Cholesterol in HDL [Moles/volume] in Dialysis fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-96596-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/96596-2.html">96596-2</a>
+                </td>
+                <td>Cholesterol in HDL [Mass/volume] in DBS</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-54372-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/54372-8.html">54372-8</a>
+                </td>
+                <td>Cholesterol in HDL [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2085-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/2085-9.html">2085-9</a>
+                </td>
+                <td>Cholesterol in HDL [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-50840-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/50840-8.html">50840-8</a>
+                </td>
+                <td>Cholesterol in HDL [Moles/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-14646-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/14646-4.html">14646-4</a>
+                </td>
+                <td>Cholesterol in HDL [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-24467-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/24467-3.html">24467-3</a>
+                </td>
+                <td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8123-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/8123-2.html">8123-2</a>
+                </td>
+                <td>CD3+CD4+ (T4 helper) cells/100 cells in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-14135-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/14135-8.html">14135-8</a>
+                </td>
+                <td>CD3+CD8+ (T8 suppressor cells) cells [#/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8101-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/8101-8.html">8101-8</a>
+                </td>
+                <td>CD3+CD8+ (T8 suppressor cells) cells/100 cells in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21232-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/21232-4.html">21232-4</a>
+                </td>
+                <td>Creatinine [Mass/volume] in Arterial blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-38483-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/38483-4.html">38483-4</a>
+                </td>
+                <td>Creatinine [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-59826-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/59826-8.html">59826-8</a>
+                </td>
+                <td>Creatinine [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-12190-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/12190-5.html">12190-5</a>
+                </td>
+                <td>Creatinine [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-25386-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/25386-4.html">25386-4</a>
+                </td>
+                <td>Creatinine [Moles/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2160-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2160-0.html">2160-0</a>
+                </td>
+                <td>Creatinine [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-14682-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/14682-9.html">14682-9</a>
+                </td>
+                <td>Creatinine [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-24519-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/24519-1.html">24519-1</a>
+                </td>
+                <td>Phosphate [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-13539-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/13539-2.html">13539-2</a>
+                </td>
+                <td>Phosphate [Moles/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2774-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/2774-8.html">2774-8</a>
+                </td>
+                <td>Phosphate [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2778-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/2778-9.html">2778-9</a>
+                </td>
+                <td>Phosphate [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2777-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/2777-1.html">2777-1</a>
+                </td>
+                <td>Phosphate [Mass/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-14879-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/14879-1.html">14879-1</a>
+                </td>
+                <td>Phosphate [Moles/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-25501-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/25501-8.html">25501-8</a>
+                </td>
+                <td>Phosphate [Moles/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-12242-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/12242-4.html">12242-4</a>
+                </td>
+                <td>Phosphate [Mass/volume] in Body fluid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2339-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2339-0.html">2339-0</a>
+                </td>
+                <td>Glucose [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2350-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/2350-7.html">2350-7</a>
+                </td>
+                <td>Glucose [Mass/volume] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-15074-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/15074-8.html">15074-8</a>
+                </td>
+                <td>Glucose [Moles/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-3015-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/3015-5.html">3015-5</a>
+                </td>
+                <td>Thyrotropin [Units/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-3016-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/3016-3.html">3016-3</a>
+                </td>
+                <td>Thyrotropin [Units/volume] in Serum or Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-26998-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/26998-5.html">26998-5</a>
+                </td>
+                <td>Thyrotropin [Units/volume] in Saliva (oral fluid)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-41995-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/41995-2.html">41995-2</a>
+                </td>
+                <td>Hemoglobin A1c [Mass/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-49498-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/49498-9.html">49498-9</a>
+                </td>
+                <td>Leukocytes [#/volume] in Blood by Estimate</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-6690-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/6690-2.html">6690-2</a>
+                </td>
+                <td>Leukocytes [#/volume] in Blood by Automated count</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-804-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/804-5.html">804-5</a>
+                </td>
+                <td>Leukocytes [#/volume] in Blood by Manual count</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-26464-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/26464-8.html">26464-8</a>
+                </td>
+                <td>Leukocytes [#/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-26453-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/26453-1.html">26453-1</a>
+                </td>
+                <td>Erythrocytes [#/volume] in Blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-789-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/789-8.html">789-8</a>
+                </td>
+                <td>Erythrocytes [#/volume] in Blood by Automated count</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-790-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/790-6.html">790-6</a>
+                </td>
+                <td>Erythrocytes [#/volume] in Blood by Manual count</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics"/>
+        <version value="0.1.0"/>
+        <name value="LaboratoryDiagnostics"/>
+        <title value="Laboratory Diagnostics"/>
+        <status value="draft"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Laboratory diagnostics in the context of NAPKON GECCO+ module"/>
+        <expansion>
+          <identifier value="urn:uuid:43370791-3e20-4ca7-939b-f3532682075e"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="106"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="70218-3"/>
+            <display value="Triglyceride [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="59572-8"/>
+            <display value="Triglyceride [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="3043-7"/>
+            <display value="Triglyceride [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14450-1"/>
+            <display value="Triglyceride [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="3040-3"/>
+            <display value="Lipase [Enzymatic activity/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="10888-6"/>
+            <display value="Lipase [Enzymatic activity/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="15212-4"/>
+            <display value="Lipase [Enzymatic activity/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="25992-9"/>
+            <display value="Lipase [Enzymatic activity/volume] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2951-2"/>
+            <display value="Sodium [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="39791-9"/>
+            <display value="Sodium [Moles/volume] in Venous blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32717-1"/>
+            <display value="Sodium [Moles/volume] in Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2947-0"/>
+            <display value="Sodium [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2955-3"/>
+            <display value="Sodium [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="72903-8"/>
+            <display value="Urea [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22700-9"/>
+            <display value="Urea [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="20977-5"/>
+            <display value="Urea [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="3092-4"/>
+            <display value="Urea [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="75940-7"/>
+            <display value="Potassium [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="87454-5"/>
+            <display value="Potassium [Mass/volume] in Specimen"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="6298-4"/>
+            <display value="Potassium [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2828-2"/>
+            <display value="Potassium [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32713-0"/>
+            <display value="Potassium [Moles/volume] in Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="39790-1"/>
+            <display value="Potassium [Moles/volume] in Capillary blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="39789-3"/>
+            <display value="Potassium [Moles/volume] in Venous blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2823-3"/>
+            <display value="Potassium [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2821-7"/>
+            <display value="Potassium [Moles/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32673-6"/>
+            <display value="Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="51506-4"/>
+            <display value="Creatine kinase.MB [Enzymatic activity/volume] in Cerebral spinal fluid by Electrophoresis"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2154-3"/>
+            <display value="Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="54370-2"/>
+            <display value="Chloride [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2078-4"/>
+            <display value="Chloride [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2069-3"/>
+            <display value="Chloride [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32307-1"/>
+            <display value="Chloride [Moles/volume] in Specimen"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="41650-3"/>
+            <display value="Chloride [Moles/volume] in Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="41649-5"/>
+            <display value="Chloride [Moles/volume] in Venous blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2075-0"/>
+            <display value="Chloride [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42908-4"/>
+            <display value="Hematocrit [Volume Fraction] of Capillary blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="41654-5"/>
+            <display value="Hematocrit [Volume Fraction] of Venous blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32354-3"/>
+            <display value="Hematocrit [Volume Fraction] of Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="17809-5"/>
+            <display value="Hematocrit [Volume Fraction] of Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="20570-8"/>
+            <display value="Hematocrit [Volume Fraction] of Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="27298-9"/>
+            <display value="Protein [Units/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21482-5"/>
+            <display value="Protein [Mass/volume] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2881-1"/>
+            <display value="Protein [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2880-3"/>
+            <display value="Protein [Mass/volume] in Cerebral spinal fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2885-2"/>
+            <display value="Protein [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2888-6"/>
+            <display value="Protein [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5804-0"/>
+            <display value="Protein [Mass/volume] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="50561-0"/>
+            <display value="Protein [Mass/volume] in Urine by Automated test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2889-4"/>
+            <display value="Protein [Mass/time] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2151-9"/>
+            <display value="Creatine kinase [Enzymatic activity/volume] in Cerebral spinal fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2157-6"/>
+            <display value="Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="16688-4"/>
+            <display value="Creatine kinase [Enzymatic activity/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="1746-7"/>
+            <display value="Albumin [Mass/volume] in Cerebral spinal fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="1754-1"/>
+            <display value="Albumin [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="1751-7"/>
+            <display value="Albumin [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="1747-5"/>
+            <display value="Albumin [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="54347-0"/>
+            <display value="Albumin [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="76480-3"/>
+            <display value="Albumin [Moles/volume] in Cerebral spinal fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2089-1"/>
+            <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13457-7"/>
+            <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22748-8"/>
+            <display value="Cholesterol in LDL [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="18262-6"/>
+            <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="53133-5"/>
+            <display value="Cholesterol in LDL [Moles/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="69419-0"/>
+            <display value="Cholesterol in LDL [Moles/volume] in Serum or Plasma by Direct assay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96597-0"/>
+            <display value="Cholesterol in LDL [Mass/volume] in DBS by Direct assay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="39469-2"/>
+            <display value="Cholesterol in LDL [Moles/volume] in Serum or Plasma by calculation"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="53135-0"/>
+            <display value="Cholesterol in HDL [Moles/volume] in Dialysis fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96596-2"/>
+            <display value="Cholesterol in HDL [Mass/volume] in DBS"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="54372-8"/>
+            <display value="Cholesterol in HDL [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2085-9"/>
+            <display value="Cholesterol in HDL [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="50840-8"/>
+            <display value="Cholesterol in HDL [Moles/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14646-4"/>
+            <display value="Cholesterol in HDL [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="24467-3"/>
+            <display value="CD3+CD4+ (T4 helper) cells [#/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8123-2"/>
+            <display value="CD3+CD4+ (T4 helper) cells/100 cells in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14135-8"/>
+            <display value="CD3+CD8+ (T8 suppressor cells) cells [#/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8101-8"/>
+            <display value="CD3+CD8+ (T8 suppressor cells) cells/100 cells in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21232-4"/>
+            <display value="Creatinine [Mass/volume] in Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="38483-4"/>
+            <display value="Creatinine [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="59826-8"/>
+            <display value="Creatinine [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="12190-5"/>
+            <display value="Creatinine [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="25386-4"/>
+            <display value="Creatinine [Moles/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2160-0"/>
+            <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14682-9"/>
+            <display value="Creatinine [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="24519-1"/>
+            <display value="Phosphate [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13539-2"/>
+            <display value="Phosphate [Moles/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2774-8"/>
+            <display value="Phosphate [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2778-9"/>
+            <display value="Phosphate [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2777-1"/>
+            <display value="Phosphate [Mass/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14879-1"/>
+            <display value="Phosphate [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="25501-8"/>
+            <display value="Phosphate [Moles/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="12242-4"/>
+            <display value="Phosphate [Mass/volume] in Body fluid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2339-0"/>
+            <display value="Glucose [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2350-7"/>
+            <display value="Glucose [Mass/volume] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="15074-8"/>
+            <display value="Glucose [Moles/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="3015-5"/>
+            <display value="Thyrotropin [Units/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="3016-3"/>
+            <display value="Thyrotropin [Units/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="26998-5"/>
+            <display value="Thyrotropin [Units/volume] in Saliva (oral fluid)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="41995-2"/>
+            <display value="Hemoglobin A1c [Mass/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="49498-9"/>
+            <display value="Leukocytes [#/volume] in Blood by Estimate"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="6690-2"/>
+            <display value="Leukocytes [#/volume] in Blood by Automated count"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="804-5"/>
+            <display value="Leukocytes [#/volume] in Blood by Manual count"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="26464-8"/>
+            <display value="Leukocytes [#/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="26453-1"/>
+            <display value="Erythrocytes [#/volume] in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="789-8"/>
+            <display value="Erythrocytes [#/volume] in Blood by Automated count"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="790-6"/>
+            <display value="Erythrocytes [#/volume] in Blood by Manual count"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-normal-pathologic"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-29458008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008">29458008</a>
+                </td>
+                <td>Pathologic (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-17621005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005">17621005</a>
+                </td>
+                <td>Normal (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
+        <version value="0.1.0"/>
+        <name value="NormalPathologic"/>
+        <title value="Normal Pathologic"/>
+        <status value="draft"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Normal Pathologic"/>
+        <expansion>
+          <identifier value="urn:uuid:fb62cc2c-816c-4223-8278-dc811ae37c05"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="29458008"/>
+            <display value="Pathologic (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17621005"/>
+            <display value="Normal (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-proms-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-61"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61">61</a>
+                </td>
+                <td>No difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-62"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62">62</a>
+                </td>
+                <td>Mild difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-63"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63">63</a>
+                </td>
+                <td>Moderate difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-64"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64">64</a>
+                </td>
+                <td>Severe difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-65"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65">65</a>
+                </td>
+                <td>I haven&#39;t done this in the past 7 days.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-66"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66">66</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
+        <version value="0.1.0"/>
+        <name value="PROMsResponses"/>
+        <title value="Proms in the context of GECCOplus"/>
+        <status value="draft"/>
+        <date value="2021-11-29"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"/>
+        <expansion>
+          <identifier value="urn:uuid:99f61a79-1e95-415e-9dac-0d16f5f5f755"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="61"/>
+            <display value="No difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="62"/>
+            <display value="Mild difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="63"/>
+            <display value="Moderate difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="64"/>
+            <display value="Severe difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="65"/>
+            <display value="I haven&#39;t done this in the past 7 days."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="66"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-positive-negative"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-10828004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004">10828004</a>
+                </td>
+                <td>Positive (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260385009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009">260385009</a>
+                </td>
+                <td>Negative (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
+        <version value="0.1.0"/>
+        <name value="PositiveNegative"/>
+        <title value="Positive Negative Codes"/>
+        <status value="draft"/>
+        <date value="2021-12-07"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Positive / Negative Codes in the context of NAPKON GECCO+ Module"/>
+        <expansion>
+          <identifier value="urn:uuid:fe31cd74-0a1d-48b9-afe1-a0104a5eff1f"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260385009"/>
+            <display value="Negative (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
     <resource>
       <ValueSet>
         <id value="present-not-present-undetermined-other"/>
@@ -134,7 +2709,7 @@
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -179,18 +2754,18 @@
                   <a name="http---snomed.info-sct-74964007"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
                 </td>
-                <td>Other</td>
+                <td>Other (qualifier value)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
         <version value="0.1.0"/>
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-11-23T16:07:41+00:00"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -201,8 +2776,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:d97a2e9f-8e63-41bc-ac1c-48bf5e281c4e"/>
-          <timestamp value="2021-11-23T16:07:52+00:00"/>
+          <identifier value="urn:uuid:d0c51238-65cd-4a6a-ae83-881db89ca328"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -234,14 +2809,14 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="74964007"/>
-            <display value="Other"/>
+            <display value="Other (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
     <resource>
       <ValueSet>
         <id value="restricted-event-status"/>
@@ -304,12 +2879,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
         <version value="0.1.0"/>
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-11-23T16:07:41+00:00"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -320,8 +2895,8 @@
         </contact>
         <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:ec186d04-eae6-4e31-9221-925035150882"/>
-          <timestamp value="2021-11-23T16:07:52+00:00"/>
+          <identifier value="urn:uuid:dccf8c38-58c8-4206-b9c6-8e01fd5c6752"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -356,7 +2931,793 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-school-degree"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-71"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71">71</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Volks-/Hauptschulabschluss</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-72"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72">72</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Realschulabschluss/Mittlere Reife</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-73"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73">73</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Fachhochschulabschluss</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-473461003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003">473461003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Educated to high school level (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-224294005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005">224294005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>No formal education (finding)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
+        <version value="0.1.0"/>
+        <name value="SchoolDegree"/>
+        <title value="School Degree"/>
+        <status value="draft"/>
+        <date value="2021-10-11"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Value set of school degrees"/>
+        <expansion>
+          <identifier value="urn:uuid:b81e8a4d-8f8c-46eb-8b7e-ba7fa85c990f"/>
+          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="71"/>
+            <display value="Volks-/Hauptschulabschluss"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="72"/>
+            <display value="Realschulabschluss/Mittlere Reife"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="73"/>
+            <display value="Fachhochschulabschluss"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="473461003"/>
+            <display value="Educated to high school level (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224294005"/>
+            <display value="No formal education (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-symptoms-sct"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-68962001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
+                </td>
+                <td>Muscle pain (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-404640003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003">404640003</a>
+                </td>
+                <td>Dizziness (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-29857009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009">29857009</a>
+                </td>
+                <td>Chest pain (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-405737000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000">405737000</a>
+                </td>
+                <td>Pharyngitis (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-64531003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003">64531003</a>
+                </td>
+                <td>Nasal discharge (finding)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
+        <version value="0.1.0"/>
+        <name value="SymptomsSCT"/>
+        <title value="Symptoms"/>
+        <status value="draft"/>
+        <date value="2021-11-29"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Value set for symptoms in the context of GECCO+"/>
+        <expansion>
+          <identifier value="urn:uuid:256630b5-4fe6-4ec0-a3fd-e55105f1e5da"/>
+          <timestamp value="2021-12-17T11:18:35+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68962001"/>
+            <display value="Muscle pain (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="404640003"/>
+            <display value="Dizziness (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="29857009"/>
+            <display value="Chest pain (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="405737000"/>
+            <display value="Pharyngitis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="64531003"/>
+            <display value="Nasal discharge (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urine-diagnostics"/>
+    <resource>
+      <ValueSet>
+        <id value="urine-diagnostics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 15 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-33903-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/33903-6.html">33903-6</a>
+                </td>
+                <td>Ketones [Presence] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-33043-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/33043-1.html">33043-1</a>
+                </td>
+                <td>Ketones [Presence] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2514-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/2514-8.html">2514-8</a>
+                </td>
+                <td>Ketones [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-57734-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/57734-6.html">57734-6</a>
+                </td>
+                <td>Ketones [Presence] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2349-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/2349-9.html">2349-9</a>
+                </td>
+                <td>Glucose [Presence] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32174-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/32174-5.html">32174-5</a>
+                </td>
+                <td>Glucose [Presence] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-25428-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/25428-4.html">25428-4</a>
+                </td>
+                <td>Glucose [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-50555-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/50555-2.html">50555-2</a>
+                </td>
+                <td>Glucose [Presence] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32710-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/32710-6.html">32710-6</a>
+                </td>
+                <td>Nitrite [Presence] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5802-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/5802-4.html">5802-4</a>
+                </td>
+                <td>Nitrite [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-50558-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/50558-6.html">50558-6</a>
+                </td>
+                <td>Nitrite [Presence] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2887-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/2887-8.html">2887-8</a>
+                </td>
+                <td>Protein [Presence] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-20454-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/20454-5.html">20454-5</a>
+                </td>
+                <td>Protein [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32209-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/32209-9.html">32209-9</a>
+                </td>
+                <td>Protein [Presence] in 24 hour Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-57735-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/57735-3.html">57735-3</a>
+                </td>
+                <td>Protein [Presence] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/urine-diagnostics"/>
+        <version value="0.1.0"/>
+        <name value="UrineDiagnostics"/>
+        <title value="Urine Diagnostics"/>
+        <status value="draft"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Urine diagnostic codes in the context of NAPKON GECCO+ module"/>
+        <expansion>
+          <identifier value="urn:uuid:d8f7a15d-7c5e-47d8-904b-0aa5dbaacc49"/>
+          <timestamp value="2021-12-17T11:18:35+00:00"/>
+          <total value="15"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="33903-6"/>
+            <display value="Ketones [Presence] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="33043-1"/>
+            <display value="Ketones [Presence] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2514-8"/>
+            <display value="Ketones [Presence] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="57734-6"/>
+            <display value="Ketones [Presence] in Urine by Automated test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2349-9"/>
+            <display value="Glucose [Presence] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32174-5"/>
+            <display value="Glucose [Presence] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="25428-4"/>
+            <display value="Glucose [Presence] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="50555-2"/>
+            <display value="Glucose [Presence] in Urine by Automated test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32710-6"/>
+            <display value="Nitrite [Presence] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5802-4"/>
+            <display value="Nitrite [Presence] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="50558-6"/>
+            <display value="Nitrite [Presence] in Urine by Automated test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2887-8"/>
+            <display value="Protein [Presence] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="20454-5"/>
+            <display value="Protein [Presence] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32209-9"/>
+            <display value="Protein [Presence] in 24 hour Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="57735-3"/>
+            <display value="Protein [Presence] in Urine by Automated test strip"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
+    <resource>
+      <ValueSet>
+        <id value="urine-specific-gravity"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2965-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/2965-2.html">2965-2</a>
+                </td>
+                <td>Specific gravity of Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2966-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2966-0.html">2966-0</a>
+                </td>
+                <td>Specific gravity of 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5810-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/5810-7.html">5810-7</a>
+                </td>
+                <td>Specific gravity of Urine by Refractometry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-44933-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/44933-0.html">44933-0</a>
+                </td>
+                <td>Specific gravity of 24 hour Urine by Refractometry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5811-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/5811-5.html">5811-5</a>
+                </td>
+                <td>Specific gravity of Urine by Test strip</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
+        <version value="0.1.0"/>
+        <name value="UrineSpecificGravity"/>
+        <title value="Urine Specific Gravity"/>
+        <status value="draft"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Specific gravity of urine"/>
+        <expansion>
+          <identifier value="urn:uuid:c2e4f65c-6754-4399-8050-5b3972b1b0e8"/>
+          <timestamp value="2021-12-17T11:18:35+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2965-2"/>
+            <display value="Specific gravity of Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2966-0"/>
+            <display value="Specific gravity of 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5810-7"/>
+            <display value="Specific gravity of Urine by Refractometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="44933-0"/>
+            <display value="Specific gravity of 24 hour Urine by Refractometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5811-5"/>
+            <display value="Specific gravity of Urine by Test strip"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
+    <resource>
+      <ValueSet>
+        <id value="urobilinogen-diagnostics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-13658-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/13658-0.html">13658-0</a>
+                </td>
+                <td>Urobilinogen [Presence] in Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-12269-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/12269-7.html">12269-7</a>
+                </td>
+                <td>Urobilinogen [Presence] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5818-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/5818-0.html">5818-0</a>
+                </td>
+                <td>Urobilinogen [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-62487-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/62487-4.html">62487-4</a>
+                </td>
+                <td>Urobilinogen [Presence] in Urine by Automated test strip</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
+        <version value="0.1.0"/>
+        <name value="UrobilinogenDiagnostics"/>
+        <title value="Urobilinogen Diagnostics"/>
+        <status value="draft"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <name value="Charité - Universitätsmedizin Berlin"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Urobilinogen diagnostics in the context of NAPKON GECCO+ module"/>
+        <expansion>
+          <identifier value="urn:uuid:d4541d47-63cc-43ba-a383-9b34e88fa518"/>
+          <timestamp value="2021-12-17T11:18:35+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13658-0"/>
+            <display value="Urobilinogen [Presence] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="12269-7"/>
+            <display value="Urobilinogen [Presence] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5818-0"/>
+            <display value="Urobilinogen [Presence] in Urine by Test strip"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="62487-4"/>
+            <display value="Urobilinogen [Presence] in Urine by Automated test strip"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
     <resource>
       <ValueSet>
         <id value="yes-no-unknown"/>
@@ -366,7 +3727,7 @@
             <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -403,18 +3764,18 @@
                   <a name="http---snomed.info-sct-261665006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
                 </td>
-                <td>Unknown</td>
+                <td>Unknown (qualifier value)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
         <version value="0.1.0"/>
         <name value="YesNoUnknown"/>
         <title value="Yes No Unknown"/>
         <status value="active"/>
-        <date value="2021-11-23T16:07:41+00:00"/>
+        <date value="2021-12-17T11:18:04+00:00"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
           <name value="Charité - Universitätsmedizin Berlin"/>
@@ -425,8 +3786,8 @@
         </contact>
         <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:237c79f0-a762-43e6-9394-7387b4fd8a55"/>
-          <timestamp value="2021-11-23T16:07:52+00:00"/>
+          <identifier value="urn:uuid:e165d6e7-59f2-41f4-a312-4c0a77452b81"/>
+          <timestamp value="2021-12-17T11:18:36+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -453,7 +3814,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="261665006"/>
-            <display value="Unknown"/>
+            <display value="Unknown (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>

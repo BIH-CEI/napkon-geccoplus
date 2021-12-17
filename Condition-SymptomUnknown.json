@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "SymptomUnknown",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 75325-1}\">Symptom</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 405737000}\">Pharyngitis (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: 2021-11-29</p></div>"
+  },
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "75325-1",
+          "display": "Symptom"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "405737000",
+        "display": "Pharyngitis (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "recordedDate": "2021-11-29"
+}

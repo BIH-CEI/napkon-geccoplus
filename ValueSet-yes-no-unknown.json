@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001\">373066001</a></td><td>Yes (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>No (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+  "url": "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
   "version": "0.1.0",
   "name": "YesNoUnknown",
   "title": "Yes No Unknown",
   "status": "active",
-  "date": "2021-11-23T16:07:41+00:00",
+  "date": "2021-12-17T11:18:04+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
