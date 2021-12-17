@@ -7,14 +7,6 @@ input-cache
 fsh-generated
 *-generated.md
 
-# Temporary folders #
-#####################
-temp
-template
-output
-input-cache
-fsh-generated
-
 # IG publisher files #
 ###########################################
 validator_cli.jar
@@ -35,28 +27,6 @@ Thumbs.db
 
 # nodejs files/directories
 ###########################
-package.json
-package-lock.json
-node_modules/
-
-# cache folders
-###########################
-__pycache__/
-
-# OS generated files #
-###########################
-.DS_Store
-Thumbs.db
-
-# IDE folders and files
-###########################
-.vscode
-*.code-workspace
-.idea
-
-# nodejs files/directories
-###########################
-package.json
 package-lock.json
 node_modules/
 

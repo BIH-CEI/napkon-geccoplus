@@ -5,7 +5,7 @@ Parent: Observation
 Id: geccoplus-urine-specific-gravity
 Title: "Urine Specific Gravity"
 Description: "Specific gravity of urine"
-* insert napkon-metadata(2021-12-06, #draft, 0.1.0)
+* insert napkon-metadata(2021-12-06, #active, 1.0.0)
 * insert mii-patient-reference
 * obeys value-or-data-absent-reason
 * status MS

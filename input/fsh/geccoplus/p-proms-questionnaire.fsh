@@ -5,7 +5,7 @@ InstanceOf: Questionnaire
 Usage: #definition
 Title: "PROMs Questionnaire"
 Description: "PROMs questionnaire in the context of GECCO+"
-* insert napkon-metadata-instance(2021-11-29, #draft, 0.1.0)
+* insert napkon-metadata-instance(2021-11-29, #active, 1.0.0)
 * url = $proms-questionaire-url
 * name = "PROMsQuestionnaire"
 * status = #active
@@ -55,7 +55,7 @@ Parent: QuestionnaireResponse
 Id: geccoplus-proms-response
 Title: "PROMS Response"
 Description: "Response to the PROMs questionnaire"
-* insert napkon-metadata(2021-11-30, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-30, #active, 1.0.0)
 * insert mii-patient-reference
 * questionnaire 1..1
 * questionnaire = $proms-questionaire-url

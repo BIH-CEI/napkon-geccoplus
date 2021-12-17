@@ -1,0 +1,13 @@
+{
+  "name": "napkon.de.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "NAPKON template extension for FHIR IG",
+  "author": "NAPKON",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current",
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}

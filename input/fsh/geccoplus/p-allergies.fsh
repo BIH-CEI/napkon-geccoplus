@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: geccoplus-allergy
 Title: "Allergies"
 Description: "Profile for allergies in the context of GECCO+"
-* insert napkon-metadata(2021-11-29, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-29, #active, 1.0.0)
 * category 1.. MS
   * coding MS
   * coding ^slicing.discriminator.type = #pattern

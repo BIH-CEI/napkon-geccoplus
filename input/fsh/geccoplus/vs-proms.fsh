@@ -2,9 +2,9 @@
 // Charité - Universitätsmedizin Berlin
 ValueSet: PROMsResponses
 Id: geccoplus-proms-responses
-Title: "Proms in the context of GECCOplus"
-Description: "Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"
-* insert napkon-metadata(2021-11-29, #draft, 0.1.0)
+Title: "PROM responses in the context of GECCOplus"
+Description: "Response codes for PROMs of GECCOplus"
+* insert napkon-metadata(2021-11-29, #active, 1.0.0)
 * $ngp#61 "No difficulties."
 * $ngp#62 "Mild difficulties."
 * $ngp#63 "Moderate difficulties."

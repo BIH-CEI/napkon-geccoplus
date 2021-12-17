@@ -5,7 +5,7 @@ Parent: Observation
 Id: geccoplus-urine-urobilinogen
 Title: "Urine Urobilinogen"
 Description: "Urine urobilinogen"
-* insert napkon-metadata(2021-12-01, #draft, 0.1.0)
+* insert napkon-metadata(2021-12-01, #active, 1.0.0)
 * insert mii-patient-reference
 * status MS
 * category 1..* MS

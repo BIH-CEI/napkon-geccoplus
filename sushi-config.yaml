@@ -5,8 +5,9 @@
 id: "napkon-geccoplus"
 canonical: "https://www.napkon.de/fhir"
 name: "napkon-geccoplus"
-status: "draft"
-version: "0.1.0"
+title: "NAPKON GECCO+"
+status: "active"
+version: "1.0.0"
 fhirVersion: "4.0.1"
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -36,9 +37,60 @@ dependencies:
     uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
     version: 1.0.3
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: NAPKON GECCO+
+  profiles.md:
+  codesystems.md:
+    title: Code Systems
+  valuesets.md:
+    title: Value Sets
+  extensions.md:
+  examples.md:
+  downloads.xml:
+  changelog.md:
+    title: Change Log
+  artifacts.html:
+    title: Artifacts
+    cardio-investigation.md:
+      title: Electrocardiography
+    gecco-heart-rate.md:
+      title: Heart Rate
+    cardio-av-block.md:
+      title: Atrioventricular Block
+    cardio-bundle-branch-block.md:
+      title: Bundle Branch Block
+    cardio-left-ventricular-ejection-fraction.md:
+      title: Left Ventricular Ejection Fraction
+    cardio-echocardiography-findings.md:
+      title: Echocardiography Findings
+    mii-laboratory.md:
+      title: Laboratory Diagnostics
+
+
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Profiles: profiles.html
+  Code Systems: codesystems.html
+  Value Sets: valuesets.html
+  Examples: examples.html
+  Downloads: downloads.html
+  Change Log: changelog.html
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  active-tables: 'true' # Whether to generate active tables in the generated fragments (tables that will expand and contract).
+  apply-contact: 'false' # if true, overwrite all canonical resource contact details with that found in the IG.
+  apply-jurisdiction: 'false' # if true, overwrite all canonical resource jurisidiction details with that found in the IG.
+  apply-publisher: 'false' # if true, overwrite all canonical resource publisher details with that found in the IG.
+  apply-version: 'false' # if true, overwrite all canonical resource version details with that found in the IG.  Default = false
+  show-inherited-invariants: 'false' # If true, render inherited constraints in the full details and invariants view. Default = true
+  usage-stats-opt-out: 'true' # If true, usage stats (information about extensions, value sets, and invariants being used) is not sent to fhir.org (see e.g. http://clinfhir.com/igAnalysis.html).
+  excludexml: 'false' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludejsn: 'false' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludettl: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludemap: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludeexample: 'true'
+  extension-domain: # An external domain fro which extensions are allowed to come (else they'll be flagged as invalid when validating).
+  - https://www.netzwerk-universitaetsmedizin.de
+  - https://napkon.de
+  - https://simplifier.net
