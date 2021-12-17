@@ -6,17 +6,14 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Urobilinogen diagnostic | `Observation.valueCodeableConcept` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Pathologisch | `Pathologic (qualifier value)` |
+| Normal | `Normal (qualifier value)` |
 {:.grid}
 
 

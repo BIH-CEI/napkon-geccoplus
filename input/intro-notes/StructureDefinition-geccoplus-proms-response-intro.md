@@ -3,21 +3,9 @@
 {% assign resource = site.data.structuredefinitions.[id] %}
 
 ### Guidance
+This profile is used to instantiate answers to the [PROMs Questionnaire][PROMs Questionnaire].
 
-| Parameter Case Report Form | FHIR Resource Attribute |
-| -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
+{% include questionnaire-proms-inline.md %}
 
 
 {% capture resource_inheritance %}

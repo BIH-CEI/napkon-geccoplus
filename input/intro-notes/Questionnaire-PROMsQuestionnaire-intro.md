@@ -4,20 +4,9 @@
 
 ### Guidance
 
+See the [PROMS Response profile][PROMS Response] for the response profile to this questionnaire.
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| Ketones (urine diagnostics) | Positive / Negative |
-| Glucose (urine diagnostics) | Positive / Negative |
-| Nitrite (urine diagnostics) | Positive / Negative |
-| Proteins (urine diagnostics) | Positive / Negative |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| Positive | `Positive (qualifier value)` |
-| Negative | `Negative (qualifier value)` |
-{:.grid}
+{% include questionnaire-proms-inline.md %}
 
 
 {% capture resource_inheritance %}

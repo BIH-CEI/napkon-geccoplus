@@ -6,17 +6,20 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Welchen höchsten allgemeinbildenden Schulabschluss haben Sie? | `Observation.code` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
 
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
+Please note: The response options are currently under review and may change.
+{:.stu-note}
+
+| Response Option | Code | CodeSystem |
+| ------ | ---- | ---------- |
+| Volks-/Hauptschulabschluss | `#71 "Volks-/Hauptschulabschluss"` | [NAPKON GECCOplus][CodeSystem NAPKON GECCOplus] |
+| Realschulabschluss/Mittlere Reife	| `#72 "Realschulabschluss/Mittlere Reife"` | [NAPKON GECCOplus][CodeSystem NAPKON GECCOplus] |
+| Fachhochschulabschluss| `#73 "Fachhochschulabschluss"` | [NAPKON GECCOplus][CodeSystem NAPKON GECCOplus] |
+| Educated to high school level (finding)	| `#473461003 "Educated to high school level (finding)"` | [SNOMED CT][SNOMEDCT] |
+| No formal education (finding) | `#224294005 "No formal education (finding)"` | [SNOMED CT][SNOMEDCT] |
 {:.grid}
 
 

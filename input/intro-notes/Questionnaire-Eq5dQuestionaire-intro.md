@@ -4,20 +4,9 @@
 
 ### Guidance
 
+See the [EQ5D Questionnaire Response profile][EQ5D Questionnaire Response] for the response profile to this questionnaire.
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| Ketones (urine diagnostics) | Positive / Negative |
-| Glucose (urine diagnostics) | Positive / Negative |
-| Nitrite (urine diagnostics) | Positive / Negative |
-| Proteins (urine diagnostics) | Positive / Negative |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| Positive | `Positive (qualifier value)` |
-| Negative | `Negative (qualifier value)` |
-{:.grid}
+{% include questionnaire-eq5d-inline.md %}
 
 
 {% capture resource_inheritance %}

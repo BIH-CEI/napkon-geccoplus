@@ -1,6 +1,8 @@
 #### Allergies & Symptoms
-{% include valueset-reference.md name='Allergies' %}
-{% include valueset-reference.md name='Symptoms' %}
+{% include valueset-reference.md name='Allergies (ICD-10-GM)' %}
+{% include valueset-reference.md name='Allergies (SNOMED CT)' %}
+{% include valueset-reference.md name='Symptoms (ICD-10-GM)' %}
+{% include valueset-reference.md name='Symptoms (SNOMED CT)' %}
 
 #### Questionnaires
 {% include valueset-reference.md name='EQ5D section one answers' %}
@@ -8,8 +10,7 @@
 {% include valueset-reference.md name='EQ5D section three answers' %}
 {% include valueset-reference.md name='EQ5D section four answers' %}
 {% include valueset-reference.md name='EQ5D section five answers' %}
-{% include valueset-reference.md name='EQ5D Questionnaire Response' %}
-{% include valueset-reference.md name='Proms in the context of GECCOplus' %}
+{% include valueset-reference.md name='PROM responses in the context of GECCOplus' %}
 {% include valueset-reference.md name='School Degree' %}
 
 #### Urine Diagnostics
@@ -20,7 +21,7 @@
 #### Laboratory Diagnostics
 {% include valueset-reference.md name='Laboratory Diagnostics' %}
 
-#### General
+#### Other
 {% include valueset-reference.md name='Yes No Unknown' %}
 {% include valueset-reference.md name='Detected Not Detected Unknown Undetermined' %}
 {% include valueset-reference.md name='Normal Pathologic' %}

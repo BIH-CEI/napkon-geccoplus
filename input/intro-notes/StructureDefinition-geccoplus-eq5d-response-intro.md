@@ -4,20 +4,9 @@
 
 ### Guidance
 
-| Parameter Case Report Form | FHIR Resource Attribute |
-| -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
+This profile is used to instantiate answers to the [EQ-5D Questionnaire][EQ-5D Questionnaire].
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
+{% include questionnaire-eq5d-inline.md %}
 
 
 {% capture resource_inheritance %}

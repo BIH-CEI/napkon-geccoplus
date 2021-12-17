@@ -6,6 +6,19 @@
 [Urine Diagnostics]: StructureDefinition-geccoplus-urine-diagnostics.html
 [Urine Specific Gravity]: StructureDefinition-geccoplus-urine-specific-gravity.html
 [Urine Urobilinogen]: StructureDefinition-geccoplus-urine-urobilinogen.html
+[EQ-5D Questionnaire]: Questionnaire-Eq5dQuestionaire.html
+[PROMs Questionnaire]: Questionnaire-PROMsQuestionnaire.html
+
+[CodeSystem NAPKON GECCOplus]: CodeSystem-geccoplus-codesystem.html
+
+[Cardio AV Block]: https://bih-cei.github.io/napkon-cardiology/StructureDefinition-ecg-atrioventricular-block.html
+[Cardio Bundle Branch Block]: https://bih-cei.github.io/napkon-cardiology/StructureDefinition-ecg-bundle-branch-block.html
+[Cardio Investigation]: https://bih-cei.github.io/napkon-cardiology/StructureDefinition-cardiovascular-investigation.html
+[Cardio LVEF]: https://bih-cei.github.io/napkon-cardiology/StructureDefinition-left-ventricular-ejection-fraction.html
+[Cardio Echo Findings]: https://bih-cei.github.io/napkon-cardiology/StructureDefinition-echocardiography-findings.html
+
+[GECCO Heart Rate canonical]: https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate
+[GECCO Heart Rate IG]: https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/Heartrate-duplicate-2
 
 [GECCO]: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/home
 [NAPKON]: https://napkon.de/

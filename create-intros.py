@@ -108,7 +108,7 @@ for resource in ig["definition"]["resource"]:
     if ref.startswith('ValueSet/'):
         linklist_vs[resource["name"]] = ref.replace('/', '-') + '.html'
 
-    if not ref.startswith('StructureDefinition/'):
+    if not ref.startswith('StructureDefinition/') and not ref.startswith('Questionnaire/'):
       continue
 
     fname = output_path / (ref.replace('/', '-') + '-intro.md')
@@ -136,12 +136,17 @@ print(profiles_fname.name)
 with open(profiles_fname, 'w') as f:
     f.write('### Profiles\n\n')
     for name in linklist:
-        f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+        if linklist[name].split('-')[0] == 'Questionnaire':
+            resource_type = 'questionnaire'
+        else:
+            resource_type = 'profile'
+
+        f.write(f"{{% include  {resource_type}-reference.md name='{name}' %}}\n")
 
 print(valuesets_fname.name)
 with open(valuesets_fname, "w") as f:
     f.write('### Value Sets\n\n')
     for name in linklist_vs:
-        f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+        f.write(f"{{% include valueset-reference.md name='{name}' %}}\n")
 
 print("Done")

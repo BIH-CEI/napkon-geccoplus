@@ -4,19 +4,20 @@
 
 ### Guidance
 
+This profile encodes additional symptoms of COVID-19 infections.
+
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| Symptom | `Condition.code` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Myalgie | `Muscle pain (finding)` |
+| Schwindel | `Dizziness (finding)` |
+| Brustschmerzen | `Chest pain (finding)` |
+| Pharyngitis | `Pharyngitis (disorder)` |
+| Laufende Nase | `Nasal discharge (finding)` |
 {:.grid}
 
 

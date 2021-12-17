@@ -4,19 +4,9 @@
 
 ### Guidance
 
-| Parameter Case Report Form | FHIR Resource Attribute |
-| -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
+| Parameter Case Report Form | FHIR Resource Attribute | Response Option |
+| -------------------------- | ----------------------- | ------------ |
+| Spezifisches Uringewicht | `Observation.valueQuantity` or `Observation.valueRange` | _Urine specific gravity as explicit value_ |
 {:.grid}
 
 

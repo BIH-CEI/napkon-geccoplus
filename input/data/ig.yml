@@ -32,6 +32,31 @@ definition:
     - generation: markdown
       nameUrl: changelog.html
       title: Change Log
+    - generation: html
+      nameUrl: artifacts.html
+      page:
+      - generation: markdown
+        nameUrl: cardio-investigation.html
+        title: Electrocardiography
+      - generation: markdown
+        nameUrl: gecco-heart-rate.html
+        title: Heart Rate
+      - generation: markdown
+        nameUrl: cardio-av-block.html
+        title: Atrioventricular Block
+      - generation: markdown
+        nameUrl: cardio-bundle-branch-block.html
+        title: Bundle Branch Block
+      - generation: markdown
+        nameUrl: cardio-left-ventricular-ejection-fraction.html
+        title: Left Ventricular Ejection Fraction
+      - generation: markdown
+        nameUrl: cardio-echocardiography-findings.html
+        title: Echocardiography Findings
+      - generation: markdown
+        nameUrl: mii-laboratory.html
+        title: Laboratory Diagnostics
+      title: Artifacts
     title: Table of Contents
   parameter:
   - code: copyrightyear
@@ -109,14 +134,14 @@ definition:
     name: Urine Urobilinogen
     reference:
       reference: StructureDefinition/geccoplus-urine-urobilinogen
-  - description: Value set for allergies in the context of GECCO+
+  - description: Value set for allergies in the context of GECCO+ (ICD-10-GM)
     exampleBoolean: false
-    name: Allergies
+    name: Allergies (ICD-10-GM)
     reference:
       reference: ValueSet/geccoplus-allergies-icd
-  - description: Value set for allergies in the context of GECCO+
+  - description: Value set for allergies in the context of GECCO+ (SNOMED CT)
     exampleBoolean: false
-    name: Allergies
+    name: Allergies (SNOMED CT)
     reference:
       reference: ValueSet/geccoplus-allergies-sct
   - description: Values for laboratory observations
@@ -159,10 +184,9 @@ definition:
     name: Normal Pathologic
     reference:
       reference: ValueSet/geccoplus-normal-pathologic
-  - description: Manuell code system for proms in order to be able to specify codes
-      which are currently not assigned to any terminology
+  - description: Response codes for PROMs of GECCOplus
     exampleBoolean: false
-    name: Proms in the context of GECCOplus
+    name: PROM responses in the context of GECCOplus
     reference:
       reference: ValueSet/geccoplus-proms-responses
   - description: Positive / Negative Codes in the context of NAPKON GECCO+ Module
@@ -186,14 +210,14 @@ definition:
     name: School Degree
     reference:
       reference: ValueSet/geccoplus-school-degree
-  - description: Value set for symptoms in the context of GECCO+
+  - description: Value set for symptoms in the context of GECCO+ (ICD-10-GM)
     exampleBoolean: false
-    name: Symptoms
+    name: Symptoms (ICD-10-GM)
     reference:
       reference: ValueSet/geccoplus-symptoms-icd
-  - description: Value set for symptoms in the context of GECCO+
+  - description: Value set for symptoms in the context of GECCO+ (SNOMED CT)
     exampleBoolean: false
-    name: Symptoms
+    name: Symptoms (SNOMED CT)
     reference:
       reference: ValueSet/geccoplus-symptoms-sct
   - description: Urine diagnostic codes in the context of NAPKON GECCO+ module
