@@ -6,17 +6,14 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Which allergies does the patient have? | `Condition.code` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
+| Response Option | `Condition.code.coding` | `Condition.code.text` |
+| ------ | ---- | ---- |
+| Heufieber (Pollenallergie) | `Allergy to pollen (finding)` | - |
+| Hausstauballergie | `Allergy to house dust (finding)` | - |
+| Andere Allergie | `Other (qualifier value)` | _free text representation_ |
 {:.grid}
 
 

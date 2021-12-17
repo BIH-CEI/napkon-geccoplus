@@ -50,6 +50,23 @@ pages:
   downloads.xml:
   changelog.md:
     title: Change Log
+  artifacts.html:
+    title: Artifacts
+    cardio-investigation.md:
+      title: Electrocardiography
+    gecco-heart-rate.md:
+      title: Heart Rate
+    cardio-av-block.md:
+      title: Atrioventricular Block
+    cardio-bundle-branch-block.md:
+      title: Bundle Branch Block
+    cardio-left-ventricular-ejection-fraction.md:
+      title: Left Ventricular Ejection Fraction
+    cardio-echocardiography-findings.md:
+      title: Echocardiography Findings
+    mii-laboratory.md:
+      title: Laboratory Diagnostics
+
 
 menu:
   Home: index.html
