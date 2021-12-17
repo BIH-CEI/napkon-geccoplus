@@ -22,7 +22,7 @@ Description: "Highest school degree in the context of GECCO+"
   * coding ^slicing.rules = #open
   * coding contains
     loinc 1..*
-  * coding[loinc] = $loinc#63504-5 "What is the highest grade or level of school you have completed or the highest degree you have received [NHANES]"
+  * coding[loinc] = $loinc#82589-3 "Highest level of education"
   * coding[loinc].system 1..
   * coding[loinc].code 1..
 * value[x] only CodeableConcept
