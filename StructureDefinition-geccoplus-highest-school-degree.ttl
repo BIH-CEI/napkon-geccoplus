@@ -23,19 +23,18 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0"];
   fhir:StructureDefinition.name [ fhir:value "HighestSchoolDegree"];
   fhir:StructureDefinition.title [ fhir:value "Highest school degree"];
-  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2021-10-11"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Highest school degree in the context of GECCO+"];

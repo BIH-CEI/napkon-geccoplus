@@ -16,17 +16,16 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="PROMsResponse"/>
   <title value="PROMS Response"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-11-30"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <description value="Response to the PROMs questionnaire"/>

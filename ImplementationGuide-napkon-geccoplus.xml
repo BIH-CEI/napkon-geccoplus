@@ -6,10 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>
   </text>
   <url value="https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="napkongeccoplus"/>
-  <status value="draft"/>
-  <date value="2021-12-17T11:18:04+00:00"/>
+  <title value="NAPKON GECCO+"/>
+  <status value="active"/>
+  <date value="2021-12-17T13:44:29+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -71,6 +72,134 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludejsn"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludeexample"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.netzwerk-universitaetsmedizin.de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://napkon.de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://simplifier.net"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -147,14 +276,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -171,39 +292,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="active-tables"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -304,8 +393,8 @@
       <reference>
         <reference value="ValueSet/geccoplus-allergies-icd"/>
       </reference>
-      <name value="Allergies"/>
-      <description value="Value set for allergies in the context of GECCO+"/>
+      <name value="Allergies (ICD-10-GM)"/>
+      <description value="Value set for allergies in the context of GECCO+ (ICD-10-GM)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -315,8 +404,8 @@
       <reference>
         <reference value="ValueSet/geccoplus-allergies-sct"/>
       </reference>
-      <name value="Allergies"/>
-      <description value="Value set for allergies in the context of GECCO+"/>
+      <name value="Allergies (SNOMED CT)"/>
+      <description value="Value set for allergies in the context of GECCO+ (SNOMED CT)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -414,8 +503,8 @@
       <reference>
         <reference value="ValueSet/geccoplus-proms-responses"/>
       </reference>
-      <name value="Proms in the context of GECCOplus"/>
-      <description value="Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"/>
+      <name value="PROM responses in the context of GECCOplus"/>
+      <description value="Response codes for PROMs of GECCOplus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -469,8 +558,8 @@
       <reference>
         <reference value="ValueSet/geccoplus-symptoms-icd"/>
       </reference>
-      <name value="Symptoms"/>
-      <description value="Value set for symptoms in the context of GECCO+"/>
+      <name value="Symptoms (ICD-10-GM)"/>
+      <description value="Value set for symptoms in the context of GECCO+ (ICD-10-GM)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -480,8 +569,8 @@
       <reference>
         <reference value="ValueSet/geccoplus-symptoms-sct"/>
       </reference>
-      <name value="Symptoms"/>
-      <description value="Value set for symptoms in the context of GECCO+"/>
+      <name value="Symptoms (SNOMED CT)"/>
+      <description value="Value set for symptoms in the context of GECCO+ (SNOMED CT)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -732,8 +821,83 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="NAPKON GECCO+"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="codesystems.html"/>
+        <title value="Code Systems"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="valuesets.html"/>
+        <title value="Value Sets"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changelog.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="cardio-investigation.html"/>
+          <title value="Electrocardiography"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="gecco-heart-rate.html"/>
+          <title value="Heart Rate"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="cardio-av-block.html"/>
+          <title value="Atrioventricular Block"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="cardio-bundle-branch-block.html"/>
+          <title value="Bundle Branch Block"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="cardio-left-ventricular-ejection-fraction.html"/>
+          <title value="Left Ventricular Ejection Fraction"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="cardio-echocardiography-findings.html"/>
+          <title value="Echocardiography Findings"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="mii-laboratory.html"/>
+          <title value="Laboratory Diagnostics"/>
+          <generation value="markdown"/>
+        </page>
       </page>
     </page>
     <parameter>

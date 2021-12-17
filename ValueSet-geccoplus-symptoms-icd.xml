@@ -6,20 +6,19 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M79.19</td><td>Myalgie: Nicht näher bezeichnete Lokalisation</td></tr><tr><td>R42</td><td>Schwindel und Taumel</td></tr><tr><td>R07.4</td><td>Brustschmerzen, nicht näher bezeichnet</td></tr><tr><td>J02.9</td><td>Akute Pharyngitis, nicht näher bezeichnet</td></tr><tr><td>J34.8</td><td>Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-icd"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="SymptomsICD"/>
-  <title value="Symptoms"/>
-  <status value="draft"/>
+  <title value="Symptoms (ICD-10-GM)"/>
+  <status value="active"/>
   <date value="2021-11-29"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Value set for symptoms in the context of GECCO+"/>
+  <description value="Value set for symptoms in the context of GECCO+ (ICD-10-GM)"/>
   <compose>
     <include>
       <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>

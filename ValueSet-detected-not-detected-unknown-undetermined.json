@@ -6,23 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001\">260373001</a></td><td>Detected (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000\">260415000</a></td><td>Not detected (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr></table></li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "DetectedNotDetectedUnknownUndetermined",
   "title": "Detected Not Detected Unknown Undetermined",
   "status": "active",
-  "date": "2021-12-17T11:18:04+00:00",
-  "publisher": "Charité - Universitätsmedizin Berlin",
-  "contact": [
-    {
-      "name": "Charité - Universitätsmedizin Berlin",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
-        }
-      ]
-    }
-  ],
+  "date": "2021-12-17T13:44:29+00:00",
   "description": "Values for laboratory observations",
   "compose": {
     "include": [

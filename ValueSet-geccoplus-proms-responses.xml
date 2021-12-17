@@ -6,20 +6,19 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-geccoplus-codesystem.html"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61">61</a></td><td>No difficulties.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62">62</a></td><td>Mild difficulties.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63">63</a></td><td>Moderate difficulties.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64">64</a></td><td>Severe difficulties.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65">65</a></td><td>I haven't done this in the past 7 days.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66">66</a></td><td>No information available.</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="PROMsResponses"/>
-  <title value="Proms in the context of GECCOplus"/>
-  <status value="draft"/>
+  <title value="PROM responses in the context of GECCOplus"/>
+  <status value="active"/>
   <date value="2021-11-29"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"/>
+  <description value="Response codes for PROMs of GECCOplus"/>
   <compose>
     <include>
       <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>

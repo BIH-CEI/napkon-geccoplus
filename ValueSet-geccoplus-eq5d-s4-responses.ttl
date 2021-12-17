@@ -13,21 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41\">41</a></td><td>I have no pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42\">42</a></td><td>I have slight pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43\">43</a></td><td>I have moderate pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44\">44</a></td><td>I have severe pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45\">45</a></td><td>I have extreme pain or discomfort.</td></tr><tr><td><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46\">46</a></td><td>No information available.</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "EQ5DS4Responses"];
   fhir:ValueSet.title [ fhir:value "EQ5D section four answers"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-17T11:18:04+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
-     ]
-  ];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T13:44:29+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "EQ5D section four (pain and discomfort) answers"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

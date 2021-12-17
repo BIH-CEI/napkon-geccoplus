@@ -16,19 +16,18 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "UrineDiagnostics",
   "title": "Urine Diagnostics",
-  "status": "draft",
+  "status": "active",
   "date": "2021-12-01",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }

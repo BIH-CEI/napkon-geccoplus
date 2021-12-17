@@ -13,19 +13,18 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008\">29458008</a></td><td>Pathologic (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005\">17621005</a></td><td>Normal (qualifier value)</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "NormalPathologic"];
   fhir:ValueSet.title [ fhir:value "Normal Pathologic"];
-  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2021-12-01"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Normal Pathologic"];

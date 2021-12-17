@@ -13,22 +13,21 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001\">68962001</a></td><td>Muscle pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003\">404640003</a></td><td>Dizziness (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009\">29857009</a></td><td>Chest pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000\">405737000</a></td><td>Pharyngitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003\">64531003</a></td><td>Nasal discharge (finding)</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "SymptomsSCT"];
-  fhir:ValueSet.title [ fhir:value "Symptoms"];
-  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.title [ fhir:value "Symptoms (SNOMED CT)"];
+  fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2021-11-29"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Value set for symptoms in the context of GECCO+"];
+  fhir:ValueSet.description [ fhir:value "Value set for symptoms in the context of GECCO+ (SNOMED CT)"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

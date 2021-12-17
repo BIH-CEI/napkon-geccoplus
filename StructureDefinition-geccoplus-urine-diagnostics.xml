@@ -29,17 +29,16 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="UrineDiagnostics"/>
   <title value="Urine Diagnostics"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-12-01"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <description value="Urine diagnostics"/>

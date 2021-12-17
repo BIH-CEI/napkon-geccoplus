@@ -6,10 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkongeccoplus</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus</pre></div>"
   },
   "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "napkongeccoplus",
-  "status": "draft",
-  "date": "2021-12-17T11:18:04+00:00",
+  "title": "NAPKON GECCO+",
+  "status": "active",
+  "date": "2021-12-17T13:44:29+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -95,6 +96,214 @@
           {
             "url": "value",
             "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "show-inherited-invariants"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "usage-stats-opt-out"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludexml"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludejsn"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludettl"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludemap"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludeexample"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://www.netzwerk-universitaetsmedizin.de"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://napkon.de"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://simplifier.net"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -220,19 +429,6 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-contact"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-context"
           },
           {
@@ -259,59 +455,7 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-jurisdiction"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-license"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-publisher"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-version"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "active-tables"
           },
           {
             "url": "value",
@@ -444,8 +588,8 @@
         "reference": {
           "reference": "ValueSet/geccoplus-allergies-icd"
         },
-        "name": "Allergies",
-        "description": "Value set for allergies in the context of GECCO+",
+        "name": "Allergies (ICD-10-GM)",
+        "description": "Value set for allergies in the context of GECCO+ (ICD-10-GM)",
         "exampleBoolean": false
       },
       {
@@ -458,8 +602,8 @@
         "reference": {
           "reference": "ValueSet/geccoplus-allergies-sct"
         },
-        "name": "Allergies",
-        "description": "Value set for allergies in the context of GECCO+",
+        "name": "Allergies (SNOMED CT)",
+        "description": "Value set for allergies in the context of GECCO+ (SNOMED CT)",
         "exampleBoolean": false
       },
       {
@@ -584,8 +728,8 @@
         "reference": {
           "reference": "ValueSet/geccoplus-proms-responses"
         },
-        "name": "Proms in the context of GECCOplus",
-        "description": "Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology",
+        "name": "PROM responses in the context of GECCOplus",
+        "description": "Response codes for PROMs of GECCOplus",
         "exampleBoolean": false
       },
       {
@@ -654,8 +798,8 @@
         "reference": {
           "reference": "ValueSet/geccoplus-symptoms-icd"
         },
-        "name": "Symptoms",
-        "description": "Value set for symptoms in the context of GECCO+",
+        "name": "Symptoms (ICD-10-GM)",
+        "description": "Value set for symptoms in the context of GECCO+ (ICD-10-GM)",
         "exampleBoolean": false
       },
       {
@@ -668,8 +812,8 @@
         "reference": {
           "reference": "ValueSet/geccoplus-symptoms-sct"
         },
-        "name": "Symptoms",
-        "description": "Value set for symptoms in the context of GECCO+",
+        "name": "Symptoms (SNOMED CT)",
+        "description": "Value set for symptoms in the context of GECCO+ (SNOMED CT)",
         "exampleBoolean": false
       },
       {
@@ -988,8 +1132,85 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "NAPKON GECCO+",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "codesystems.html",
+          "title": "Code Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "valuesets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "changelog.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "artifacts.html",
+          "title": "Artifacts",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "cardio-investigation.html",
+              "title": "Electrocardiography",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gecco-heart-rate.html",
+              "title": "Heart Rate",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cardio-av-block.html",
+              "title": "Atrioventricular Block",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cardio-bundle-branch-block.html",
+              "title": "Bundle Branch Block",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cardio-left-ventricular-ejection-fraction.html",
+              "title": "Left Ventricular Ejection Fraction",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cardio-echocardiography-findings.html",
+              "title": "Echocardiography Findings",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "mii-laboratory.html",
+              "title": "Laboratory Diagnostics",
+              "generation": "markdown"
+            }
+          ]
         }
       ]
     },

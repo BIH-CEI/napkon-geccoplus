@@ -6,24 +6,23 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>J30.1</td><td>Allergische Rhinopathie durch Pollen</td></tr><tr><td>J30.3</td><td>Sonstige allergische Rhinopathie</td></tr><tr><td>T78.4</td><td>Allergie, nicht näher bezeichnet</td></tr></table></li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-icd",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "AllergiesICD",
-  "title": "Allergies",
-  "status": "draft",
+  "title": "Allergies (ICD-10-GM)",
+  "status": "active",
   "date": "2021-11-29",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
-  "description": "Value set for allergies in the context of GECCO+",
+  "description": "Value set for allergies in the context of GECCO+ (ICD-10-GM)",
   "compose": {
     "include": [
       {

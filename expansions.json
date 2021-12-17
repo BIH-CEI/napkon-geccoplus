@@ -1,37 +1,80 @@
 {
   "resourceType" : "Bundle",
-  "id" : "659b306b-96ea-4780-bc3c-763d458157ff",
+  "id" : "ce67ccab-5290-41af-ac95-3b4edffdc353",
   "meta" : {
-    "lastUpdated" : "2021-12-17T11:18:04.287+00:00"
+    "lastUpdated" : "2021-12-17T13:44:29.186+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "geccoplus-allergies-sct",
+      "id" : "restricted-event-status",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300910009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009\">300910009</a></td><td>Allergy to pollen (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-232349006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006\">232349006</a></td><td>Allergy to house dust (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\">EventStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\"><code>http://hl7.org/fhir/event-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-not-done\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done\">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-completed\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed\">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-unknown\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown\">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-in-progress\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress\">in-progress</a></td><td>In Progress</td><td>The event is currently occurring.</td></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
-      "version" : "0.1.0",
-      "name" : "AllergiesSCT",
-      "title" : "Allergies",
-      "status" : "draft",
-      "date" : "2021-11-29",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Value set for allergies in the context of GECCO+",
+      "url" : "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
+      "version" : "1.0.0",
+      "name" : "RestrictedEventStatus",
+      "title" : "RestrictedEventStatus",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:940c6102-a586-4652-b18f-b65f150e05be",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
+        "identifier" : "urn:uuid:61e4c359-d517-48d5-a47f-f7c3ad48fa61",
+        "timestamp" : "2021-12-17T13:44:55+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/event-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "not-done",
+          "display" : "Not Done"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://hl7.org/fhir/event-status",
+          "code" : "in-progress",
+          "display" : "In Progress"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "yes-no-unknown",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373066001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001\">373066001</a></td><td>Yes (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>No (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
+      "version" : "1.0.0",
+      "name" : "YesNoUnknown",
+      "title" : "Yes No Unknown",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "Yes / No / Unknown",
+      "expansion" : {
+        "identifier" : "urn:uuid:2a5f159f-96d1-434b-9ce5-4bdd55b8b2cd",
+        "timestamp" : "2021-12-17T13:44:55+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -47,50 +90,49 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "300910009",
-          "display" : "Allergy to pollen (finding)"
+          "code" : "373066001",
+          "display" : "Yes (qualifier value)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "232349006",
-          "display" : "Allergy to house dust (finding)"
+          "code" : "373067005",
+          "display" : "No (qualifier value)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "74964007",
-          "display" : "Other (qualifier value)"
+          "code" : "261665006",
+          "display" : "Unknown (qualifier value)"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "detected-not-detected-unknown-undetermined",
+      "id" : "geccoplus-symptoms-sct",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260373001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001\">260373001</a></td><td>Detected (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260415000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000\">260415000</a></td><td>Not detected (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-68962001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001\">68962001</a></td><td>Muscle pain (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-404640003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003\">404640003</a></td><td>Dizziness (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-29857009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009\">29857009</a></td><td>Chest pain (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-405737000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000\">405737000</a></td><td>Pharyngitis (disorder)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-64531003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003\">64531003</a></td><td>Nasal discharge (finding)</td><td/></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
-      "version" : "0.1.0",
-      "name" : "DetectedNotDetectedUnknownUndetermined",
-      "title" : "Detected Not Detected Unknown Undetermined",
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct",
+      "version" : "1.0.0",
+      "name" : "SymptomsSCT",
+      "title" : "Symptoms (SNOMED CT)",
       "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
+      "date" : "2021-11-29",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
-      "description" : "Values for laboratory observations",
+      "description" : "Value set for symptoms in the context of GECCO+ (SNOMED CT)",
       "expansion" : {
-        "identifier" : "urn:uuid:88d87a2a-b5c0-4a8a-934c-7258cd39c6b5",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:41b1ba47-e54f-4a5c-a8f6-02cf5aefd2b6",
+        "timestamp" : "2021-12-17T13:44:55+00:00",
+        "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -105,368 +147,103 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "260373001",
-          "display" : "Detected (qualifier value)"
+          "code" : "68962001",
+          "display" : "Muscle pain (finding)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "260415000",
-          "display" : "Not detected (qualifier value)"
+          "code" : "404640003",
+          "display" : "Dizziness (finding)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "261665006",
-          "display" : "Unknown (qualifier value)"
+          "code" : "29857009",
+          "display" : "Chest pain (finding)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "373068000",
-          "display" : "Undetermined (qualifier value)"
+          "code" : "405737000",
+          "display" : "Pharyngitis (disorder)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "64531003",
+          "display" : "Nasal discharge (finding)"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "geccoplus-eq5d-s1-responses",
+      "id" : "geccoplus-school-degree",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-11\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11\">11</a></td><td>I have no problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-12\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12\">12</a></td><td>I have slight problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-13\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13\">13</a></td><td>I have moderate problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-14\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14\">14</a></td><td>I have severe problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-15\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15\">15</a></td><td>I am unable to walk about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-16\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16\">16</a></td><td>No information available.</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-71\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71\">71</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Volks-/Hauptschulabschluss</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-72\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72\">72</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Realschulabschluss/Mittlere Reife</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-73\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73\">73</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Fachhochschulabschluss</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-473461003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003\">473461003</a></td><td>http://snomed.info/sct</td><td>Educated to high school level (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-224294005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005\">224294005</a></td><td>http://snomed.info/sct</td><td>No formal education (finding)</td><td/></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
-      "version" : "0.1.0",
-      "name" : "EQ5DS1Responses",
-      "title" : "EQ5D section one answers",
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
+      "version" : "1.0.0",
+      "name" : "SchoolDegree",
+      "title" : "School Degree",
       "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
+      "date" : "2021-10-11",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
-      "description" : "EQ5D section one (agility and mobility) answers",
+      "description" : "Value set of school degrees",
       "expansion" : {
-        "identifier" : "urn:uuid:d07d3d99-3b9c-4559-ae29-a53e3fc08a4a",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:ebb15bd8-1f44-4d89-87a3-4dd840d23726",
+        "timestamp" : "2021-12-17T13:44:55+00:00",
+        "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "11",
-          "display" : "I have no problems in walking about."
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
         },
         {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "12",
-          "display" : "I have slight problems in walking about."
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         },
         {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "13",
-          "display" : "I have moderate problems in walking about."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "14",
-          "display" : "I have severe problems in walking about."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "15",
-          "display" : "I am unable to walk about."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "16",
-          "display" : "No information available."
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-eq5d-s2-responses",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-21\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21\">21</a></td><td>I have no problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-22\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22\">22</a></td><td>I have slight problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-23\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23\">23</a></td><td>I have moderate problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-24\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24\">24</a></td><td>I have severe problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-25\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25\">25</a></td><td>I am unable to wash or dress myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-26\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26\">26</a></td><td>No information available.</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
-      "version" : "0.1.0",
-      "name" : "EQ5DS2Responses",
-      "title" : "EQ5D section two answers",
-      "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "EQ5D section two (self-sufficiency) answers",
-      "expansion" : {
-        "identifier" : "urn:uuid:9fc4162c-0f3d-4600-9d1d-acf53dc3963c",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
-        "total" : 6,
-        "parameter" : [{
           "name" : "excludeNested",
-          "valueBoolean" : false
+          "valueBoolean" : true
         },
         {
           "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "21",
-          "display" : "I have no problems washing or dressing myself."
+          "code" : "71",
+          "display" : "Volks-/Hauptschulabschluss"
         },
         {
           "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "22",
-          "display" : "I have slight problems washing or dressing myself."
+          "code" : "72",
+          "display" : "Realschulabschluss/Mittlere Reife"
         },
         {
           "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "23",
-          "display" : "I have moderate problems washing or dressing myself."
+          "code" : "73",
+          "display" : "Fachhochschulabschluss"
         },
         {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "24",
-          "display" : "I have severe problems washing or dressing myself."
+          "system" : "http://snomed.info/sct",
+          "code" : "473461003",
+          "display" : "Educated to high school level (finding)"
         },
         {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "25",
-          "display" : "I am unable to wash or dress myself."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "26",
-          "display" : "No information available."
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-eq5d-s3-responses",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-31\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31\">31</a></td><td>I have no problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-32\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32\">32</a></td><td>I have slight problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-33\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33\">33</a></td><td>I have moderate problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-34\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34\">34</a></td><td>I have severe problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-35\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35\">35</a></td><td>I am unable to do my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-36\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36\">36</a></td><td>No information available.</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses",
-      "version" : "0.1.0",
-      "name" : "EQ5DS3Responses",
-      "title" : "EQ5D section three answers",
-      "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "EQ5D section three (daily activities) answers",
-      "expansion" : {
-        "identifier" : "urn:uuid:3cd99543-1bf5-4c6a-b8b7-f0f082d53f0c",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "31",
-          "display" : "I have no problems doing my usual activities."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "32",
-          "display" : "I have slight problems doing my usual activities."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "33",
-          "display" : "I have moderate problems doing my usual activities."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "34",
-          "display" : "I have severe problems doing my usual activities."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "35",
-          "display" : "I am unable to do my usual activities."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "36",
-          "display" : "No information available."
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-eq5d-s4-responses",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-41\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41\">41</a></td><td>I have no pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-42\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42\">42</a></td><td>I have slight pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-43\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43\">43</a></td><td>I have moderate pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-44\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44\">44</a></td><td>I have severe pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-45\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45\">45</a></td><td>I have extreme pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-46\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46\">46</a></td><td>No information available.</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
-      "version" : "0.1.0",
-      "name" : "EQ5DS4Responses",
-      "title" : "EQ5D section four answers",
-      "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "EQ5D section four (pain and discomfort) answers",
-      "expansion" : {
-        "identifier" : "urn:uuid:3b3faf3d-7455-41ea-ab75-123cff7303cd",
-        "timestamp" : "2021-12-17T11:18:33+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "41",
-          "display" : "I have no pain or discomfort."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "42",
-          "display" : "I have slight pain or discomfort."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "43",
-          "display" : "I have moderate pain or discomfort."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "44",
-          "display" : "I have severe pain or discomfort."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "45",
-          "display" : "I have extreme pain or discomfort."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "46",
-          "display" : "No information available."
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-eq5d-s5-responses",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-51\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51\">51</a></td><td>I am not anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-52\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52\">52</a></td><td>I am slightly anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-53\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53\">53</a></td><td>I am moderately anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-54\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54\">54</a></td><td>I am severely anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-55\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55\">55</a></td><td>I am extremely anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-56\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56\">56</a></td><td>No information available.</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses",
-      "version" : "0.1.0",
-      "name" : "EQ5DS5Responses",
-      "title" : "EQ5D section five answers",
-      "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "EQ5D section five (anxiety and depression) answers",
-      "expansion" : {
-        "identifier" : "urn:uuid:cddb4be3-ddce-4a4b-8fb6-7afabc9b1370",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "51",
-          "display" : "I am not anxious or depressed."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "52",
-          "display" : "I am slightly anxious or depressed."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "53",
-          "display" : "I am moderately anxious or depressed."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "54",
-          "display" : "I am severely anxious or depressed."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "55",
-          "display" : "I am extremely anxious or depressed."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "56",
-          "display" : "No information available."
+          "system" : "http://snomed.info/sct",
+          "code" : "224294005",
+          "display" : "No formal education (finding)"
         }]
       }
     }
@@ -481,23 +258,22 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 106 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-70218-3\"> </a><a href=\"http://details.loinc.org/LOINC/70218-3.html\">70218-3</a></td><td>Triglyceride [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-59572-8\"> </a><a href=\"http://details.loinc.org/LOINC/59572-8.html\">59572-8</a></td><td>Triglyceride [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-3043-7\"> </a><a href=\"http://details.loinc.org/LOINC/3043-7.html\">3043-7</a></td><td>Triglyceride [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14450-1\"> </a><a href=\"http://details.loinc.org/LOINC/14450-1.html\">14450-1</a></td><td>Triglyceride [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-3040-3\"> </a><a href=\"http://details.loinc.org/LOINC/3040-3.html\">3040-3</a></td><td>Lipase [Enzymatic activity/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-10888-6\"> </a><a href=\"http://details.loinc.org/LOINC/10888-6.html\">10888-6</a></td><td>Lipase [Enzymatic activity/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-15212-4\"> </a><a href=\"http://details.loinc.org/LOINC/15212-4.html\">15212-4</a></td><td>Lipase [Enzymatic activity/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25992-9\"> </a><a href=\"http://details.loinc.org/LOINC/25992-9.html\">25992-9</a></td><td>Lipase [Enzymatic activity/volume] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2951-2\"> </a><a href=\"http://details.loinc.org/LOINC/2951-2.html\">2951-2</a></td><td>Sodium [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-39791-9\"> </a><a href=\"http://details.loinc.org/LOINC/39791-9.html\">39791-9</a></td><td>Sodium [Moles/volume] in Venous blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32717-1\"> </a><a href=\"http://details.loinc.org/LOINC/32717-1.html\">32717-1</a></td><td>Sodium [Moles/volume] in Arterial blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2947-0\"> </a><a href=\"http://details.loinc.org/LOINC/2947-0.html\">2947-0</a></td><td>Sodium [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2955-3\"> </a><a href=\"http://details.loinc.org/LOINC/2955-3.html\">2955-3</a></td><td>Sodium [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-72903-8\"> </a><a href=\"http://details.loinc.org/LOINC/72903-8.html\">72903-8</a></td><td>Urea [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-22700-9\"> </a><a href=\"http://details.loinc.org/LOINC/22700-9.html\">22700-9</a></td><td>Urea [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-20977-5\"> </a><a href=\"http://details.loinc.org/LOINC/20977-5.html\">20977-5</a></td><td>Urea [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-3092-4\"> </a><a href=\"http://details.loinc.org/LOINC/3092-4.html\">3092-4</a></td><td>Urea [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-75940-7\"> </a><a href=\"http://details.loinc.org/LOINC/75940-7.html\">75940-7</a></td><td>Potassium [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-87454-5\"> </a><a href=\"http://details.loinc.org/LOINC/87454-5.html\">87454-5</a></td><td>Potassium [Mass/volume] in Specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-6298-4\"> </a><a href=\"http://details.loinc.org/LOINC/6298-4.html\">6298-4</a></td><td>Potassium [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2828-2\"> </a><a href=\"http://details.loinc.org/LOINC/2828-2.html\">2828-2</a></td><td>Potassium [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32713-0\"> </a><a href=\"http://details.loinc.org/LOINC/32713-0.html\">32713-0</a></td><td>Potassium [Moles/volume] in Arterial blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-39790-1\"> </a><a href=\"http://details.loinc.org/LOINC/39790-1.html\">39790-1</a></td><td>Potassium [Moles/volume] in Capillary blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-39789-3\"> </a><a href=\"http://details.loinc.org/LOINC/39789-3.html\">39789-3</a></td><td>Potassium [Moles/volume] in Venous blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2823-3\"> </a><a href=\"http://details.loinc.org/LOINC/2823-3.html\">2823-3</a></td><td>Potassium [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2821-7\"> </a><a href=\"http://details.loinc.org/LOINC/2821-7.html\">2821-7</a></td><td>Potassium [Moles/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32673-6\"> </a><a href=\"http://details.loinc.org/LOINC/32673-6.html\">32673-6</a></td><td>Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-51506-4\"> </a><a href=\"http://details.loinc.org/LOINC/51506-4.html\">51506-4</a></td><td>Creatine kinase.MB [Enzymatic activity/volume] in Cerebral spinal fluid by Electrophoresis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2154-3\"> </a><a href=\"http://details.loinc.org/LOINC/2154-3.html\">2154-3</a></td><td>Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-54370-2\"> </a><a href=\"http://details.loinc.org/LOINC/54370-2.html\">54370-2</a></td><td>Chloride [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2078-4\"> </a><a href=\"http://details.loinc.org/LOINC/2078-4.html\">2078-4</a></td><td>Chloride [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2069-3\"> </a><a href=\"http://details.loinc.org/LOINC/2069-3.html\">2069-3</a></td><td>Chloride [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32307-1\"> </a><a href=\"http://details.loinc.org/LOINC/32307-1.html\">32307-1</a></td><td>Chloride [Moles/volume] in Specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41650-3\"> </a><a href=\"http://details.loinc.org/LOINC/41650-3.html\">41650-3</a></td><td>Chloride [Moles/volume] in Arterial blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41649-5\"> </a><a href=\"http://details.loinc.org/LOINC/41649-5.html\">41649-5</a></td><td>Chloride [Moles/volume] in Venous blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2075-0\"> </a><a href=\"http://details.loinc.org/LOINC/2075-0.html\">2075-0</a></td><td>Chloride [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-42908-4\"> </a><a href=\"http://details.loinc.org/LOINC/42908-4.html\">42908-4</a></td><td>Hematocrit [Volume Fraction] of Capillary blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41654-5\"> </a><a href=\"http://details.loinc.org/LOINC/41654-5.html\">41654-5</a></td><td>Hematocrit [Volume Fraction] of Venous blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32354-3\"> </a><a href=\"http://details.loinc.org/LOINC/32354-3.html\">32354-3</a></td><td>Hematocrit [Volume Fraction] of Arterial blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-17809-5\"> </a><a href=\"http://details.loinc.org/LOINC/17809-5.html\">17809-5</a></td><td>Hematocrit [Volume Fraction] of Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-20570-8\"> </a><a href=\"http://details.loinc.org/LOINC/20570-8.html\">20570-8</a></td><td>Hematocrit [Volume Fraction] of Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-27298-9\"> </a><a href=\"http://details.loinc.org/LOINC/27298-9.html\">27298-9</a></td><td>Protein [Units/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21482-5\"> </a><a href=\"http://details.loinc.org/LOINC/21482-5.html\">21482-5</a></td><td>Protein [Mass/volume] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2881-1\"> </a><a href=\"http://details.loinc.org/LOINC/2881-1.html\">2881-1</a></td><td>Protein [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2880-3\"> </a><a href=\"http://details.loinc.org/LOINC/2880-3.html\">2880-3</a></td><td>Protein [Mass/volume] in Cerebral spinal fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2885-2\"> </a><a href=\"http://details.loinc.org/LOINC/2885-2.html\">2885-2</a></td><td>Protein [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2888-6\"> </a><a href=\"http://details.loinc.org/LOINC/2888-6.html\">2888-6</a></td><td>Protein [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5804-0\"> </a><a href=\"http://details.loinc.org/LOINC/5804-0.html\">5804-0</a></td><td>Protein [Mass/volume] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-50561-0\"> </a><a href=\"http://details.loinc.org/LOINC/50561-0.html\">50561-0</a></td><td>Protein [Mass/volume] in Urine by Automated test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2889-4\"> </a><a href=\"http://details.loinc.org/LOINC/2889-4.html\">2889-4</a></td><td>Protein [Mass/time] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2151-9\"> </a><a href=\"http://details.loinc.org/LOINC/2151-9.html\">2151-9</a></td><td>Creatine kinase [Enzymatic activity/volume] in Cerebral spinal fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2157-6\"> </a><a href=\"http://details.loinc.org/LOINC/2157-6.html\">2157-6</a></td><td>Creatine kinase [Enzymatic activity/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-16688-4\"> </a><a href=\"http://details.loinc.org/LOINC/16688-4.html\">16688-4</a></td><td>Creatine kinase [Enzymatic activity/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-1746-7\"> </a><a href=\"http://details.loinc.org/LOINC/1746-7.html\">1746-7</a></td><td>Albumin [Mass/volume] in Cerebral spinal fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-1754-1\"> </a><a href=\"http://details.loinc.org/LOINC/1754-1.html\">1754-1</a></td><td>Albumin [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-1751-7\"> </a><a href=\"http://details.loinc.org/LOINC/1751-7.html\">1751-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-1747-5\"> </a><a href=\"http://details.loinc.org/LOINC/1747-5.html\">1747-5</a></td><td>Albumin [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-54347-0\"> </a><a href=\"http://details.loinc.org/LOINC/54347-0.html\">54347-0</a></td><td>Albumin [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76480-3\"> </a><a href=\"http://details.loinc.org/LOINC/76480-3.html\">76480-3</a></td><td>Albumin [Moles/volume] in Cerebral spinal fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2089-1\"> </a><a href=\"http://details.loinc.org/LOINC/2089-1.html\">2089-1</a></td><td>Cholesterol in LDL [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-13457-7\"> </a><a href=\"http://details.loinc.org/LOINC/13457-7.html\">13457-7</a></td><td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-22748-8\"> </a><a href=\"http://details.loinc.org/LOINC/22748-8.html\">22748-8</a></td><td>Cholesterol in LDL [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-18262-6\"> </a><a href=\"http://details.loinc.org/LOINC/18262-6.html\">18262-6</a></td><td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-53133-5\"> </a><a href=\"http://details.loinc.org/LOINC/53133-5.html\">53133-5</a></td><td>Cholesterol in LDL [Moles/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69419-0\"> </a><a href=\"http://details.loinc.org/LOINC/69419-0.html\">69419-0</a></td><td>Cholesterol in LDL [Moles/volume] in Serum or Plasma by Direct assay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-96597-0\"> </a><a href=\"http://details.loinc.org/LOINC/96597-0.html\">96597-0</a></td><td>Cholesterol in LDL [Mass/volume] in DBS by Direct assay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-39469-2\"> </a><a href=\"http://details.loinc.org/LOINC/39469-2.html\">39469-2</a></td><td>Cholesterol in LDL [Moles/volume] in Serum or Plasma by calculation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-53135-0\"> </a><a href=\"http://details.loinc.org/LOINC/53135-0.html\">53135-0</a></td><td>Cholesterol in HDL [Moles/volume] in Dialysis fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-96596-2\"> </a><a href=\"http://details.loinc.org/LOINC/96596-2.html\">96596-2</a></td><td>Cholesterol in HDL [Mass/volume] in DBS</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-54372-8\"> </a><a href=\"http://details.loinc.org/LOINC/54372-8.html\">54372-8</a></td><td>Cholesterol in HDL [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2085-9\"> </a><a href=\"http://details.loinc.org/LOINC/2085-9.html\">2085-9</a></td><td>Cholesterol in HDL [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-50840-8\"> </a><a href=\"http://details.loinc.org/LOINC/50840-8.html\">50840-8</a></td><td>Cholesterol in HDL [Moles/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14646-4\"> </a><a href=\"http://details.loinc.org/LOINC/14646-4.html\">14646-4</a></td><td>Cholesterol in HDL [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a><a href=\"http://details.loinc.org/LOINC/24467-3.html\">24467-3</a></td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8123-2\"> </a><a href=\"http://details.loinc.org/LOINC/8123-2.html\">8123-2</a></td><td>CD3+CD4+ (T4 helper) cells/100 cells in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14135-8\"> </a><a href=\"http://details.loinc.org/LOINC/14135-8.html\">14135-8</a></td><td>CD3+CD8+ (T8 suppressor cells) cells [#/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8101-8\"> </a><a href=\"http://details.loinc.org/LOINC/8101-8.html\">8101-8</a></td><td>CD3+CD8+ (T8 suppressor cells) cells/100 cells in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21232-4\"> </a><a href=\"http://details.loinc.org/LOINC/21232-4.html\">21232-4</a></td><td>Creatinine [Mass/volume] in Arterial blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-38483-4\"> </a><a href=\"http://details.loinc.org/LOINC/38483-4.html\">38483-4</a></td><td>Creatinine [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-59826-8\"> </a><a href=\"http://details.loinc.org/LOINC/59826-8.html\">59826-8</a></td><td>Creatinine [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-12190-5\"> </a><a href=\"http://details.loinc.org/LOINC/12190-5.html\">12190-5</a></td><td>Creatinine [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25386-4\"> </a><a href=\"http://details.loinc.org/LOINC/25386-4.html\">25386-4</a></td><td>Creatinine [Moles/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2160-0\"> </a><a href=\"http://details.loinc.org/LOINC/2160-0.html\">2160-0</a></td><td>Creatinine [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14682-9\"> </a><a href=\"http://details.loinc.org/LOINC/14682-9.html\">14682-9</a></td><td>Creatinine [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24519-1\"> </a><a href=\"http://details.loinc.org/LOINC/24519-1.html\">24519-1</a></td><td>Phosphate [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-13539-2\"> </a><a href=\"http://details.loinc.org/LOINC/13539-2.html\">13539-2</a></td><td>Phosphate [Moles/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2774-8\"> </a><a href=\"http://details.loinc.org/LOINC/2774-8.html\">2774-8</a></td><td>Phosphate [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2778-9\"> </a><a href=\"http://details.loinc.org/LOINC/2778-9.html\">2778-9</a></td><td>Phosphate [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2777-1\"> </a><a href=\"http://details.loinc.org/LOINC/2777-1.html\">2777-1</a></td><td>Phosphate [Mass/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14879-1\"> </a><a href=\"http://details.loinc.org/LOINC/14879-1.html\">14879-1</a></td><td>Phosphate [Moles/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25501-8\"> </a><a href=\"http://details.loinc.org/LOINC/25501-8.html\">25501-8</a></td><td>Phosphate [Moles/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-12242-4\"> </a><a href=\"http://details.loinc.org/LOINC/12242-4.html\">12242-4</a></td><td>Phosphate [Mass/volume] in Body fluid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2339-0\"> </a><a href=\"http://details.loinc.org/LOINC/2339-0.html\">2339-0</a></td><td>Glucose [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2350-7\"> </a><a href=\"http://details.loinc.org/LOINC/2350-7.html\">2350-7</a></td><td>Glucose [Mass/volume] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-15074-8\"> </a><a href=\"http://details.loinc.org/LOINC/15074-8.html\">15074-8</a></td><td>Glucose [Moles/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-3015-5\"> </a><a href=\"http://details.loinc.org/LOINC/3015-5.html\">3015-5</a></td><td>Thyrotropin [Units/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-3016-3\"> </a><a href=\"http://details.loinc.org/LOINC/3016-3.html\">3016-3</a></td><td>Thyrotropin [Units/volume] in Serum or Plasma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-26998-5\"> </a><a href=\"http://details.loinc.org/LOINC/26998-5.html\">26998-5</a></td><td>Thyrotropin [Units/volume] in Saliva (oral fluid)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41995-2\"> </a><a href=\"http://details.loinc.org/LOINC/41995-2.html\">41995-2</a></td><td>Hemoglobin A1c [Mass/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-49498-9\"> </a><a href=\"http://details.loinc.org/LOINC/49498-9.html\">49498-9</a></td><td>Leukocytes [#/volume] in Blood by Estimate</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-6690-2\"> </a><a href=\"http://details.loinc.org/LOINC/6690-2.html\">6690-2</a></td><td>Leukocytes [#/volume] in Blood by Automated count</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-804-5\"> </a><a href=\"http://details.loinc.org/LOINC/804-5.html\">804-5</a></td><td>Leukocytes [#/volume] in Blood by Manual count</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-26464-8\"> </a><a href=\"http://details.loinc.org/LOINC/26464-8.html\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-26453-1\"> </a><a href=\"http://details.loinc.org/LOINC/26453-1.html\">26453-1</a></td><td>Erythrocytes [#/volume] in Blood</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-789-8\"> </a><a href=\"http://details.loinc.org/LOINC/789-8.html\">789-8</a></td><td>Erythrocytes [#/volume] in Blood by Automated count</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-790-6\"> </a><a href=\"http://details.loinc.org/LOINC/790-6.html\">790-6</a></td><td>Erythrocytes [#/volume] in Blood by Manual count</td><td/></tr></table></div>"
       },
       "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "name" : "LaboratoryDiagnostics",
       "title" : "Laboratory Diagnostics",
-      "status" : "draft",
+      "status" : "active",
       "date" : "2021-12-01",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
       "description" : "Laboratory diagnostics in the context of NAPKON GECCO+ module",
       "expansion" : {
-        "identifier" : "urn:uuid:43370791-3e20-4ca7-939b-f3532682075e",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
+        "identifier" : "urn:uuid:b06861bb-a84e-40a1-8ccd-687a6d6cab8a",
+        "timestamp" : "2021-12-17T13:44:56+00:00",
         "total" : 106,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1045,33 +821,32 @@
     }
   },
   {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "geccoplus-normal-pathologic",
+      "id" : "urobilinogen-diagnostics",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-29458008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008\">29458008</a></td><td>Pathologic (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-17621005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005\">17621005</a></td><td>Normal (qualifier value)</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-13658-0\"> </a><a href=\"http://details.loinc.org/LOINC/13658-0.html\">13658-0</a></td><td>Urobilinogen [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-12269-7\"> </a><a href=\"http://details.loinc.org/LOINC/12269-7.html\">12269-7</a></td><td>Urobilinogen [Presence] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5818-0\"> </a><a href=\"http://details.loinc.org/LOINC/5818-0.html\">5818-0</a></td><td>Urobilinogen [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-62487-4\"> </a><a href=\"http://details.loinc.org/LOINC/62487-4.html\">62487-4</a></td><td>Urobilinogen [Presence] in Urine by Automated test strip</td><td/></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic",
-      "version" : "0.1.0",
-      "name" : "NormalPathologic",
-      "title" : "Normal Pathologic",
-      "status" : "draft",
+      "url" : "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
+      "version" : "1.0.0",
+      "name" : "UrobilinogenDiagnostics",
+      "title" : "Urobilinogen Diagnostics",
+      "status" : "active",
       "date" : "2021-12-01",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
-      "description" : "Normal Pathologic",
+      "description" : "Urobilinogen diagnostics in the context of NAPKON GECCO+ module",
       "expansion" : {
-        "identifier" : "urn:uuid:fb62cc2c-816c-4223-8278-dc811ae37c05",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 2,
+        "identifier" : "urn:uuid:6eb1b2d8-c458-4bf0-beb9-b21f6ba71206",
+        "timestamp" : "2021-12-17T13:44:57+00:00",
+        "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1082,139 +857,27 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://loinc.org|2.71"
         }],
         "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "29458008",
-          "display" : "Pathologic (qualifier value)"
+          "system" : "http://loinc.org",
+          "code" : "13658-0",
+          "display" : "Urobilinogen [Presence] in Urine"
         },
         {
-          "system" : "http://snomed.info/sct",
-          "code" : "17621005",
-          "display" : "Normal (qualifier value)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-proms-responses",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-61\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61\">61</a></td><td>No difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-62\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62\">62</a></td><td>Mild difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-63\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63\">63</a></td><td>Moderate difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-64\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64\">64</a></td><td>Severe difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-65\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65\">65</a></td><td>I haven't done this in the past 7 days.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-66\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66\">66</a></td><td>No information available.</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses",
-      "version" : "0.1.0",
-      "name" : "PROMsResponses",
-      "title" : "Proms in the context of GECCOplus",
-      "status" : "draft",
-      "date" : "2021-11-29",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology",
-      "expansion" : {
-        "identifier" : "urn:uuid:99f61a79-1e95-415e-9dac-0d16f5f5f755",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "system" : "http://loinc.org",
+          "code" : "12269-7",
+          "display" : "Urobilinogen [Presence] in 24 hour Urine"
         },
         {
-          "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "61",
-          "display" : "No difficulties."
+          "system" : "http://loinc.org",
+          "code" : "5818-0",
+          "display" : "Urobilinogen [Presence] in Urine by Test strip"
         },
         {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "62",
-          "display" : "Mild difficulties."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "63",
-          "display" : "Moderate difficulties."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "64",
-          "display" : "Severe difficulties."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "65",
-          "display" : "I haven't done this in the past 7 days."
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "66",
-          "display" : "No information available."
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-positive-negative",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10828004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004\">10828004</a></td><td>Positive (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260385009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009\">260385009</a></td><td>Negative (qualifier value)</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative",
-      "version" : "0.1.0",
-      "name" : "PositiveNegative",
-      "title" : "Positive Negative Codes",
-      "status" : "draft",
-      "date" : "2021-12-07",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Positive / Negative Codes in the context of NAPKON GECCO+ Module",
-      "expansion" : {
-        "identifier" : "urn:uuid:fe31cd74-0a1d-48b9-afe1-a0104a5eff1f",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "10828004",
-          "display" : "Positive (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "260385009",
-          "display" : "Negative (qualifier value)"
+          "system" : "http://loinc.org",
+          "code" : "62487-4",
+          "display" : "Urobilinogen [Presence] in Urine by Automated test strip"
         }]
       }
     }
@@ -1229,23 +892,15 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410605003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003\">410605003</a></td><td>Confirmed present (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410594000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000\">410594000</a></td><td>Definitely NOT present (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td><td/></tr></table></div>"
       },
       "url" : "https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
+      "date" : "2021-12-17T13:44:29+00:00",
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:d0c51238-65cd-4a6a-ae83-881db89ca328",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
+        "identifier" : "urn:uuid:02d7d2e6-9c49-4629-aca6-774f82d838ca",
+        "timestamp" : "2021-12-17T13:44:57+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1283,168 +938,32 @@
     }
   },
   {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "restricted-event-status",
+      "id" : "geccoplus-allergies-sct",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\">EventStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html\"><code>http://hl7.org/fhir/event-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-not-done\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done\">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-completed\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed\">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-unknown\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown\">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-event-status-in-progress\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress\">in-progress</a></td><td>In Progress</td><td>The event is currently occurring.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300910009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009\">300910009</a></td><td>Allergy to pollen (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-232349006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006\">232349006</a></td><td>Allergy to house dust (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td><td/></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
-      "version" : "0.1.0",
-      "name" : "RestrictedEventStatus",
-      "title" : "RestrictedEventStatus",
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
+      "version" : "1.0.0",
+      "name" : "AllergiesSCT",
+      "title" : "Allergies (SNOMED CT)",
       "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
-      "expansion" : {
-        "identifier" : "urn:uuid:dccf8c38-58c8-4206-b9c6-8e01fd5c6752",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/event-status|4.0.1"
-        }],
-        "contains" : [{
-          "system" : "http://hl7.org/fhir/event-status",
-          "code" : "not-done",
-          "display" : "Not Done"
-        },
-        {
-          "system" : "http://hl7.org/fhir/event-status",
-          "code" : "completed",
-          "display" : "Completed"
-        },
-        {
-          "system" : "http://hl7.org/fhir/event-status",
-          "code" : "unknown",
-          "display" : "Unknown"
-        },
-        {
-          "system" : "http://hl7.org/fhir/event-status",
-          "code" : "in-progress",
-          "display" : "In Progress"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-school-degree",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-71\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71\">71</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Volks-/Hauptschulabschluss</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-72\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72\">72</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Realschulabschluss/Mittlere Reife</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-73\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73\">73</a></td><td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td><td>Fachhochschulabschluss</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-473461003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003\">473461003</a></td><td>http://snomed.info/sct</td><td>Educated to high school level (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-224294005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005\">224294005</a></td><td>http://snomed.info/sct</td><td>No formal education (finding)</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
-      "version" : "0.1.0",
-      "name" : "SchoolDegree",
-      "title" : "School Degree",
-      "status" : "draft",
-      "date" : "2021-10-11",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Value set of school degrees",
-      "expansion" : {
-        "identifier" : "urn:uuid:b81e8a4d-8f8c-46eb-8b7e-ba7fa85c990f",
-        "timestamp" : "2021-12-17T11:18:34+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
-        }],
-        "contains" : [{
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "71",
-          "display" : "Volks-/Hauptschulabschluss"
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "72",
-          "display" : "Realschulabschluss/Mittlere Reife"
-        },
-        {
-          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-          "code" : "73",
-          "display" : "Fachhochschulabschluss"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "473461003",
-          "display" : "Educated to high school level (finding)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "224294005",
-          "display" : "No formal education (finding)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "geccoplus-symptoms-sct",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-68962001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001\">68962001</a></td><td>Muscle pain (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-404640003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003\">404640003</a></td><td>Dizziness (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-29857009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009\">29857009</a></td><td>Chest pain (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-405737000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000\">405737000</a></td><td>Pharyngitis (disorder)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-64531003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003\">64531003</a></td><td>Nasal discharge (finding)</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct",
-      "version" : "0.1.0",
-      "name" : "SymptomsSCT",
-      "title" : "Symptoms",
-      "status" : "draft",
       "date" : "2021-11-29",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
-      "description" : "Value set for symptoms in the context of GECCO+",
+      "description" : "Value set for allergies in the context of GECCO+ (SNOMED CT)",
       "expansion" : {
-        "identifier" : "urn:uuid:256630b5-4fe6-4ec0-a3fd-e55105f1e5da",
-        "timestamp" : "2021-12-17T11:18:35+00:00",
-        "total" : 5,
+        "identifier" : "urn:uuid:1fc4b4fc-07d7-4ec1-98ac-a205bd37bdaf",
+        "timestamp" : "2021-12-17T13:44:58+00:00",
+        "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1459,28 +978,85 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "68962001",
-          "display" : "Muscle pain (finding)"
+          "code" : "300910009",
+          "display" : "Allergy to pollen (finding)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "404640003",
-          "display" : "Dizziness (finding)"
+          "code" : "232349006",
+          "display" : "Allergy to house dust (finding)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "29857009",
-          "display" : "Chest pain (finding)"
+          "code" : "74964007",
+          "display" : "Other (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/urine-specific-gravity",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "urine-specific-gravity",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2965-2\"> </a><a href=\"http://details.loinc.org/LOINC/2965-2.html\">2965-2</a></td><td>Specific gravity of Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2966-0\"> </a><a href=\"http://details.loinc.org/LOINC/2966-0.html\">2966-0</a></td><td>Specific gravity of 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5810-7\"> </a><a href=\"http://details.loinc.org/LOINC/5810-7.html\">5810-7</a></td><td>Specific gravity of Urine by Refractometry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-44933-0\"> </a><a href=\"http://details.loinc.org/LOINC/44933-0.html\">44933-0</a></td><td>Specific gravity of 24 hour Urine by Refractometry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5811-5\"> </a><a href=\"http://details.loinc.org/LOINC/5811-5.html\">5811-5</a></td><td>Specific gravity of Urine by Test strip</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/urine-specific-gravity",
+      "version" : "1.0.0",
+      "name" : "UrineSpecificGravity",
+      "title" : "Urine Specific Gravity",
+      "status" : "active",
+      "date" : "2021-12-01",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }]
+      }],
+      "description" : "Specific gravity of urine",
+      "expansion" : {
+        "identifier" : "urn:uuid:f3f70b3c-d8b1-4a86-b4a7-a3533ceff473",
+        "timestamp" : "2021-12-17T13:44:59+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
         },
         {
-          "system" : "http://snomed.info/sct",
-          "code" : "405737000",
-          "display" : "Pharyngitis (disorder)"
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         },
         {
-          "system" : "http://snomed.info/sct",
-          "code" : "64531003",
-          "display" : "Nasal discharge (finding)"
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.71"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "2965-2",
+          "display" : "Specific gravity of Urine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2966-0",
+          "display" : "Specific gravity of 24 hour Urine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "5810-7",
+          "display" : "Specific gravity of Urine by Refractometry"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "44933-0",
+          "display" : "Specific gravity of 24 hour Urine by Refractometry"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "5811-5",
+          "display" : "Specific gravity of Urine by Test strip"
         }]
       }
     }
@@ -1495,23 +1071,22 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-33903-6\"> </a><a href=\"http://details.loinc.org/LOINC/33903-6.html\">33903-6</a></td><td>Ketones [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-33043-1\"> </a><a href=\"http://details.loinc.org/LOINC/33043-1.html\">33043-1</a></td><td>Ketones [Presence] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2514-8\"> </a><a href=\"http://details.loinc.org/LOINC/2514-8.html\">2514-8</a></td><td>Ketones [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-57734-6\"> </a><a href=\"http://details.loinc.org/LOINC/57734-6.html\">57734-6</a></td><td>Ketones [Presence] in Urine by Automated test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2349-9\"> </a><a href=\"http://details.loinc.org/LOINC/2349-9.html\">2349-9</a></td><td>Glucose [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32174-5\"> </a><a href=\"http://details.loinc.org/LOINC/32174-5.html\">32174-5</a></td><td>Glucose [Presence] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25428-4\"> </a><a href=\"http://details.loinc.org/LOINC/25428-4.html\">25428-4</a></td><td>Glucose [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-50555-2\"> </a><a href=\"http://details.loinc.org/LOINC/50555-2.html\">50555-2</a></td><td>Glucose [Presence] in Urine by Automated test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32710-6\"> </a><a href=\"http://details.loinc.org/LOINC/32710-6.html\">32710-6</a></td><td>Nitrite [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5802-4\"> </a><a href=\"http://details.loinc.org/LOINC/5802-4.html\">5802-4</a></td><td>Nitrite [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-50558-6\"> </a><a href=\"http://details.loinc.org/LOINC/50558-6.html\">50558-6</a></td><td>Nitrite [Presence] in Urine by Automated test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2887-8\"> </a><a href=\"http://details.loinc.org/LOINC/2887-8.html\">2887-8</a></td><td>Protein [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-20454-5\"> </a><a href=\"http://details.loinc.org/LOINC/20454-5.html\">20454-5</a></td><td>Protein [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32209-9\"> </a><a href=\"http://details.loinc.org/LOINC/32209-9.html\">32209-9</a></td><td>Protein [Presence] in 24 hour Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-57735-3\"> </a><a href=\"http://details.loinc.org/LOINC/57735-3.html\">57735-3</a></td><td>Protein [Presence] in Urine by Automated test strip</td><td/></tr></table></div>"
       },
       "url" : "https://www.napkon.de/fhir/ValueSet/urine-diagnostics",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "name" : "UrineDiagnostics",
       "title" : "Urine Diagnostics",
-      "status" : "draft",
+      "status" : "active",
       "date" : "2021-12-01",
       "publisher" : "Charité - Universitätsmedizin Berlin",
       "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }]
       }],
       "description" : "Urine diagnostic codes in the context of NAPKON GECCO+ module",
       "expansion" : {
-        "identifier" : "urn:uuid:d8f7a15d-7c5e-47d8-904b-0aa5dbaacc49",
-        "timestamp" : "2021-12-17T11:18:35+00:00",
+        "identifier" : "urn:uuid:d2be7d7c-b144-439f-8f63-a217aa86b6d8",
+        "timestamp" : "2021-12-17T13:44:59+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1604,164 +1179,86 @@
     }
   },
   {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/urine-specific-gravity",
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "urine-specific-gravity",
+      "id" : "geccoplus-eq5d-s4-responses",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2965-2\"> </a><a href=\"http://details.loinc.org/LOINC/2965-2.html\">2965-2</a></td><td>Specific gravity of Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2966-0\"> </a><a href=\"http://details.loinc.org/LOINC/2966-0.html\">2966-0</a></td><td>Specific gravity of 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5810-7\"> </a><a href=\"http://details.loinc.org/LOINC/5810-7.html\">5810-7</a></td><td>Specific gravity of Urine by Refractometry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-44933-0\"> </a><a href=\"http://details.loinc.org/LOINC/44933-0.html\">44933-0</a></td><td>Specific gravity of 24 hour Urine by Refractometry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5811-5\"> </a><a href=\"http://details.loinc.org/LOINC/5811-5.html\">5811-5</a></td><td>Specific gravity of Urine by Test strip</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-41\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41\">41</a></td><td>I have no pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-42\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42\">42</a></td><td>I have slight pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-43\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43\">43</a></td><td>I have moderate pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-44\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44\">44</a></td><td>I have severe pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-45\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45\">45</a></td><td>I have extreme pain or discomfort.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-46\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46\">46</a></td><td>No information available.</td><td/></tr></table></div>"
       },
-      "url" : "https://www.napkon.de/fhir/ValueSet/urine-specific-gravity",
-      "version" : "0.1.0",
-      "name" : "UrineSpecificGravity",
-      "title" : "Urine Specific Gravity",
-      "status" : "draft",
-      "date" : "2021-12-01",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Specific gravity of urine",
-      "expansion" : {
-        "identifier" : "urn:uuid:c2e4f65c-6754-4399-8050-5b3972b1b0e8",
-        "timestamp" : "2021-12-17T11:18:35+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.71"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "2965-2",
-          "display" : "Specific gravity of Urine"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "2966-0",
-          "display" : "Specific gravity of 24 hour Urine"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "5810-7",
-          "display" : "Specific gravity of Urine by Refractometry"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "44933-0",
-          "display" : "Specific gravity of 24 hour Urine by Refractometry"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "5811-5",
-          "display" : "Specific gravity of Urine by Test strip"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "urobilinogen-diagnostics",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-13658-0\"> </a><a href=\"http://details.loinc.org/LOINC/13658-0.html\">13658-0</a></td><td>Urobilinogen [Presence] in Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-12269-7\"> </a><a href=\"http://details.loinc.org/LOINC/12269-7.html\">12269-7</a></td><td>Urobilinogen [Presence] in 24 hour Urine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-5818-0\"> </a><a href=\"http://details.loinc.org/LOINC/5818-0.html\">5818-0</a></td><td>Urobilinogen [Presence] in Urine by Test strip</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-62487-4\"> </a><a href=\"http://details.loinc.org/LOINC/62487-4.html\">62487-4</a></td><td>Urobilinogen [Presence] in Urine by Automated test strip</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
-      "version" : "0.1.0",
-      "name" : "UrobilinogenDiagnostics",
-      "title" : "Urobilinogen Diagnostics",
-      "status" : "draft",
-      "date" : "2021-12-01",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Urobilinogen diagnostics in the context of NAPKON GECCO+ module",
-      "expansion" : {
-        "identifier" : "urn:uuid:d4541d47-63cc-43ba-a383-9b34e88fa518",
-        "timestamp" : "2021-12-17T11:18:35+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.71"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "13658-0",
-          "display" : "Urobilinogen [Presence] in Urine"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "12269-7",
-          "display" : "Urobilinogen [Presence] in 24 hour Urine"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "5818-0",
-          "display" : "Urobilinogen [Presence] in Urine by Test strip"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "62487-4",
-          "display" : "Urobilinogen [Presence] in Urine by Automated test strip"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "yes-no-unknown",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373066001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001\">373066001</a></td><td>Yes (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>No (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
-      "version" : "0.1.0",
-      "name" : "YesNoUnknown",
-      "title" : "Yes No Unknown",
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
+      "version" : "1.0.0",
+      "name" : "EQ5DS4Responses",
+      "title" : "EQ5D section four answers",
       "status" : "active",
-      "date" : "2021-12-17T11:18:04+00:00",
-      "publisher" : "Charité - Universitätsmedizin Berlin",
-      "contact" : [{
-        "name" : "Charité - Universitätsmedizin Berlin",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Yes / No / Unknown",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EQ5D section four (pain and discomfort) answers",
       "expansion" : {
-        "identifier" : "urn:uuid:e165d6e7-59f2-41f4-a312-4c0a77452b81",
-        "timestamp" : "2021-12-17T11:18:36+00:00",
-        "total" : 3,
+        "identifier" : "urn:uuid:249c091e-6426-4bc2-b47c-d3c27d24ba93",
+        "timestamp" : "2021-12-17T13:44:59+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "41",
+          "display" : "I have no pain or discomfort."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "42",
+          "display" : "I have slight pain or discomfort."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "43",
+          "display" : "I have moderate pain or discomfort."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "44",
+          "display" : "I have severe pain or discomfort."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "45",
+          "display" : "I have extreme pain or discomfort."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "46",
+          "display" : "No information available."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "detected-not-detected-unknown-undetermined",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260373001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001\">260373001</a></td><td>Detected (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260415000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000\">260415000</a></td><td>Not detected (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>Unknown (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+      "version" : "1.0.0",
+      "name" : "DetectedNotDetectedUnknownUndetermined",
+      "title" : "Detected Not Detected Unknown Undetermined",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "Values for laboratory observations",
+      "expansion" : {
+        "identifier" : "urn:uuid:1f9d5f2f-8162-46a0-b91d-ab06c8e3c813",
+        "timestamp" : "2021-12-17T13:44:59+00:00",
+        "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1776,18 +1273,439 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "373066001",
-          "display" : "Yes (qualifier value)"
+          "code" : "260373001",
+          "display" : "Detected (qualifier value)"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "373067005",
-          "display" : "No (qualifier value)"
+          "code" : "260415000",
+          "display" : "Not detected (qualifier value)"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "261665006",
           "display" : "Unknown (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373068000",
+          "display" : "Undetermined (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-eq5d-s1-responses",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-11\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11\">11</a></td><td>I have no problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-12\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12\">12</a></td><td>I have slight problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-13\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13\">13</a></td><td>I have moderate problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-14\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14\">14</a></td><td>I have severe problems in walking about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-15\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15\">15</a></td><td>I am unable to walk about.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-16\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16\">16</a></td><td>No information available.</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
+      "version" : "1.0.0",
+      "name" : "EQ5DS1Responses",
+      "title" : "EQ5D section one answers",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EQ5D section one (agility and mobility) answers",
+      "expansion" : {
+        "identifier" : "urn:uuid:209d7a36-3ade-4a95-a36b-fcf88759d164",
+        "timestamp" : "2021-12-17T13:45:00+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "11",
+          "display" : "I have no problems in walking about."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "12",
+          "display" : "I have slight problems in walking about."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "13",
+          "display" : "I have moderate problems in walking about."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "14",
+          "display" : "I have severe problems in walking about."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "15",
+          "display" : "I am unable to walk about."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "16",
+          "display" : "No information available."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-positive-negative",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10828004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004\">10828004</a></td><td>Positive (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260385009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009\">260385009</a></td><td>Negative (qualifier value)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative",
+      "version" : "1.0.0",
+      "name" : "PositiveNegative",
+      "title" : "Positive Negative Codes",
+      "status" : "active",
+      "date" : "2021-12-07",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }]
+      }],
+      "description" : "Positive / Negative Codes in the context of NAPKON GECCO+ Module",
+      "expansion" : {
+        "identifier" : "urn:uuid:2d7b997e-b18e-4a36-a14b-3459d11fe125",
+        "timestamp" : "2021-12-17T13:45:00+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260385009",
+          "display" : "Negative (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-eq5d-s5-responses",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-51\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51\">51</a></td><td>I am not anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-52\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52\">52</a></td><td>I am slightly anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-53\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53\">53</a></td><td>I am moderately anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-54\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54\">54</a></td><td>I am severely anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-55\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55\">55</a></td><td>I am extremely anxious or depressed.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-56\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56\">56</a></td><td>No information available.</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses",
+      "version" : "1.0.0",
+      "name" : "EQ5DS5Responses",
+      "title" : "EQ5D section five answers",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EQ5D section five (anxiety and depression) answers",
+      "expansion" : {
+        "identifier" : "urn:uuid:613bfac7-b6f7-4486-bd55-82a90cf349b0",
+        "timestamp" : "2021-12-17T13:45:00+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "51",
+          "display" : "I am not anxious or depressed."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "52",
+          "display" : "I am slightly anxious or depressed."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "53",
+          "display" : "I am moderately anxious or depressed."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "54",
+          "display" : "I am severely anxious or depressed."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "55",
+          "display" : "I am extremely anxious or depressed."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "56",
+          "display" : "No information available."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-normal-pathologic",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-29458008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008\">29458008</a></td><td>Pathologic (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-17621005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005\">17621005</a></td><td>Normal (qualifier value)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic",
+      "version" : "1.0.0",
+      "name" : "NormalPathologic",
+      "title" : "Normal Pathologic",
+      "status" : "active",
+      "date" : "2021-12-01",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }]
+      }],
+      "description" : "Normal Pathologic",
+      "expansion" : {
+        "identifier" : "urn:uuid:0ed2f823-dbc3-4dc9-a280-7d48f22ba188",
+        "timestamp" : "2021-12-17T13:45:00+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "29458008",
+          "display" : "Pathologic (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "17621005",
+          "display" : "Normal (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-proms-responses",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-61\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61\">61</a></td><td>No difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-62\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62\">62</a></td><td>Mild difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-63\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63\">63</a></td><td>Moderate difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-64\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64\">64</a></td><td>Severe difficulties.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-65\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65\">65</a></td><td>I haven't done this in the past 7 days.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-66\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66\">66</a></td><td>No information available.</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses",
+      "version" : "1.0.0",
+      "name" : "PROMsResponses",
+      "title" : "PROM responses in the context of GECCOplus",
+      "status" : "active",
+      "date" : "2021-11-29",
+      "publisher" : "Charité - Universitätsmedizin Berlin",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }]
+      }],
+      "description" : "Response codes for PROMs of GECCOplus",
+      "expansion" : {
+        "identifier" : "urn:uuid:41f23881-bd14-47a2-9de5-ac76c0b213d3",
+        "timestamp" : "2021-12-17T13:45:01+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "61",
+          "display" : "No difficulties."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "62",
+          "display" : "Mild difficulties."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "63",
+          "display" : "Moderate difficulties."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "64",
+          "display" : "Severe difficulties."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "65",
+          "display" : "I haven't done this in the past 7 days."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "66",
+          "display" : "No information available."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-eq5d-s3-responses",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-31\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31\">31</a></td><td>I have no problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-32\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32\">32</a></td><td>I have slight problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-33\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33\">33</a></td><td>I have moderate problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-34\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34\">34</a></td><td>I have severe problems doing my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-35\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35\">35</a></td><td>I am unable to do my usual activities.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-36\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36\">36</a></td><td>No information available.</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses",
+      "version" : "1.0.0",
+      "name" : "EQ5DS3Responses",
+      "title" : "EQ5D section three answers",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EQ5D section three (daily activities) answers",
+      "expansion" : {
+        "identifier" : "urn:uuid:9fdc98a0-97cb-402f-a974-eafdbb1a129f",
+        "timestamp" : "2021-12-17T13:45:01+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "31",
+          "display" : "I have no problems doing my usual activities."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "32",
+          "display" : "I have slight problems doing my usual activities."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "33",
+          "display" : "I have moderate problems doing my usual activities."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "34",
+          "display" : "I have severe problems doing my usual activities."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "35",
+          "display" : "I am unable to do my usual activities."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "36",
+          "display" : "No information available."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "geccoplus-eq5d-s2-responses",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-geccoplus-codesystem.html\">GECCOplus Module Codes v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-geccoplus-codesystem.html\"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-21\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21\">21</a></td><td>I have no problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-22\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22\">22</a></td><td>I have slight problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-23\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23\">23</a></td><td>I have moderate problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-24\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24\">24</a></td><td>I have severe problems washing or dressing myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-25\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25\">25</a></td><td>I am unable to wash or dress myself.</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-26\"> </a><a href=\"CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26\">26</a></td><td>No information available.</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
+      "version" : "1.0.0",
+      "name" : "EQ5DS2Responses",
+      "title" : "EQ5D section two answers",
+      "status" : "active",
+      "date" : "2021-12-17T13:44:29+00:00",
+      "description" : "EQ5D section two (self-sufficiency) answers",
+      "expansion" : {
+        "identifier" : "urn:uuid:826319ed-4800-4cd3-bd35-611675c158cd",
+        "timestamp" : "2021-12-17T13:45:01+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "21",
+          "display" : "I have no problems washing or dressing myself."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "22",
+          "display" : "I have slight problems washing or dressing myself."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "23",
+          "display" : "I have moderate problems washing or dressing myself."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "24",
+          "display" : "I have severe problems washing or dressing myself."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "25",
+          "display" : "I am unable to wash or dress myself."
+        },
+        {
+          "system" : "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
+          "code" : "26",
+          "display" : "No information available."
         }]
       }
     }

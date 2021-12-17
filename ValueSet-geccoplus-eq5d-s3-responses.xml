@@ -6,19 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-geccoplus-codesystem.html"><code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31">31</a></td><td>I have no problems doing my usual activities.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32">32</a></td><td>I have slight problems doing my usual activities.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33">33</a></td><td>I have moderate problems doing my usual activities.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34">34</a></td><td>I have severe problems doing my usual activities.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35">35</a></td><td>I am unable to do my usual activities.</td></tr><tr><td><a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36">36</a></td><td>No information available.</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="EQ5DS3Responses"/>
   <title value="EQ5D section three answers"/>
   <status value="active"/>
-  <date value="2021-12-17T11:18:04+00:00"/>
-  <publisher value="Charité - Universitätsmedizin Berlin"/>
-  <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-    </telecom>
-  </contact>
+  <date value="2021-12-17T13:44:29+00:00"/>
   <description value="EQ5D section three (daily activities) answers"/>
   <compose>
     <include>

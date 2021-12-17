@@ -6,19 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003">410605003</a></td><td>Confirmed present (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000">410594000</a></td><td>Definitely NOT present (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a></td><td>Other (qualifier value)</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="PresentNotPresentUndeterminedOther"/>
   <title value="Present Not Present Undetermined Other"/>
   <status value="active"/>
-  <date value="2021-12-17T11:18:04+00:00"/>
-  <publisher value="Charité - Universitätsmedizin Berlin"/>
-  <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-    </telecom>
-  </contact>
+  <date value="2021-12-17T13:44:29+00:00"/>
   <description value="Values for laboratory observations"/>
   <compose>
     <include>

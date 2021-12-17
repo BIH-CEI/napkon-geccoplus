@@ -16,19 +16,18 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "EQ5DResponse",
   "title": "EQ5D Questionnaire Response",
-  "status": "draft",
+  "status": "active",
   "date": "2021-11-25",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }

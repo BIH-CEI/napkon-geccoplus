@@ -6,19 +6,18 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33903-6.html\">33903-6</a></td><td>Ketones [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33043-1.html\">33043-1</a></td><td>Ketones [Presence] in 24 hour Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2514-8.html\">2514-8</a></td><td>Ketones [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57734-6.html\">57734-6</a></td><td>Ketones [Presence] in Urine by Automated test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2349-9.html\">2349-9</a></td><td>Glucose [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32174-5.html\">32174-5</a></td><td>Glucose [Presence] in 24 hour Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/25428-4.html\">25428-4</a></td><td>Glucose [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50555-2.html\">50555-2</a></td><td>Glucose [Presence] in Urine by Automated test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32710-6.html\">32710-6</a></td><td>Nitrite [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5802-4.html\">5802-4</a></td><td>Nitrite [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/50558-6.html\">50558-6</a></td><td>Nitrite [Presence] in Urine by Automated test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2887-8.html\">2887-8</a></td><td>Protein [Presence] in Urine</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20454-5.html\">20454-5</a></td><td>Protein [Presence] in Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32209-9.html\">32209-9</a></td><td>Protein [Presence] in 24 hour Urine by Test strip</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57735-3.html\">57735-3</a></td><td>Protein [Presence] in Urine by Automated test strip</td></tr></table></li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/urine-diagnostics",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "UrineDiagnostics",
   "title": "Urine Diagnostics",
-  "status": "draft",
+  "status": "active",
   "date": "2021-12-01",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }

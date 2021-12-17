@@ -1,16 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="659b306b-96ea-4780-bc3c-763d458157ff"/>
+  <id value="ce67ccab-5290-41af-ac95-3b4edffdc353"/>
   <meta>
-    <lastUpdated value="2021-12-17T11:18:04.287+00:00"/>
+    <lastUpdated value="2021-12-17T13:44:29.186+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
     <resource>
       <ValueSet>
-        <id value="geccoplus-allergies-sct"/>
+        <id value="restricted-event-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">
+                <code>http://hl7.org/fhir/event-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-not-done"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a>
+                </td>
+                <td>Not Done</td>
+                <td>The event was terminated prior to any activity beyond preparation.  I.e. The &#39;main&#39; activity has not yet begun.  The boundary between preparatory and the &#39;main&#39; activity is context-specific.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-completed"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a>
+                </td>
+                <td>Completed</td>
+                <td>The event has now concluded.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-unknown"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-in-progress"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress">in-progress</a>
+                </td>
+                <td>In Progress</td>
+                <td>The event is currently occurring.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
+        <version value="1.0.0"/>
+        <name value="RestrictedEventStatus"/>
+        <title value="RestrictedEventStatus"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
+        <expansion>
+          <identifier value="urn:uuid:61e4c359-d517-48d5-a47f-f7c3ad48fa61"/>
+          <timestamp value="2021-12-17T13:44:55+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/event-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="not-done"/>
+            <display value="Not Done"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
+    <resource>
+      <ValueSet>
+        <id value="yes-no-unknown"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -35,49 +142,41 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-300910009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009">300910009</a>
+                  <a name="http---snomed.info-sct-373066001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
                 </td>
-                <td>Allergy to pollen (finding)</td>
+                <td>Yes (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-232349006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006">232349006</a>
+                  <a name="http---snomed.info-sct-373067005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
                 </td>
-                <td>Allergy to house dust (finding)</td>
+                <td>No (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-74964007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
                 </td>
-                <td>Other (qualifier value)</td>
+                <td>Unknown (qualifier value)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
-        <version value="0.1.0"/>
-        <name value="AllergiesSCT"/>
-        <title value="Allergies"/>
-        <status value="draft"/>
-        <date value="2021-11-29"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Value set for allergies in the context of GECCO+"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
+        <version value="1.0.0"/>
+        <name value="YesNoUnknown"/>
+        <title value="Yes No Unknown"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:940c6102-a586-4652-b18f-b65f150e05be"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
+          <identifier value="urn:uuid:2a5f159f-96d1-434b-9ce5-4bdd55b8b2cd"/>
+          <timestamp value="2021-12-17T13:44:55+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -93,32 +192,32 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="300910009"/>
-            <display value="Allergy to pollen (finding)"/>
+            <code value="373066001"/>
+            <display value="Yes (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="232349006"/>
-            <display value="Allergy to house dust (finding)"/>
+            <code value="373067005"/>
+            <display value="No (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="74964007"/>
-            <display value="Other (qualifier value)"/>
+            <code value="261665006"/>
+            <display value="Unknown (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
     <resource>
       <ValueSet>
-        <id value="detected-not-detected-unknown-undetermined"/>
+        <id value="geccoplus-symptoms-sct"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
@@ -139,58 +238,65 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260373001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
+                  <a name="http---snomed.info-sct-68962001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
                 </td>
-                <td>Detected (qualifier value)</td>
+                <td>Muscle pain (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260415000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
+                  <a name="http---snomed.info-sct-404640003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003">404640003</a>
                 </td>
-                <td>Not detected (qualifier value)</td>
+                <td>Dizziness (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-261665006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                  <a name="http---snomed.info-sct-29857009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009">29857009</a>
                 </td>
-                <td>Unknown (qualifier value)</td>
+                <td>Chest pain (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373068000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                  <a name="http---snomed.info-sct-405737000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000">405737000</a>
                 </td>
-                <td>Undetermined (qualifier value)</td>
+                <td>Pharyngitis (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-64531003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003">64531003</a>
+                </td>
+                <td>Nasal discharge (finding)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
-        <version value="0.1.0"/>
-        <name value="DetectedNotDetectedUnknownUndetermined"/>
-        <title value="Detected Not Detected Unknown Undetermined"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
+        <version value="1.0.0"/>
+        <name value="SymptomsSCT"/>
+        <title value="Symptoms (SNOMED CT)"/>
         <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
+        <date value="2021-11-29"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
-        <description value="Values for laboratory observations"/>
+        <description value="Value set for symptoms in the context of GECCO+ (SNOMED CT)"/>
         <expansion>
-          <identifier value="urn:uuid:88d87a2a-b5c0-4a8a-934c-7258cd39c6b5"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
-          <total value="4"/>
+          <identifier value="urn:uuid:41b1ba47-e54f-4a5c-a8f6-02cf5aefd2b6"/>
+          <timestamp value="2021-12-17T13:44:55+00:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -205,49 +311,58 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="260373001"/>
-            <display value="Detected (qualifier value)"/>
+            <code value="68962001"/>
+            <display value="Muscle pain (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="260415000"/>
-            <display value="Not detected (qualifier value)"/>
+            <code value="404640003"/>
+            <display value="Dizziness (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="261665006"/>
-            <display value="Unknown (qualifier value)"/>
+            <code value="29857009"/>
+            <display value="Chest pain (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="373068000"/>
-            <display value="Undetermined (qualifier value)"/>
+            <code value="405737000"/>
+            <display value="Pharyngitis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="64531003"/>
+            <display value="Nasal discharge (finding)"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
     <resource>
       <ValueSet>
-        <id value="geccoplus-eq5d-s1-responses"/>
+        <id value="geccoplus-school-degree"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
+            <p>This value set contains 5 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -258,675 +373,114 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-11"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11">11</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-71"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71">71</a>
                 </td>
-                <td>I have no problems in walking about.</td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Volks-/Hauptschulabschluss</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-12"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12">12</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-72"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72">72</a>
                 </td>
-                <td>I have slight problems in walking about.</td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Realschulabschluss/Mittlere Reife</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-13"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13">13</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-73"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73">73</a>
                 </td>
-                <td>I have moderate problems in walking about.</td>
+                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
+                <td>Fachhochschulabschluss</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-14"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14">14</a>
+                  <a name="http---snomed.info-sct-473461003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003">473461003</a>
                 </td>
-                <td>I have severe problems in walking about.</td>
+                <td>http://snomed.info/sct</td>
+                <td>Educated to high school level (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-15"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15">15</a>
+                  <a name="http---snomed.info-sct-224294005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005">224294005</a>
                 </td>
-                <td>I am unable to walk about.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-16"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16">16</a>
-                </td>
-                <td>No information available.</td>
+                <td>http://snomed.info/sct</td>
+                <td>No formal education (finding)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
-        <version value="0.1.0"/>
-        <name value="EQ5DS1Responses"/>
-        <title value="EQ5D section one answers"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
+        <version value="1.0.0"/>
+        <name value="SchoolDegree"/>
+        <title value="School Degree"/>
         <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
+        <date value="2021-10-11"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
-        <description value="EQ5D section one (agility and mobility) answers"/>
+        <description value="Value set of school degrees"/>
         <expansion>
-          <identifier value="urn:uuid:d07d3d99-3b9c-4559-ae29-a53e3fc08a4a"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
-          <total value="6"/>
+          <identifier value="urn:uuid:ebb15bd8-1f44-4d89-87a3-4dd840d23726"/>
+          <timestamp value="2021-12-17T13:44:55+00:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
           </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="11"/>
-            <display value="I have no problems in walking about."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="12"/>
-            <display value="I have slight problems in walking about."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="13"/>
-            <display value="I have moderate problems in walking about."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="14"/>
-            <display value="I have severe problems in walking about."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="15"/>
-            <display value="I am unable to walk about."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="16"/>
-            <display value="No information available."/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-eq5d-s2-responses"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-21"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21">21</a>
-                </td>
-                <td>I have no problems washing or dressing myself.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-22"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22">22</a>
-                </td>
-                <td>I have slight problems washing or dressing myself.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-23"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23">23</a>
-                </td>
-                <td>I have moderate problems washing or dressing myself.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-24"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24">24</a>
-                </td>
-                <td>I have severe problems washing or dressing myself.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-25"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25">25</a>
-                </td>
-                <td>I am unable to wash or dress myself.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-26"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26">26</a>
-                </td>
-                <td>No information available.</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
-        <version value="0.1.0"/>
-        <name value="EQ5DS2Responses"/>
-        <title value="EQ5D section two answers"/>
-        <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="EQ5D section two (self-sufficiency) answers"/>
-        <expansion>
-          <identifier value="urn:uuid:9fc4162c-0f3d-4600-9d1d-acf53dc3963c"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
-          <total value="6"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
-            <valueBoolean value="false"/>
+            <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="21"/>
-            <display value="I have no problems washing or dressing myself."/>
+            <code value="71"/>
+            <display value="Volks-/Hauptschulabschluss"/>
           </contains>
           <contains>
             <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="22"/>
-            <display value="I have slight problems washing or dressing myself."/>
+            <code value="72"/>
+            <display value="Realschulabschluss/Mittlere Reife"/>
           </contains>
           <contains>
             <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="23"/>
-            <display value="I have moderate problems washing or dressing myself."/>
+            <code value="73"/>
+            <display value="Fachhochschulabschluss"/>
           </contains>
           <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="24"/>
-            <display value="I have severe problems washing or dressing myself."/>
+            <system value="http://snomed.info/sct"/>
+            <code value="473461003"/>
+            <display value="Educated to high school level (finding)"/>
           </contains>
           <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="25"/>
-            <display value="I am unable to wash or dress myself."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="26"/>
-            <display value="No information available."/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-eq5d-s3-responses"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-31"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31">31</a>
-                </td>
-                <td>I have no problems doing my usual activities.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-32"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32">32</a>
-                </td>
-                <td>I have slight problems doing my usual activities.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-33"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33">33</a>
-                </td>
-                <td>I have moderate problems doing my usual activities.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-34"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34">34</a>
-                </td>
-                <td>I have severe problems doing my usual activities.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-35"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35">35</a>
-                </td>
-                <td>I am unable to do my usual activities.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-36"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36">36</a>
-                </td>
-                <td>No information available.</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
-        <version value="0.1.0"/>
-        <name value="EQ5DS3Responses"/>
-        <title value="EQ5D section three answers"/>
-        <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="EQ5D section three (daily activities) answers"/>
-        <expansion>
-          <identifier value="urn:uuid:3cd99543-1bf5-4c6a-b8b7-f0f082d53f0c"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="31"/>
-            <display value="I have no problems doing my usual activities."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="32"/>
-            <display value="I have slight problems doing my usual activities."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="33"/>
-            <display value="I have moderate problems doing my usual activities."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="34"/>
-            <display value="I have severe problems doing my usual activities."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="35"/>
-            <display value="I am unable to do my usual activities."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="36"/>
-            <display value="No information available."/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-eq5d-s4-responses"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-41"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41">41</a>
-                </td>
-                <td>I have no pain or discomfort.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-42"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42">42</a>
-                </td>
-                <td>I have slight pain or discomfort.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-43"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43">43</a>
-                </td>
-                <td>I have moderate pain or discomfort.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-44"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44">44</a>
-                </td>
-                <td>I have severe pain or discomfort.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-45"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45">45</a>
-                </td>
-                <td>I have extreme pain or discomfort.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-46"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46">46</a>
-                </td>
-                <td>No information available.</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
-        <version value="0.1.0"/>
-        <name value="EQ5DS4Responses"/>
-        <title value="EQ5D section four answers"/>
-        <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="EQ5D section four (pain and discomfort) answers"/>
-        <expansion>
-          <identifier value="urn:uuid:3b3faf3d-7455-41ea-ab75-123cff7303cd"/>
-          <timestamp value="2021-12-17T11:18:33+00:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="41"/>
-            <display value="I have no pain or discomfort."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="42"/>
-            <display value="I have slight pain or discomfort."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="43"/>
-            <display value="I have moderate pain or discomfort."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="44"/>
-            <display value="I have severe pain or discomfort."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="45"/>
-            <display value="I have extreme pain or discomfort."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="46"/>
-            <display value="No information available."/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-eq5d-s5-responses"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-51"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51">51</a>
-                </td>
-                <td>I am not anxious or depressed.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-52"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52">52</a>
-                </td>
-                <td>I am slightly anxious or depressed.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-53"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53">53</a>
-                </td>
-                <td>I am moderately anxious or depressed.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-54"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54">54</a>
-                </td>
-                <td>I am severely anxious or depressed.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-55"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55">55</a>
-                </td>
-                <td>I am extremely anxious or depressed.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-56"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56">56</a>
-                </td>
-                <td>No information available.</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
-        <version value="0.1.0"/>
-        <name value="EQ5DS5Responses"/>
-        <title value="EQ5D section five answers"/>
-        <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="EQ5D section five (anxiety and depression) answers"/>
-        <expansion>
-          <identifier value="urn:uuid:cddb4be3-ddce-4a4b-8fb6-7afabc9b1370"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="51"/>
-            <display value="I am not anxious or depressed."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="52"/>
-            <display value="I am slightly anxious or depressed."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="53"/>
-            <display value="I am moderately anxious or depressed."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="54"/>
-            <display value="I am severely anxious or depressed."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="55"/>
-            <display value="I am extremely anxious or depressed."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="56"/>
-            <display value="No information available."/>
+            <system value="http://snomed.info/sct"/>
+            <code value="224294005"/>
+            <display value="No formal education (finding)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1811,23 +1365,22 @@
           </div>
         </text>
         <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="LaboratoryDiagnostics"/>
         <title value="Laboratory Diagnostics"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2021-12-01"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
         <description value="Laboratory diagnostics in the context of NAPKON GECCO+ module"/>
         <expansion>
-          <identifier value="urn:uuid:43370791-3e20-4ca7-939b-f3532682075e"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <identifier value="urn:uuid:b06861bb-a84e-40a1-8ccd-687a6d6cab8a"/>
+          <timestamp value="2021-12-17T13:44:56+00:00"/>
           <total value="106"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2376,18 +1929,18 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
     <resource>
       <ValueSet>
-        <id value="geccoplus-normal-pathologic"/>
+        <id value="urobilinogen-diagnostics"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
               </a>
             </p>
             <table class="codes">
@@ -2404,42 +1957,57 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-29458008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008">29458008</a>
+                  <a name="http---loinc.org-13658-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/13658-0.html">13658-0</a>
                 </td>
-                <td>Pathologic (qualifier value)</td>
+                <td>Urobilinogen [Presence] in Urine</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-17621005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005">17621005</a>
+                  <a name="http---loinc.org-12269-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/12269-7.html">12269-7</a>
                 </td>
-                <td>Normal (qualifier value)</td>
+                <td>Urobilinogen [Presence] in 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5818-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/5818-0.html">5818-0</a>
+                </td>
+                <td>Urobilinogen [Presence] in Urine by Test strip</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-62487-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/62487-4.html">62487-4</a>
+                </td>
+                <td>Urobilinogen [Presence] in Urine by Automated test strip</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
-        <version value="0.1.0"/>
-        <name value="NormalPathologic"/>
-        <title value="Normal Pathologic"/>
-        <status value="draft"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
+        <version value="1.0.0"/>
+        <name value="UrobilinogenDiagnostics"/>
+        <title value="Urobilinogen Diagnostics"/>
+        <status value="active"/>
         <date value="2021-12-01"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
-        <description value="Normal Pathologic"/>
+        <description value="Urobilinogen diagnostics in the context of NAPKON GECCO+ module"/>
         <expansion>
-          <identifier value="urn:uuid:fb62cc2c-816c-4223-8278-dc811ae37c05"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:6eb1b2d8-c458-4bf0-beb9-b21f6ba71206"/>
+          <timestamp value="2021-12-17T13:44:57+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2450,249 +2018,27 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://loinc.org|2.71"/>
           </parameter>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="29458008"/>
-            <display value="Pathologic (qualifier value)"/>
+            <system value="http://loinc.org"/>
+            <code value="13658-0"/>
+            <display value="Urobilinogen [Presence] in Urine"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="17621005"/>
-            <display value="Normal (qualifier value)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-proms-responses"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-geccoplus-codesystem.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-61"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61">61</a>
-                </td>
-                <td>No difficulties.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-62"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62">62</a>
-                </td>
-                <td>Mild difficulties.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-63"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63">63</a>
-                </td>
-                <td>Moderate difficulties.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-64"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64">64</a>
-                </td>
-                <td>Severe difficulties.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-65"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65">65</a>
-                </td>
-                <td>I haven&#39;t done this in the past 7 days.</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-66"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66">66</a>
-                </td>
-                <td>No information available.</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
-        <version value="0.1.0"/>
-        <name value="PROMsResponses"/>
-        <title value="Proms in the context of GECCOplus"/>
-        <status value="draft"/>
-        <date value="2021-11-29"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Manuell code system for proms in order to be able to specify codes which are currently not assigned to any terminology"/>
-        <expansion>
-          <identifier value="urn:uuid:99f61a79-1e95-415e-9dac-0d16f5f5f755"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="61"/>
-            <display value="No difficulties."/>
+            <system value="http://loinc.org"/>
+            <code value="12269-7"/>
+            <display value="Urobilinogen [Presence] in 24 hour Urine"/>
           </contains>
           <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="62"/>
-            <display value="Mild difficulties."/>
+            <system value="http://loinc.org"/>
+            <code value="5818-0"/>
+            <display value="Urobilinogen [Presence] in Urine by Test strip"/>
           </contains>
           <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="63"/>
-            <display value="Moderate difficulties."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="64"/>
-            <display value="Severe difficulties."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="65"/>
-            <display value="I haven&#39;t done this in the past 7 days."/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="66"/>
-            <display value="No information available."/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-positive-negative"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-10828004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004">10828004</a>
-                </td>
-                <td>Positive (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260385009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009">260385009</a>
-                </td>
-                <td>Negative (qualifier value)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
-        <version value="0.1.0"/>
-        <name value="PositiveNegative"/>
-        <title value="Positive Negative Codes"/>
-        <status value="draft"/>
-        <date value="2021-12-07"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Positive / Negative Codes in the context of NAPKON GECCO+ Module"/>
-        <expansion>
-          <identifier value="urn:uuid:fe31cd74-0a1d-48b9-afe1-a0104a5eff1f"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="10828004"/>
-            <display value="Positive (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260385009"/>
-            <display value="Negative (qualifier value)"/>
+            <system value="http://loinc.org"/>
+            <code value="62487-4"/>
+            <display value="Urobilinogen [Presence] in Urine by Automated test strip"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2761,23 +2107,15 @@
           </div>
         </text>
         <url value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
+        <date value="2021-12-17T13:44:29+00:00"/>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:d0c51238-65cd-4a6a-ae83-881db89ca328"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
+          <identifier value="urn:uuid:02d7d2e6-9c49-4629-aca6-774f82d838ca"/>
+          <timestamp value="2021-12-17T13:44:57+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2816,278 +2154,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
     <resource>
       <ValueSet>
-        <id value="restricted-event-status"/>
+        <id value="geccoplus-allergies-sct"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">
-                <code>http://hl7.org/fhir/event-status</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-event-status-not-done"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a>
-                </td>
-                <td>Not Done</td>
-                <td>The event was terminated prior to any activity beyond preparation.  I.e. The &#39;main&#39; activity has not yet begun.  The boundary between preparatory and the &#39;main&#39; activity is context-specific.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-event-status-completed"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a>
-                </td>
-                <td>Completed</td>
-                <td>The event has now concluded.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-event-status-unknown"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a>
-                </td>
-                <td>Unknown</td>
-                <td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-event-status-in-progress"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress">in-progress</a>
-                </td>
-                <td>In Progress</td>
-                <td>The event is currently occurring.</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
-        <version value="0.1.0"/>
-        <name value="RestrictedEventStatus"/>
-        <title value="RestrictedEventStatus"/>
-        <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
-        <expansion>
-          <identifier value="urn:uuid:dccf8c38-58c8-4206-b9c6-8e01fd5c6752"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/event-status|4.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/event-status"/>
-            <code value="not-done"/>
-            <display value="Not Done"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/event-status"/>
-            <code value="completed"/>
-            <display value="Completed"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/event-status"/>
-            <code value="unknown"/>
-            <display value="Unknown"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/event-status"/>
-            <code value="in-progress"/>
-            <display value="In Progress"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-school-degree"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v0.1.0 (CodeSystem)</a>
-                </li>
-                <li>SNOMED CT International edition 31-Jul 2021</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-71"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-71">71</a>
-                </td>
-                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
-                <td>Volks-/Hauptschulabschluss</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-72"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-72">72</a>
-                </td>
-                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
-                <td>Realschulabschluss/Mittlere Reife</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-73"> </a>
-                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-73">73</a>
-                </td>
-                <td>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</td>
-                <td>Fachhochschulabschluss</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-473461003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=473461003">473461003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Educated to high school level (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-224294005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224294005">224294005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>No formal education (finding)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree"/>
-        <version value="0.1.0"/>
-        <name value="SchoolDegree"/>
-        <title value="School Degree"/>
-        <status value="draft"/>
-        <date value="2021-10-11"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Value set of school degrees"/>
-        <expansion>
-          <identifier value="urn:uuid:b81e8a4d-8f8c-46eb-8b7e-ba7fa85c990f"/>
-          <timestamp value="2021-12-17T11:18:34+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|0.1.0"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="71"/>
-            <display value="Volks-/Hauptschulabschluss"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="72"/>
-            <display value="Realschulabschluss/Mittlere Reife"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
-            <code value="73"/>
-            <display value="Fachhochschulabschluss"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="473461003"/>
-            <display value="Educated to high school level (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="224294005"/>
-            <display value="No formal education (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
-    <resource>
-      <ValueSet>
-        <id value="geccoplus-symptoms-sct"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
@@ -3108,66 +2182,49 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-68962001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
+                  <a name="http---snomed.info-sct-300910009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300910009">300910009</a>
                 </td>
-                <td>Muscle pain (finding)</td>
+                <td>Allergy to pollen (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-404640003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404640003">404640003</a>
+                  <a name="http---snomed.info-sct-232349006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=232349006">232349006</a>
                 </td>
-                <td>Dizziness (finding)</td>
+                <td>Allergy to house dust (finding)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-29857009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009">29857009</a>
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
                 </td>
-                <td>Chest pain (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-405737000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405737000">405737000</a>
-                </td>
-                <td>Pharyngitis (disorder)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-64531003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003">64531003</a>
-                </td>
-                <td>Nasal discharge (finding)</td>
+                <td>Other (qualifier value)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct"/>
-        <version value="0.1.0"/>
-        <name value="SymptomsSCT"/>
-        <title value="Symptoms"/>
-        <status value="draft"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct"/>
+        <version value="1.0.0"/>
+        <name value="AllergiesSCT"/>
+        <title value="Allergies (SNOMED CT)"/>
+        <status value="active"/>
         <date value="2021-11-29"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
-        <description value="Value set for symptoms in the context of GECCO+"/>
+        <description value="Value set for allergies in the context of GECCO+ (SNOMED CT)"/>
         <expansion>
-          <identifier value="urn:uuid:256630b5-4fe6-4ec0-a3fd-e55105f1e5da"/>
-          <timestamp value="2021-12-17T11:18:35+00:00"/>
-          <total value="5"/>
+          <identifier value="urn:uuid:1fc4b4fc-07d7-4ec1-98ac-a205bd37bdaf"/>
+          <timestamp value="2021-12-17T13:44:58+00:00"/>
+          <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3182,28 +2239,147 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="68962001"/>
-            <display value="Muscle pain (finding)"/>
+            <code value="300910009"/>
+            <display value="Allergy to pollen (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="404640003"/>
-            <display value="Dizziness (finding)"/>
+            <code value="232349006"/>
+            <display value="Allergy to house dust (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="29857009"/>
-            <display value="Chest pain (finding)"/>
+            <code value="74964007"/>
+            <display value="Other (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
+    <resource>
+      <ValueSet>
+        <id value="urine-specific-gravity"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2965-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/2965-2.html">2965-2</a>
+                </td>
+                <td>Specific gravity of Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2966-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/2966-0.html">2966-0</a>
+                </td>
+                <td>Specific gravity of 24 hour Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5810-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/5810-7.html">5810-7</a>
+                </td>
+                <td>Specific gravity of Urine by Refractometry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-44933-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/44933-0.html">44933-0</a>
+                </td>
+                <td>Specific gravity of 24 hour Urine by Refractometry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-5811-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/5811-5.html">5811-5</a>
+                </td>
+                <td>Specific gravity of Urine by Test strip</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
+        <version value="1.0.0"/>
+        <name value="UrineSpecificGravity"/>
+        <title value="Urine Specific Gravity"/>
+        <status value="active"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Specific gravity of urine"/>
+        <expansion>
+          <identifier value="urn:uuid:f3f70b3c-d8b1-4a86-b4a7-a3533ceff473"/>
+          <timestamp value="2021-12-17T13:44:59+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2965-2"/>
+            <display value="Specific gravity of Urine"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="405737000"/>
-            <display value="Pharyngitis (disorder)"/>
+            <system value="http://loinc.org"/>
+            <code value="2966-0"/>
+            <display value="Specific gravity of 24 hour Urine"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="64531003"/>
-            <display value="Nasal discharge (finding)"/>
+            <system value="http://loinc.org"/>
+            <code value="5810-7"/>
+            <display value="Specific gravity of Urine by Refractometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="44933-0"/>
+            <display value="Specific gravity of 24 hour Urine by Refractometry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="5811-5"/>
+            <display value="Specific gravity of Urine by Test strip"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3360,23 +2536,22 @@
           </div>
         </text>
         <url value="https://www.napkon.de/fhir/ValueSet/urine-diagnostics"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
         <name value="UrineDiagnostics"/>
         <title value="Urine Diagnostics"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2021-12-01"/>
         <publisher value="Charité - Universitätsmedizin Berlin"/>
         <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
           </telecom>
         </contact>
         <description value="Urine diagnostic codes in the context of NAPKON GECCO+ module"/>
         <expansion>
-          <identifier value="urn:uuid:d8f7a15d-7c5e-47d8-904b-0aa5dbaacc49"/>
-          <timestamp value="2021-12-17T11:18:35+00:00"/>
+          <identifier value="urn:uuid:d2be7d7c-b144-439f-8f63-a217aa86b6d8"/>
+          <timestamp value="2021-12-17T13:44:59+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3470,18 +2645,20 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
     <resource>
       <ValueSet>
-        <id value="urine-specific-gravity"/>
+        <id value="geccoplus-eq5d-s4-responses"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
-                <code>http://loinc.org</code>
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
               </a>
             </p>
             <table class="codes">
@@ -3498,233 +2675,117 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-2965-2"> </a>
-                  <a href="http://details.loinc.org/LOINC/2965-2.html">2965-2</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-41"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-41">41</a>
                 </td>
-                <td>Specific gravity of Urine</td>
+                <td>I have no pain or discomfort.</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-2966-0"> </a>
-                  <a href="http://details.loinc.org/LOINC/2966-0.html">2966-0</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-42"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-42">42</a>
                 </td>
-                <td>Specific gravity of 24 hour Urine</td>
+                <td>I have slight pain or discomfort.</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-5810-7"> </a>
-                  <a href="http://details.loinc.org/LOINC/5810-7.html">5810-7</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-43"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-43">43</a>
                 </td>
-                <td>Specific gravity of Urine by Refractometry</td>
+                <td>I have moderate pain or discomfort.</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-44933-0"> </a>
-                  <a href="http://details.loinc.org/LOINC/44933-0.html">44933-0</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-44"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-44">44</a>
                 </td>
-                <td>Specific gravity of 24 hour Urine by Refractometry</td>
+                <td>I have severe pain or discomfort.</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-5811-5"> </a>
-                  <a href="http://details.loinc.org/LOINC/5811-5.html">5811-5</a>
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-45"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-45">45</a>
                 </td>
-                <td>Specific gravity of Urine by Test strip</td>
+                <td>I have extreme pain or discomfort.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-46"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-46">46</a>
+                </td>
+                <td>No information available.</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/urine-specific-gravity"/>
-        <version value="0.1.0"/>
-        <name value="UrineSpecificGravity"/>
-        <title value="Urine Specific Gravity"/>
-        <status value="draft"/>
-        <date value="2021-12-01"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Specific gravity of urine"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses"/>
+        <version value="1.0.0"/>
+        <name value="EQ5DS4Responses"/>
+        <title value="EQ5D section four answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EQ5D section four (pain and discomfort) answers"/>
         <expansion>
-          <identifier value="urn:uuid:c2e4f65c-6754-4399-8050-5b3972b1b0e8"/>
-          <timestamp value="2021-12-17T11:18:35+00:00"/>
-          <total value="5"/>
+          <identifier value="urn:uuid:249c091e-6426-4bc2-b47c-d3c27d24ba93"/>
+          <timestamp value="2021-12-17T13:44:59+00:00"/>
+          <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.71"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
           </parameter>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="2965-2"/>
-            <display value="Specific gravity of Urine"/>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="41"/>
+            <display value="I have no pain or discomfort."/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="2966-0"/>
-            <display value="Specific gravity of 24 hour Urine"/>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="42"/>
+            <display value="I have slight pain or discomfort."/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="5810-7"/>
-            <display value="Specific gravity of Urine by Refractometry"/>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="43"/>
+            <display value="I have moderate pain or discomfort."/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="44933-0"/>
-            <display value="Specific gravity of 24 hour Urine by Refractometry"/>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="44"/>
+            <display value="I have severe pain or discomfort."/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="5811-5"/>
-            <display value="Specific gravity of Urine by Test strip"/>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="45"/>
+            <display value="I have extreme pain or discomfort."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="46"/>
+            <display value="No information available."/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
     <resource>
       <ValueSet>
-        <id value="urobilinogen-diagnostics"/>
+        <id value="detected-not-detected-unknown-undetermined"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.71</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-loinc.html">
-                <code>http://loinc.org</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-13658-0"> </a>
-                  <a href="http://details.loinc.org/LOINC/13658-0.html">13658-0</a>
-                </td>
-                <td>Urobilinogen [Presence] in Urine</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-12269-7"> </a>
-                  <a href="http://details.loinc.org/LOINC/12269-7.html">12269-7</a>
-                </td>
-                <td>Urobilinogen [Presence] in 24 hour Urine</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-5818-0"> </a>
-                  <a href="http://details.loinc.org/LOINC/5818-0.html">5818-0</a>
-                </td>
-                <td>Urobilinogen [Presence] in Urine by Test strip</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-62487-4"> </a>
-                  <a href="http://details.loinc.org/LOINC/62487-4.html">62487-4</a>
-                </td>
-                <td>Urobilinogen [Presence] in Urine by Automated test strip</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics"/>
-        <version value="0.1.0"/>
-        <name value="UrobilinogenDiagnostics"/>
-        <title value="Urobilinogen Diagnostics"/>
-        <status value="draft"/>
-        <date value="2021-12-01"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Urobilinogen diagnostics in the context of NAPKON GECCO+ module"/>
-        <expansion>
-          <identifier value="urn:uuid:d4541d47-63cc-43ba-a383-9b34e88fa518"/>
-          <timestamp value="2021-12-17T11:18:35+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.71"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="13658-0"/>
-            <display value="Urobilinogen [Presence] in Urine"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="12269-7"/>
-            <display value="Urobilinogen [Presence] in 24 hour Urine"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="5818-0"/>
-            <display value="Urobilinogen [Presence] in Urine by Test strip"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="62487-4"/>
-            <display value="Urobilinogen [Presence] in Urine by Automated test strip"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
-    <resource>
-      <ValueSet>
-        <id value="yes-no-unknown"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
@@ -3745,18 +2806,18 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373066001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
+                  <a name="http---snomed.info-sct-260373001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
                 </td>
-                <td>Yes (qualifier value)</td>
+                <td>Detected (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373067005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
+                  <a name="http---snomed.info-sct-260415000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
                 </td>
-                <td>No (qualifier value)</td>
+                <td>Not detected (qualifier value)</td>
                 <td/>
               </tr>
               <tr>
@@ -3767,28 +2828,28 @@
                 <td>Unknown (qualifier value)</td>
                 <td/>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373068000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                </td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
-        <version value="0.1.0"/>
-        <name value="YesNoUnknown"/>
-        <title value="Yes No Unknown"/>
+        <url value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+        <version value="1.0.0"/>
+        <name value="DetectedNotDetectedUnknownUndetermined"/>
+        <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-12-17T11:18:04+00:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Yes / No / Unknown"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:e165d6e7-59f2-41f4-a312-4c0a77452b81"/>
-          <timestamp value="2021-12-17T11:18:36+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:1f9d5f2f-8162-46a0-b91d-ab06c8e3c813"/>
+          <timestamp value="2021-12-17T13:44:59+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3803,18 +2864,875 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="373066001"/>
-            <display value="Yes (qualifier value)"/>
+            <code value="260373001"/>
+            <display value="Detected (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="373067005"/>
-            <display value="No (qualifier value)"/>
+            <code value="260415000"/>
+            <display value="Not detected (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="261665006"/>
             <display value="Unknown (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s1-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-11"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-11">11</a>
+                </td>
+                <td>I have no problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-12"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-12">12</a>
+                </td>
+                <td>I have slight problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-13"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-13">13</a>
+                </td>
+                <td>I have moderate problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-14"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-14">14</a>
+                </td>
+                <td>I have severe problems in walking about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-15"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-15">15</a>
+                </td>
+                <td>I am unable to walk about.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-16"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-16">16</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses"/>
+        <version value="1.0.0"/>
+        <name value="EQ5DS1Responses"/>
+        <title value="EQ5D section one answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EQ5D section one (agility and mobility) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:209d7a36-3ade-4a95-a36b-fcf88759d164"/>
+          <timestamp value="2021-12-17T13:45:00+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="11"/>
+            <display value="I have no problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="12"/>
+            <display value="I have slight problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="13"/>
+            <display value="I have moderate problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="14"/>
+            <display value="I have severe problems in walking about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="15"/>
+            <display value="I am unable to walk about."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="16"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-positive-negative"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-10828004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10828004">10828004</a>
+                </td>
+                <td>Positive (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260385009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260385009">260385009</a>
+                </td>
+                <td>Negative (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative"/>
+        <version value="1.0.0"/>
+        <name value="PositiveNegative"/>
+        <title value="Positive Negative Codes"/>
+        <status value="active"/>
+        <date value="2021-12-07"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Positive / Negative Codes in the context of NAPKON GECCO+ Module"/>
+        <expansion>
+          <identifier value="urn:uuid:2d7b997e-b18e-4a36-a14b-3459d11fe125"/>
+          <timestamp value="2021-12-17T13:45:00+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260385009"/>
+            <display value="Negative (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s5-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-51"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-51">51</a>
+                </td>
+                <td>I am not anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-52"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-52">52</a>
+                </td>
+                <td>I am slightly anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-53"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-53">53</a>
+                </td>
+                <td>I am moderately anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-54"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-54">54</a>
+                </td>
+                <td>I am severely anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-55"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-55">55</a>
+                </td>
+                <td>I am extremely anxious or depressed.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-56"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-56">56</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses"/>
+        <version value="1.0.0"/>
+        <name value="EQ5DS5Responses"/>
+        <title value="EQ5D section five answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EQ5D section five (anxiety and depression) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:613bfac7-b6f7-4486-bd55-82a90cf349b0"/>
+          <timestamp value="2021-12-17T13:45:00+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="51"/>
+            <display value="I am not anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="52"/>
+            <display value="I am slightly anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="53"/>
+            <display value="I am moderately anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="54"/>
+            <display value="I am severely anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="55"/>
+            <display value="I am extremely anxious or depressed."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="56"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-normal-pathologic"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-29458008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29458008">29458008</a>
+                </td>
+                <td>Pathologic (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-17621005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17621005">17621005</a>
+                </td>
+                <td>Normal (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic"/>
+        <version value="1.0.0"/>
+        <name value="NormalPathologic"/>
+        <title value="Normal Pathologic"/>
+        <status value="active"/>
+        <date value="2021-12-01"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Normal Pathologic"/>
+        <expansion>
+          <identifier value="urn:uuid:0ed2f823-dbc3-4dc9-a280-7d48f22ba188"/>
+          <timestamp value="2021-12-17T13:45:00+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="29458008"/>
+            <display value="Pathologic (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17621005"/>
+            <display value="Normal (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-proms-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-61"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-61">61</a>
+                </td>
+                <td>No difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-62"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-62">62</a>
+                </td>
+                <td>Mild difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-63"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-63">63</a>
+                </td>
+                <td>Moderate difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-64"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-64">64</a>
+                </td>
+                <td>Severe difficulties.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-65"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-65">65</a>
+                </td>
+                <td>I haven&#39;t done this in the past 7 days.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-66"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-66">66</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses"/>
+        <version value="1.0.0"/>
+        <name value="PROMsResponses"/>
+        <title value="PROM responses in the context of GECCOplus"/>
+        <status value="active"/>
+        <date value="2021-11-29"/>
+        <publisher value="Charité - Universitätsmedizin Berlin"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Response codes for PROMs of GECCOplus"/>
+        <expansion>
+          <identifier value="urn:uuid:41f23881-bd14-47a2-9de5-ac76c0b213d3"/>
+          <timestamp value="2021-12-17T13:45:01+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="61"/>
+            <display value="No difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="62"/>
+            <display value="Mild difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="63"/>
+            <display value="Moderate difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="64"/>
+            <display value="Severe difficulties."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="65"/>
+            <display value="I haven&#39;t done this in the past 7 days."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="66"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s3-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-31"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-31">31</a>
+                </td>
+                <td>I have no problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-32"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-32">32</a>
+                </td>
+                <td>I have slight problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-33"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-33">33</a>
+                </td>
+                <td>I have moderate problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-34"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-34">34</a>
+                </td>
+                <td>I have severe problems doing my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-35"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-35">35</a>
+                </td>
+                <td>I am unable to do my usual activities.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-36"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-36">36</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses"/>
+        <version value="1.0.0"/>
+        <name value="EQ5DS3Responses"/>
+        <title value="EQ5D section three answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EQ5D section three (daily activities) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:9fdc98a0-97cb-402f-a974-eafdbb1a129f"/>
+          <timestamp value="2021-12-17T13:45:01+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="31"/>
+            <display value="I have no problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="32"/>
+            <display value="I have slight problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="33"/>
+            <display value="I have moderate problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="34"/>
+            <display value="I have severe problems doing my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="35"/>
+            <display value="I am unable to do my usual activities."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="36"/>
+            <display value="No information available."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
+    <resource>
+      <ValueSet>
+        <id value="geccoplus-eq5d-s2-responses"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-geccoplus-codesystem.html">GECCOplus Module Codes v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-geccoplus-codesystem.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-21"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-21">21</a>
+                </td>
+                <td>I have no problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-22"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-22">22</a>
+                </td>
+                <td>I have slight problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-23"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-23">23</a>
+                </td>
+                <td>I have moderate problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-24"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-24">24</a>
+                </td>
+                <td>I have severe problems washing or dressing myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-25"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-25">25</a>
+                </td>
+                <td>I am unable to wash or dress myself.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-geccoplus-codesystem-26"> </a>
+                  <a href="CodeSystem-geccoplus-codesystem.html#geccoplus-codesystem-26">26</a>
+                </td>
+                <td>No information available.</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses"/>
+        <version value="1.0.0"/>
+        <name value="EQ5DS2Responses"/>
+        <title value="EQ5D section two answers"/>
+        <status value="active"/>
+        <date value="2021-12-17T13:44:29+00:00"/>
+        <description value="EQ5D section two (self-sufficiency) answers"/>
+        <expansion>
+          <identifier value="urn:uuid:826319ed-4800-4cd3-bd35-611675c158cd"/>
+          <timestamp value="2021-12-17T13:45:01+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="21"/>
+            <display value="I have no problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="22"/>
+            <display value="I have slight problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="23"/>
+            <display value="I have moderate problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="24"/>
+            <display value="I have severe problems washing or dressing myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="25"/>
+            <display value="I am unable to wash or dress myself."/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem"/>
+            <code value="26"/>
+            <display value="No information available."/>
           </contains>
         </expansion>
       </ValueSet>

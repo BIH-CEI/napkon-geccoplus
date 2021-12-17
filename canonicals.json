@@ -3,231 +3,231 @@
     "id": "geccoplus-codesystem",
     "type": "CodeSystem",
     "url": "https://www.napkon.de/fhir/CodeSystem/geccoplus-codesystem",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "GECCOPlus"
   },
   {
     "id": "napkon-geccoplus",
     "type": "ImplementationGuide",
     "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "napkongeccoplus"
   },
   {
     "id": "geccoplus-allergy",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-allergy",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "Allergies"
   },
   {
     "id": "geccoplus-eq5d-response",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-eq5d-response",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DResponse"
   },
   {
     "id": "geccoplus-highest-school-degree",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-highest-school-degree",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "HighestSchoolDegree"
   },
   {
     "id": "geccoplus-proms-response",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-proms-response",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "PROMsResponse"
   },
   {
     "id": "geccoplus-symptoms",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-symptoms",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "Symptoms"
   },
   {
     "id": "geccoplus-urine-diagnostics",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-diagnostics",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrineDiagnostics"
   },
   {
     "id": "geccoplus-urine-specific-gravity",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-specific-gravity",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrineSpecificGravity"
   },
   {
     "id": "geccoplus-urine-urobilinogen",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/geccoplus-urine-urobilinogen",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrineUrobilinogen"
   },
   {
     "id": "detected-not-detected-unknown-undetermined",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "DetectedNotDetectedUnknownUndetermined"
   },
   {
     "id": "geccoplus-allergies-icd",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-icd",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "AllergiesICD"
   },
   {
     "id": "geccoplus-allergies-sct",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-allergies-sct",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "AllergiesSCT"
   },
   {
     "id": "geccoplus-eq5d-s1-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s1-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DS1Responses"
   },
   {
     "id": "geccoplus-eq5d-s2-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s2-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DS2Responses"
   },
   {
     "id": "geccoplus-eq5d-s3-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s3-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DS3Responses"
   },
   {
     "id": "geccoplus-eq5d-s4-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s4-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DS4Responses"
   },
   {
     "id": "geccoplus-eq5d-s5-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-eq5d-s5-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DS5Responses"
   },
   {
     "id": "geccoplus-laboratory-diagnostics",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-laboratory-diagnostics",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "LaboratoryDiagnostics"
   },
   {
     "id": "geccoplus-normal-pathologic",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-normal-pathologic",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "NormalPathologic"
   },
   {
     "id": "geccoplus-positive-negative",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-positive-negative",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "PositiveNegative"
   },
   {
     "id": "geccoplus-proms-responses",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-proms-responses",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "PROMsResponses"
   },
   {
     "id": "geccoplus-school-degree",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-school-degree",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "SchoolDegree"
   },
   {
     "id": "geccoplus-symptoms-icd",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-icd",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "SymptomsICD"
   },
   {
     "id": "geccoplus-symptoms-sct",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/geccoplus-symptoms-sct",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "SymptomsSCT"
   },
   {
     "id": "present-not-present-undetermined-other",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "PresentNotPresentUndeterminedOther"
   },
   {
     "id": "restricted-event-status",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "RestrictedEventStatus"
   },
   {
     "id": "urine-diagnostics",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/urine-diagnostics",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrineDiagnostics"
   },
   {
     "id": "urine-specific-gravity",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/urine-specific-gravity",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrineSpecificGravity"
   },
   {
     "id": "urobilinogen-diagnostics",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/urobilinogen-diagnostics",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "UrobilinogenDiagnostics"
   },
   {
     "id": "yes-no-unknown",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "YesNoUnknown"
   },
   {
     "id": "Eq5dQuestionaire",
     "type": "Questionnaire",
     "url": "https://www.napkon.de/fhir/eq5d-questionnaire",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "EQ5DQuestionaire"
   },
   {
     "id": "PROMsQuestionnaire",
     "type": "Questionnaire",
     "url": "https://www.napkon.de/fhir/proms-questionnaire",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "PROMsQuestionnaire"
   }
 ]
