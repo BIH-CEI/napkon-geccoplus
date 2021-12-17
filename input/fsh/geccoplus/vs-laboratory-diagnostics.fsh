@@ -4,7 +4,7 @@ ValueSet: LaboratoryDiagnostics
 Id: geccoplus-laboratory-diagnostics
 Title: "Laboratory Diagnostics"
 Description: "Laboratory diagnostics in the context of NAPKON GECCO+ module"
-* insert napkon-metadata(2021-12-01, #draft, 0.1.0)
+* insert napkon-metadata(2021-12-01, #active, 1.0.0)
 
 // Triglyceride
 * $loinc#70218-3 "Triglyceride [Moles/volume] in Blood"

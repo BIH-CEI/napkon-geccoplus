@@ -4,7 +4,7 @@ ValueSet: PROMsResponses
 Id: geccoplus-proms-responses
 Title: "PROM responses in the context of GECCOplus"
 Description: "Response codes for PROMs of GECCOplus"
-* insert napkon-metadata(2021-11-29, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-29, #active, 1.0.0)
 * $ngp#61 "No difficulties."
 * $ngp#62 "Mild difficulties."
 * $ngp#63 "Moderate difficulties."

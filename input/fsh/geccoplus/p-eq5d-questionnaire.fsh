@@ -5,7 +5,7 @@ InstanceOf: Questionnaire
 Usage: #definition
 Title: "EQ-5D Questionnaire"
 Description: "EQ-5D is a standardised measure of health-related quality of life developed by the EuroQol Group to provide a simple, generic questionnaire for use in clinical and economic appraisal and population health surveys."
-* insert napkon-metadata-instance(2021-11-22, #draft, 0.1.0)
+* insert napkon-metadata-instance(2021-11-22, #active, 1.0.0)
 * url = $eq5d-questionaire-url
 * name = "EQ5DQuestionaire"
 * status = #active
@@ -40,7 +40,7 @@ Parent: QuestionnaireResponse
 Id: geccoplus-eq5d-response
 Title: "EQ5D Questionnaire Response"
 Description: "Response to the EQ-5D Questionnaire"
-* insert napkon-metadata(2021-11-25, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-25, #active, 1.0.0)
 * insert mii-patient-reference
 * questionnaire 1..1
 * questionnaire = $eq5d-questionaire-url

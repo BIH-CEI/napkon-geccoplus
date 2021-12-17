@@ -4,7 +4,7 @@ ValueSet: UrineDiagnostics
 Id: urine-diagnostics
 Title: "Urine Diagnostics"
 Description: "Urine diagnostic codes in the context of NAPKON GECCO+ module"
-* insert napkon-metadata(2021-12-01, #draft, 0.1.0)
+* insert napkon-metadata(2021-12-01, #active, 1.0.0)
 * $loinc#33903-6 "Ketones [Presence] in Urine"
 * $loinc#33043-1 "Ketones [Presence] in 24 hour Urine"
 * $loinc#2514-8	"Ketones [Presence] in Urine by Test strip"

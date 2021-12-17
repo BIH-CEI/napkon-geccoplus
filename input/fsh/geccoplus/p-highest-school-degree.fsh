@@ -5,7 +5,7 @@ Parent: Observation
 Id: geccoplus-highest-school-degree
 Title: "Highest school degree"
 Description: "Highest school degree in the context of GECCO+"
-* insert napkon-metadata(2021-10-11, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-11, #active, 1.0.0)
 * insert mii-patient-reference
 * obeys value-or-data-absent-reason
 * status MS

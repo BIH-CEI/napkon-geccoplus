@@ -372,7 +372,7 @@ name: napkongeccoplus
 packageId: napkon-geccoplus
 publisher: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
 resourceType: ImplementationGuide
-status: draft
+status: active
 title: NAPKON GECCO+
 url: https://www.napkon.de/fhir/ImplementationGuide/napkon-geccoplus
-version: 0.1.0
+version: 1.0.0
