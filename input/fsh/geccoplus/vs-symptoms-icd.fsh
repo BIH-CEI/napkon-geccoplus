@@ -2,8 +2,8 @@
 // Charité - Universitätsmedizin Berlin
 ValueSet: SymptomsICD
 Id: geccoplus-symptoms-icd
-Title: "Symptoms"
-Description: "Value set for symptoms in the context of GECCO+"
+Title: "Symptoms (ICD-10-GM)"
+Description: "Value set for symptoms in the context of GECCO+ (ICD-10-GM)"
 * insert napkon-metadata(2021-11-29, #draft, 0.1.0)
 * $icd10-gm#M79.19 "Myalgie: Nicht näher bezeichnete Lokalisation"
 * $icd10-gm#R42 "Schwindel und Taumel"
